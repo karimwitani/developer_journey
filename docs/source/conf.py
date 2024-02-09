@@ -61,7 +61,9 @@ html_theme_options = {
 
     'logo_icon':'&#xe853'
 }
-
+myst_enable_extensions = [
+    "dollarmath"
+]
 html_sidebars = {
     "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]
 }
