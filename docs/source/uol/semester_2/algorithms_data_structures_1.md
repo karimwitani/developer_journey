@@ -22,7 +22,3 @@ Key Concepts:
 Learning Outcome Statements:
 
 - LOS X
-
-<a class="top-link hide" href="#top">↑</a>
-<a name="top"></a>
-<link href="../../static/styles.css" rel="stylesheet"></link> 
