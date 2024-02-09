@@ -78,15 +78,30 @@ $$
 
 Flowcharts are graphincal representation of series of events, decisions and computations. They are useful for modeling the flow of execution of an algorithm.
 
-Types of components:
+UML (Universal Modelling Language) is a standard way of representing systems designs in many industries, not just software (e.g: manufacturing)
+
+#### Flowchart component types
+
+1. Start & end states (terminals)
+   1. oval shapes
+2. I/O actions
+   1. paralelogram shapes
+   2. represents gathering or displaying data
+3. Control flows
+   1. Arrows between states/actions
+4. Decisions
+   1. diamond shapes
+   2. Multiple branches lead out in different directions, depending on choice. Typically YES/NO choices.
+5. Basic actions
+   1. Runs computation, send request
 
 :::{mermaid}
-flowchart TD
-   id1(Start) --> id2[Action]
-   id2 --> id3{Decision}
-   id3 -- CHOICE 1 --> id4[Action]
-   id3 -- CHOICE 1 --> id5[Action]
-   id5 --> id2
+    flowchart TD
+    id1(Start - enter room) --> id2[Action - check light]
+    id2 --> id3{Decision - Is it dark?}
+    id3 -- Yes --> id4[Action - Turn on light]
+    id3 -- CHOICE 1 --> id5[Action - Sit down]
+    id5 --> id2
 :::
 
 ## Topic 2: Pseudocode
