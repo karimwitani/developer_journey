@@ -74,7 +74,8 @@ $$
 |\sqrt{X} - x_n | \le \eta
 $$
 
-```{mermaid}flowchart TD
+```{mermaid}
+flowchart TD
     Start-->Stop
 ```
 
