@@ -58,6 +58,10 @@ html_theme_options = {
 
     'logo_icon':'&#xeacd'
 }
+
+html_sidebars = {
+    "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]
+}
 # html_theme = 'sphinx_rtd_theme'
 html_theme = 'sphinx_material'
 
