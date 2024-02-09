@@ -22,9 +22,6 @@ Contents
 --------
 
 .. toctree::
-
-   usage
-   api
    uol/index
 
 Index
