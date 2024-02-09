@@ -84,7 +84,7 @@ Types of components:
 flowchart TD
    id1(Start) --> id2[/Action/]
    id2--> id3{Decision}
-   id3-->id4[/Action/] && id5[/Action/]
+   id3-->id4[/Action/] id5[/Action/]
    id5-->End
 :::
 
