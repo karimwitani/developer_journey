@@ -56,7 +56,7 @@ html_theme_options = {
     # If True, show hidden TOC entries
     'globaltoc_includehidden': False,
 
-    'logo_icon':'eacd'
+    'logo_icon':'&#xeacd'
 }
 # html_theme = 'sphinx_rtd_theme'
 html_theme = 'sphinx_material'
