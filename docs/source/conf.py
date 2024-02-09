@@ -56,7 +56,7 @@ html_theme_options = {
     # If True, show hidden TOC entries
     'globaltoc_includehidden': False,
 
-    'logo_icon':'&#xeacd'
+    'logo_icon':'&#xe853'
 }
 
 html_sidebars = {
