@@ -57,10 +57,7 @@ $$
 
 One of the earliest know algorithms, created by Heron of Alexandria in order to approximate the square root of a number.
 
-It consists of taking an initial candidate $x_0$ that may be the square root of $X$ such as:
-$$
-X=x_0^2
-$$
+It consists of taking an initial candidate $x_0$ that may be the square root of $X$ such as $X=x_0^2$
 
 If the above formula doesn't hold for a desired level of precision we take $x_1$ as the average of $X$ and $x_0$. We keep iterating untill we reach a number $x_n$ that satisfies the equation.
 
@@ -97,11 +94,28 @@ UML (Universal Modelling Language) is a standard way of representing systems des
 
 :::{mermaid}
     flowchart TD
-    id1(Start - enter room) --> id2[Action - check light]
+    id1(Start - enter room) --> id2[/Action - check light/]
     id2 --> id3{Decision - Is it dark?}
     id3 -- Yes --> id4[Action - Turn on light]
     id3 -- CHOICE 1 --> id5[Action - Sit down]
     id5 --> id2
+:::
+
+#### Heron's method as a flowchart
+
+Compute square root of integer X up to n.d.p
+
+:::{mermaid}
+    flowchart TD
+    id1(Start) --> id2[/Get X,n]
+    id2 --> id3[Make guess g of $\sqrt{X}$]
+    id3 --> id4[Calculate $\frac{X}{g}$]
+    id3 --> id4[/Does $\frac{X}{g}$ differ from g up to n.d.p?/]
+    id4 -- YES --> id7[Calculate average($\frac{x}{g}$, g)]
+    id7 --> id8[set g=m]
+    id8 --> id3
+    id4 -- NO --> id5[Output g]
+    id5 --> id6(Stop)
 :::
 
 ## Topic 2: Pseudocode
