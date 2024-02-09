@@ -11,8 +11,8 @@ clearly and simply to others.
 This documentation website is a collection of my study notes, my musings and personal projects. I hope you find them useful,
 interesting and informative.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+.. Check out the :doc:`usage` section for further information, including
+.. how to :ref:`installation` the project.
 
 .. note::
 
@@ -25,8 +25,8 @@ Contents
 
    usage
    api
-   uol/semester_2/index
+   uol/index
 
 Index
-~~~~~
+--------
 :ref:`genindex`
