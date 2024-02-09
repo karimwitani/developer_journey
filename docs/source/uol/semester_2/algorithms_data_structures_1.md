@@ -74,6 +74,11 @@ $$
 |\sqrt{X} - x_n | \le \eta
 $$
 
+```{mermaid}
+flowchart TD
+    Start --> Stop
+```
+
 ## Topic 2: Pseudocode
 
 Key Concepts:
