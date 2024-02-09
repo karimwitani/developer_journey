@@ -82,10 +82,11 @@ Types of components:
 
 :::{mermaid}
 flowchart TD
-   id1(Start) --> id2[/Action/]
+   id1(Start) --> id2[Action]
    id2 --> id3{Decision}
-   id3 -->id4[/Action/] & id5[/Action/]
-   id5 -->End
+   id3 -- CHOICE 1 --> id4[Action]
+   id3 -- CHOICE 1 --> id5[Action]
+   id5 --> id2
 :::
 
 ## Topic 2: Pseudocode
