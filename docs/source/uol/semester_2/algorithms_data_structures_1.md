@@ -68,11 +68,15 @@ $$
 x_{n+1}=\frac{1}{2}*(x_n+\frac{X}{x_n})
 $$
 
-The intuition behind this is that if $x_n$ is an overestimate of $\sqrt{X}$ then $\frac{X}{x_n}$ will be an underestimate. The average of the two would be closer to the true value of $\sqrt{X}$. As we rerun the steps for $n=1,2,3,4....$ we have the difference between the candidate value and true value getting smaller, untill it
+The intuition behind this is that if $x_n$ is an overestimate of $\sqrt{X}$ then $\frac{X}{x_n}$ will be an underestimate. The average of the two would be closer to the true value of $\sqrt{X}$. As we rerun the steps for $n=1,2,3,4....$ we have the difference between the candidate value and true value getting smaller, untill it id under the threshold.
 
 $$
 |\sqrt{X} - x_n | \le \eta
 $$
+
+```{mermaid}flowchart TD
+    Start-->Stop
+```
 
 ## Topic 2: Pseudocode
 

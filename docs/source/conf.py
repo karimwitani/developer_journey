@@ -18,7 +18,9 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'myst_parser',
-    'sphinx.ext.imgmath'
+    'sphinx.ext.imgmath',
+    'sphinxcontrib.mermaid',
+    "sphinx_design"
 ]
 # suppress_warnings = ["myst.xref_missing"]
 
@@ -62,7 +64,8 @@ html_theme_options = {
     'logo_icon':'&#xe853'
 }
 myst_enable_extensions = [
-    "dollarmath"
+    "dollarmath",
+    'myst_fence_as_directive'
 ]
 html_sidebars = {
     "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]
