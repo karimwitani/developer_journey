@@ -75,7 +75,9 @@ $$
 
 Flowcharts are graphincal representation of series of events, decisions and computations. They are useful for modeling the flow of execution of an algorithm.
 
-UML (Universal Modelling Language) is a standard way of representing systems designs in many industries, not just software (e.g: manufacturing)
+UML (Universal Modelling Language) is a standard way of representing systems designs in many industries, not just software (e.g: manufacturing).
+
+[UML Wikipedia Page](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
 
 #### Flowchart component types
 
@@ -92,31 +94,33 @@ UML (Universal Modelling Language) is a standard way of representing systems des
 5. Basic actions
    1. Runs computation, send request
 
-:::{mermaid}
+```mermaid
     flowchart TD
     id1(Start - enter room) --> id2[/Action - check light/]
     id2 --> id3{Decision - Is it dark?}
     id3 -- Yes --> id4[Action - Turn on light]
     id3 -- CHOICE 1 --> id5[Action - Sit down]
     id5 --> id2
-:::
+```
 
 #### Heron's method as a flowchart
 
 Compute square root of integer X up to n.d.p
 
-:::{mermaid}
+```mermaid
     flowchart TD
-    id1(Start) --> id2[/Get X,n]
-    id2 --> id3[Make guess g of $\sqrt{X}$]
-    id3 --> id4[Calculate $\frac{X}{g}$]
-    id3 --> id4[/Does $\frac{X}{g}$ differ from g up to n.d.p?/]
-    id4 -- YES --> id7[Calculate average($\frac{x}{g}$, g)]
-    id7 --> id8[set g=m]
-    id8 --> id3
-    id4 -- NO --> id5[Output g]
-    id5 --> id6(Stop)
-:::
+    id1(Start) --> id2[/Get X,n/]
+    id2 --> id3["Make guess g of sqrt(X)"]
+    id3 --> id4[Calculate X/g]
+    id4 --> id5{Does X/g differ from g up to n.d.p?}
+    id5 -- NO --> id6[Output g]
+    id6 --> id7(Stop)
+    id5 -- YES --> id8["Calculate average(X/g, g)"]
+    id8 --> id9["set g=average(X/g, g)"]
+    id9 --> id4
+    
+    
+```
 
 ## Topic 2: Pseudocode
 
