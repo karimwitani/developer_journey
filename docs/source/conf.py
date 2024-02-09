@@ -68,7 +68,7 @@ html_sidebars = {
 # html_theme = 'sphinx_rtd_theme'
 html_theme = 'sphinx_material'
 html_css_files = [
-    'css/custom.css',
+    'css/styles.css',
 ]
 
 # -- Options for EPUB output
