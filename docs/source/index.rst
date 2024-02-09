@@ -26,3 +26,7 @@ Contents
    usage
    api
    uol/semester_2/index
+
+Index
+~~~~~
+:ref:`genindex`
