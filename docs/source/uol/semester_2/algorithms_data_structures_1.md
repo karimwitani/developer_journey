@@ -82,19 +82,9 @@ Types of components:
 
 :::{mermaid}
 flowchart TD
-   Start --> Stop
+   Start --> [/Decision/]
+   [/Decision/]-->End
 :::
-
-Start --> [/Decision/]
-[/Decision/]-->End
-
-%%{init: {"flowchart": {"htmlLabels": false}} }%%
-flowchart LR
-    markdown["`This **is** _Markdown_`"]
-    newLines["`Line1
-    Line 2
-    Line 3`"]
-    markdown --> newLines
 
 ## Topic 2: Pseudocode
 
