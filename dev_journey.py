@@ -1,5 +1,5 @@
 """
-Lumache - Python library for cooks and food lovers.
+My dev journey. From finance bro to full-fledged geek.
 """
 
 __version__ = "0.1.0"
