@@ -74,10 +74,27 @@ $$
 |\sqrt{X} - x_n | \le \eta
 $$
 
-```{mermaid}
+### Flowcharts
+
+Flowcharts are graphincal representation of series of events, decisions and computations. They are useful for modeling the flow of execution of an algorithm.
+
+Types of components:
+
+:::{mermaid}
 flowchart TD
-    Start --> Stop
-```
+   Start --> Stop
+:::
+
+Start --> [/Decision/]
+[/Decision/]-->End
+
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart LR
+    markdown["`This **is** _Markdown_`"]
+    newLines["`Line1
+    Line 2
+    Line 3`"]
+    markdown --> newLines
 
 ## Topic 2: Pseudocode
 
@@ -87,10 +104,6 @@ Key Concepts:
 - Iteration
 
 ## Topic 3: Vectors, Stacks and Queues
-
-Key Concepts:
-
-- XXXX
 
 ## Topic 4: Arrays, Linked Lists and Searching Algorithms (part 1)
 
