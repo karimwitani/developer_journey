@@ -18,7 +18,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'myst_parser',
-    sphinx.ext.imgmath
+    'sphinx.ext.imgmath'
 ]
 # suppress_warnings = ["myst.xref_missing"]
 
