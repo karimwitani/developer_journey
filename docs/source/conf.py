@@ -19,6 +19,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'myst_parser'
 ]
+suppress_warnings = ["myst.header"]
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
