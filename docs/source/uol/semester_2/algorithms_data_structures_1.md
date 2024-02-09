@@ -95,6 +95,7 @@ UML (Universal Modelling Language) is a standard way of representing systems des
   - Runs computation, send request
 
 ```mermaid
+    %%{init: { 'theme':'dark', 'sequence': {'useMaxWidth':false} } }%%
     flowchart TD
     id1(Start - enter room) --> id2[/Action - check light/]
     id2 --> id3{Decision - Is it dark?}
@@ -108,6 +109,7 @@ UML (Universal Modelling Language) is a standard way of representing systems des
 Compute square root of integer X up to n.d.p
 
 ```mermaid
+    %%{init: { 'theme':'dark', 'sequence': {'useMaxWidth':false} } }%%
     flowchart TD
     id1(Start) --> id2[/Get X,n/]
     id2 --> id3["Make guess g of sqrt(X)"]
