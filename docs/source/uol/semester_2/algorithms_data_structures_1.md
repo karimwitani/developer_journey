@@ -81,18 +81,18 @@ UML (Universal Modelling Language) is a standard way of representing systems des
 
 #### Flowchart component types
 
-1. Start & end states (terminals)
-   1. oval shapes
-2. I/O actions
-   1. paralelogram shapes
-   2. represents gathering or displaying data
-3. Control flows
-   1. Arrows between states/actions
-4. Decisions
-   1. diamond shapes
-   2. Multiple branches lead out in different directions, depending on choice. Typically YES/NO choices.
-5. Basic actions
-   1. Runs computation, send request
+- Start & end states (terminals)
+  - oval shapes
+- I/O actions
+  - paralelogram shapes
+  - represents gathering or displaying data
+- Control flows
+  - Arrows between states/actions
+- Decisions
+  - diamond shapes
+  - Multiple branches lead out in different directions, depending on choice. Typically YES/NO choices.
+- Basic actions
+  - Runs computation, send request
 
 ```mermaid
     flowchart TD
@@ -118,8 +118,6 @@ Compute square root of integer X up to n.d.p
     id5 -- YES --> id8["Calculate average(X/g, g)"]
     id8 --> id9["set g=average(X/g, g)"]
     id9 --> id4
-    
-    
 ```
 
 ## Topic 2: Pseudocode
