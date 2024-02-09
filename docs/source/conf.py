@@ -42,12 +42,12 @@ html_theme_options = {
     'base_url': 'https://developer-journey.readthedocs.io/',
 
     # Set the color and the accent color
-    'color_primary': 'blue',
+    'color_primary': 'indigo',
     'color_accent': 'light-blue',
 
     # Set the repo location to get a badge with stats
     'repo_url': 'https://github.com/karimwitani/developer_journey',
-    'repo_name': 'Project',
+    'repo_name': 'Dev Journey',
 
     # Visible levels of the global TOC; -1 means unlimited
     'globaltoc_depth': 3,
@@ -55,6 +55,8 @@ html_theme_options = {
     'globaltoc_collapse': False,
     # If True, show hidden TOC entries
     'globaltoc_includehidden': False,
+
+    'logo_icon':'eacd'
 }
 # html_theme = 'sphinx_rtd_theme'
 html_theme = 'sphinx_material'
