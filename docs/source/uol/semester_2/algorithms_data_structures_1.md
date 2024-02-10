@@ -201,10 +201,10 @@ Iteration is the process of repeating a set of steps multiple times untill a con
 
 They are also called "loops" and in flowchart representation you can see that by following the arrows forming a loops such as the below chart:
 
-```mermaid
+:::{mermaid}
   flowchart LR
   t1(Start) --> s1 --> s2 --> s3 -- LOOP --> t1
-```
+:::
 
 There are two type of loops, "For Loops" and "While Loops".
 
