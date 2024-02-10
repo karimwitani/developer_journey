@@ -120,7 +120,7 @@ Compute square root of integer X up to n.d.p
     id9 --> id4
 :::
 
-### Challenge: Euclid's algorithm
+### Euclid's algorithm
 
 You have 48 toys and 42 sweets to distribute to guests at a child birthday party. The goal is to equaly distribute all the sweets and toys to the maximum number of people. How would you go about solving this problem.
 
@@ -156,6 +156,93 @@ Key Concepts:
 
 - Pseudocode
 - Iteration
+
+Flowchart are limited because they are continuous processes while algorithms operate in discrete steps. Flowchart provide a usefull starting point but we need a tool that take this into account. This is where pseudocode comes into the picture.
+
+Pseudocode is a way to write algorithm in plain language that is independent of which programing language or machine you are using.
+
+### Pseudocode Notation
+
+There are common standards to notation:
+
+- Assignment operator: $\leftarrow$
+  - e.: assign the value 2 to the variable x : $x  \leftarrow 2$
+- Variable name contain have spaces
+  - e.g: VariableName (correct), varible_3 (correct), Variable Name(incorrect)
+- Written from left to right, top to bottom
+- Variables can be self referencial
+- Arithmetic: $+ - * /$
+- Comaprison: $= \ne \le \ge > <$
+- Flow control blocks are indented.
+- Logic under If, While & For loop blocks are indented
+  - If statement start with "If condition then" and end with "end if"
+
+### Functions
+
+A general concept but in computer science its am encolsed set of logic that takes input and returns output.
+
+#### Example Function
+
+The below function would check if a number is even or odd.
+
+```bash
+function Even(n)
+  if n mode 2 = 0
+    return TRUE
+  else
+    return FALSE
+  end if
+end function
+```
+
+### Iteration
+
+Iteration is the process of repeating a set of steps multiple times untill a condition is met. When the condition is met you "break" out of the repeating loop and move on to the subsequent set of intructions.
+
+They are also called "loops" and in flowchart representation you can see that by following the arrows forming a loops such as the below chart:
+
+```mermaid
+  flowchart LR
+  t1(Start) --> s1 --> s2 --> s3 -- LOOP --> t1
+```
+
+There are two type of loops, "For Loops" and "While Loops".
+
+- "For loops" iterate over specific number of steps, predefined at the top.
+
+```bash
+x <-- 1
+for 2 < i < 10 do
+  x <-- x + 1
+end for
+```
+
+- "While Loops" iterate untill a condition is met. The execution of the code in the loop will modify values that the "While loop" will examin at the start of each iteration.
+
+```bash
+x <-- 1
+while x < 10 do
+  x <-- x + 1
+end while
+```
+
+#### Challenge: Solving a problem with iteration
+
+Problem: If $x^2 = n$, is x an integer?
+
+Our solution would be to start with the first integer, 1, and iterate untill n. If any of the integers x from 1 to n satisfy $x^2 = n$, output true, otherwise output false.
+
+```bash
+function IsXInteger(n)
+  y <-- FALSE
+  for 1 <= i <=n do
+    if i*i = n then
+      y <-- TRUE
+    end if
+  end for
+  return y
+end function
+```
 
 ## Topic 3: Vectors, Stacks and Queues
 
