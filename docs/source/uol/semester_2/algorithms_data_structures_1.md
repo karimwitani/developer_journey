@@ -94,14 +94,14 @@ UML (Universal Modelling Language) is a standard way of representing systems des
 - Basic actions
   - Runs computation, send request
 
-:::{mermaid}
+```mermaid
     flowchart TD
     id1(Start - enter room) --> id2[/Action - check light/]
     id2 --> id3{Decision - Is it dark?}
     id3 -- Yes --> id4[Action - Turn on light]
     id3 -- CHOICE 1 --> id5[Action - Sit down]
     id5 --> id2
-:::
+```
 
 #### Heron's method as a flowchart
 
@@ -133,12 +133,10 @@ This is a generalisable problem for ressource allocation. Euclid proposed an alg
   t1(Start) --> s1{Is A=B}
   s1 -- YES --> s2[Output A]
   s2 --> t2
-  
-  s3 --> YES --> s4[Set A = A-B] 
-  s1 -- NO --> s3{Is A>B} 
+  s3 --> YES --> s4[Set A = A-B]
+  s1 -- NO --> s3{Is A>B}
   s3 --> NO --> s5[Set B = B-A]
   s4 & s5 --> s1
-
   t2(End)
 :::
 
