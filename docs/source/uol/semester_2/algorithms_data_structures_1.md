@@ -120,6 +120,51 @@ Compute square root of integer X up to n.d.p
     id9 --> id4
 :::
 
+```mermaid
+    flowchart TD
+    id1(Start) --> id2[/Get X,n/]
+    id2 --> id3["Make guess g of sqrt(X)"]
+    id3 --> id4[Calculate X/g]
+    id4 --> id5{Does X/g differ from g up to n.d.p?}
+    id5 -- NO --> id6[Output g]
+    id6 --> id7(Stop)
+    id5 -- YES --> id8["Calculate average(X/g, g)"]
+    id8 --> id9["set g=average(X/g, g)"]
+    id9 --> id4
+```
+
+### Challenge: Euclid's algorithm
+
+You have 48 toys and 42 sweets to distribute to guests at a child birthday party. The goal is to equaly distribute all the sweets and toys to the maximum number of people. How would you go about solving this problem.
+
+This is a case of looking for the greatest common divisor for both sweets and toys. This number would be the solution to how many people you can invite and how many sweets/toys each will get.
+
+This is a generalisable problem for ressource allocation. Euclid proposed an algotihm to find the GCD over 2000 years ago. It goes like this:
+
+```mermaid
+  flowchart TD
+  t1(Start) --> s1{Is A=B}
+  s1 -- YES --> s2[Output A]
+  s2 --> t2
+  
+  s3 --> YES --> s4[Set A = A-B] 
+  s1 -- NO --> s3{Is A>B} 
+  s3 --> NO --> s5[Set B = B-A]
+  s4 & s5 --> s1
+
+  t2(End)
+```
+
+Intuitivly, if the larger number divided by the second has no remainder then the division result is a common divisor.
+
+Untill the two number are not equal, repplace larger number with  remainder and repeat untill both numbers are equal in wich case that is the GCD.
+
+Mathmatically it can be explained as such. If $A = B+C$, then $A \mod  N \equiv (B \mod N )+ (C \mod N)$.
+
+We know that $A = B * quotient + R$ and thus a common divisor G for A & B is also divides A & R.
+
+We use this logic to keep repeating untill we find a division that has no remainder which is the GCD.
+
 ## Topic 2: Pseudocode
 
 Key Concepts:
