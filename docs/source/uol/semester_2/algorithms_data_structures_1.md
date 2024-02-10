@@ -94,20 +94,20 @@ UML (Universal Modelling Language) is a standard way of representing systems des
 - Basic actions
   - Runs computation, send request
 
-```mermaid
+:::{mermaid}
     flowchart TD
     id1(Start - enter room) --> id2[/Action - check light/]
     id2 --> id3{Decision - Is it dark?}
     id3 -- Yes --> id4[Action - Turn on light]
     id3 -- CHOICE 1 --> id5[Action - Sit down]
     id5 --> id2
-```
+:::
 
 #### Heron's method as a flowchart
 
 Compute square root of integer X up to n.d.p
 
-```mermaid
+:::{mermaid}
     flowchart TD
     id1(Start) --> id2[/Get X,n/]
     id2 --> id3["Make guess g of sqrt(X)"]
@@ -118,7 +118,7 @@ Compute square root of integer X up to n.d.p
     id5 -- YES --> id8["Calculate average(X/g, g)"]
     id8 --> id9["set g=average(X/g, g)"]
     id9 --> id4
-```
+:::
 
 ## Topic 2: Pseudocode
 
