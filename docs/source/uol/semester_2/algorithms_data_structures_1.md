@@ -94,14 +94,14 @@ UML (Universal Modelling Language) is a standard way of representing systems des
 - Basic actions
   - Runs computation, send request
 
-```mermaid
+:::{mermaid}
     flowchart TD
     id1(Start - enter room) --> id2[/Action - check light/]
     id2 --> id3{Decision - Is it dark?}
     id3 -- Yes --> id4[Action - Turn on light]
     id3 -- CHOICE 1 --> id5[Action - Sit down]
     id5 --> id2
-```
+:::
 
 #### Heron's method as a flowchart
 
