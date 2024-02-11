@@ -349,9 +349,13 @@ Queue differ from vectors:
 :::{mermaid}
   flowchart LR
     Tail <--> q1
-    q3 <--> Head
+    q4 <--> Head
     subgraph "Queue"
-      q1 <--> q2 <--> q3
+      q1["`q1
+      Q[1]`"] <--> q2["`2
+      Q[2]`"] <--> q3["`3
+      Q[3]`"] <--> q4["`4
+      Q[4]`"]
     end
 :::
 
@@ -359,10 +363,10 @@ Queue differ from vectors:
 
 | OPERATION  | PSEUDOCODE   |
 |------------|--------------|
-| head       | HEAD[q]      |
-| dequeue    | DEQUEUE[q]   |
-| enqueue[o] | ENQUEUE[o,q] |
-| empty      | EMPTY[q]     |
+| head       | HEAD[Q]      |
+| dequeue    | DEQUEUE[Q]   |
+| enqueue[x] | ENQUEUE[x,Q] |
+| empty      | EMPTY[Q]     |
 
 ### Stacks
 
@@ -382,10 +386,10 @@ Stacks operate in a last-in first-out models (LIFO). The most recent element add
 
 | OPERATION | PSEUDOCODE |
 |-----------|------------|
-| push[o]   | PUSH[o,s]  |
-| top       | TOP[s]     |
-| pop       | POP[s]     |
-| empty     | EMPTY[s]   |
+| push[x]   | PUSH(x,S)  |
+| top       | TOP(S)     |
+| pop       | POP(S)     |
+| empty     | EMPTY(S)   |
 
 #### Challenge: Stacks
 
@@ -421,6 +425,11 @@ function ConvertDecimalToBinary(n)
     else
       n <-- quotient # Reassign n to be the quotient for next loop
   return s
+```
+
+```{note}
+Additional Reading: Section 3 introduction & Chapter 10.1 - Introduction to algorithms, Cormen, T.H., (Cambridge, MA: MIT Press, 2009) 3rd edition.
+[PDF link](https://pd.daffodilvarsity.edu.bd/course/material/book-430/pdf_content)
 ```
 
 ## Topic 4: Arrays, Linked Lists and Searching Algorithms (part 1)
