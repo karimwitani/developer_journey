@@ -68,7 +68,7 @@ $$
 The intuition behind this is that if $x_n$ is an overestimate of $\sqrt{X}$ then $\frac{X}{x_n}$ will be an underestimate. The average of the two would be closer to the true value of $\sqrt{X}$. As we rerun the steps for $n=1,2,3,4....$ we have the difference between the candidate value and true value getting smaller, untill it id under the threshold.
 
 $$
-|\sqrt{X} - x_n | \le \eta
+arrow|\sqrt{X} - x_n | \le \eta
 $$
 
 ### Flowcharts
@@ -120,7 +120,7 @@ Compute square root of integer X up to n.d.p
     id9 --> id4
 :::
 
-### Euclid's algorithm
+### Euclid's algorithm as a flowchart
 
 You have 48 toys and 42 sweets to distribute to guests at a child birthday party. The goal is to equaly distribute all the sweets and toys to the maximum number of people. How would you go about solving this problem.
 
@@ -226,6 +226,40 @@ while x < 10 do
 end while
 ```
 
+#### Extended loop behaviors: break & continue
+
+During execution we can stop iterating early, if a certain condition has been met, using break statements. In the below example we return y = 5 and not y = 10 because we **break out** of the loop when i = 5, which stop us from iterating further up to 10.
+
+```bash
+function TestBreak()
+  for i <= 10 do
+    y <-- i
+    if i = 5 then
+      break
+    end if
+  end for
+  return y
+
+TestBreak()
+5
+```
+
+We can also skip some iterations of the loop and restart at the next iteration using **continue**. In the below example we skip over the execution of a loop if i is even, thus only printing out the odd numbers in the array.
+
+```bash
+function TestContinue()
+  for i <= 10 do
+    if i mod 2 = 0 then
+      continue
+    else
+      print(i)
+    end if
+  end for
+
+TestContinue()
+1,3,5,7,9
+```
+
 #### Challenge: Solving a problem with iteration
 
 Problem: If $x^2 = n$, is x an integer?
@@ -238,13 +272,156 @@ function IsXInteger(n)
   for 1 <= i <=n do
     if i*i = n then
       y <-- TRUE
+      break
     end if
   end for
   return y
 end function
 ```
 
+#### Euclid's algorithm as pseudocode
+
+```bash
+function GreatestCommonDivisor(A,B)
+  while A != B do
+    if A > B then
+      A <-- A - B
+    else
+      B <-- B - A
+    end if
+  end while
+  return A
+```
+
 ## Topic 3: Vectors, Stacks and Queues
+
+Key Concepts:
+
+- Data structures
+- Abstraction
+
+Data structures are abstractions of how computer memory is used to store data and run operations on it.
+
+In this section we will present three datastructures that are used to store collections of data items, define relations among them and operate on them (read, write).
+
+These data structures :
+
+1. Vectors
+2. Stacks
+3. Queues
+
+### Vectors
+
+A finite, fixed sized, data collection.
+
+- Data is stored sequentially: contiguous set of memory cells
+- Fixed sized: The number of elements in the vector is set at the moment it is instanciated and cannot be modified subsequently.
+
+The position of an element in the vector is called the **index**.
+
+:::{mermaid}
+  flowchart LR
+    subgraph "Vector"
+      direction LR
+      v1 ---v2--- v3
+    end
+:::
+
+#### Vector Operations
+
+| OPERATION  | PSEUDOCODE          |
+|------------|---------------------|
+| length     | LENGTH              |
+| select[k]  | v[k]                |
+| store[o,k] | v[k] $\leftarrow$ o |
+
+### Queues
+
+Intuitivly a queue in computing is similar to a queue at the airport. People join the queue a the end (the tail) and are processed for onboarding the airplane at the beggining (the head).
+
+Queues are often used when a ressource is needed but cannot be immediatly accessed. As such the elements in the queue await to be processed in a first come first served basis (formally FIFO: First In, Firt Out).
+
+Queue differ from vectors:
+
+1. Not fixed size and can extend.
+2. Not all element are accessible. You can add elements at the tail and remove them from the head.
+
+:::{mermaid}
+  flowchart LR
+    Tail <--> q1
+    q3 <--> Head
+    subgraph "Queue"
+      q1 <--> q2 <--> q3
+    end
+:::
+
+#### Queue Operations
+
+| OPERATION  | PSEUDOCODE   |
+|------------|--------------|
+| head       | HEAD[q]      |
+| dequeue    | DEQUEUE[q]   |
+| enqueue[o] | ENQUEUE[o,q] |
+| empty      | EMPTY[q]     |
+
+### Stacks
+
+Stacks are similar to queue but only one element is accessible, the top (equivalent to the tail in queues).
+
+Stacks operate in a last-in first-out models (LIFO). The most recent element added to the stack can be accessed.
+
+:::{mermaid}
+  flowchart LR
+    Top <--> s1
+    subgraph "Stack"
+      s1 <--> s2 <--> s3
+    end
+:::
+
+#### Stack Operations
+
+| OPERATION | PSEUDOCODE |
+|-----------|------------|
+| push[o]   | PUSH[o,s]  |
+| top       | TOP[s]     |
+| pop       | POP[s]     |
+| empty     | EMPTY[s]   |
+
+#### Challenge: Stacks
+
+Given integer $n$ in decimal form, give a binary representation as a stack.
+
+Solution intuition: We know that to convert decimal (base 10) to binary (base 2) we divide the decimal number by two and keep track of the quotient and remainder. The remainder at each step will be either 0 or 1 (the modulo of any number with 2 return either 0, or 1). The sequence of 0s and 1s from those divisions untill the quotiet is 0 is the binary representation if that number.
+
+Example: Convert $13_{10}$ to binary.
+
+| Division by 2 | Quotient | Remainder | Bit # |
+|---------------|----------|-----------|-------|
+| 13/2          | 6        | 1         | 0     |
+| 6/2           | 3        | 0         | 1     |
+| 3/2           | 1        | 1         | 2     |
+| 1/2           | 0        | 1         | 3     |
+
+The solution is: $13_{10} = 1101_{2}$
+
+In algorithmic form, using a stack and floor division/modulo operator ( // & % respectivly)
+
+```bash
+function ConvertDecimalToBinary(n)
+  s <-- new Stack
+
+  while TRUE do # Start while loop that will iterate untill we hit break
+    remainder <-- n % 2
+    ENQUEUE[remainder, s]    
+
+    quotient <-- n // 2
+
+    if quotient = 0 then # Check quotient is zero to control break from 
+      break
+    else
+      n <-- quotient # Reassign n to be the quotient for next loop
+  return s
+```
 
 ## Topic 4: Arrays, Linked Lists and Searching Algorithms (part 1)
 
