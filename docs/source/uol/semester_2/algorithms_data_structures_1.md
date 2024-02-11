@@ -332,8 +332,8 @@ The position of an element in the vector is called the **index**.
 | OPERATION  | PSEUDOCODE          |
 |------------|---------------------|
 | length     | LENGTH              |
-| select[k]  | v[k]                |
-| store[o,k] | v[k] $\leftarrow$ o |
+| select[k]  | V[k]                |
+| store[o,k] | V[k] $\leftarrow$ o |
 
 ### Queues
 
@@ -351,11 +351,7 @@ Queue differ from vectors:
     Tail <--> q1
     q4 <--> Head
     subgraph "Queue"
-      q1["`q1
-      Q[1]`"] <--> q2["`2
-      Q[2]`"] <--> q3["`3
-      Q[3]`"] <--> q4["`4
-      Q[4]`"]
+      q1["Q[1]"] <--> q2["Q[2]"] <--> q3["Q[3]"] <--> q4["Q[4]"]
     end
 :::
 
@@ -433,6 +429,207 @@ Additional Reading: Section 3 introduction & Chapter 10.1 - Introduction to algo
 ```
 
 ## Topic 4: Arrays, Linked Lists and Searching Algorithms (part 1)
+
+Key Concepts:
+
+- Search Algorithms
+- Abstract Data Types vs Data Structures
+
+An important distinction is the difference between **Data Types** and **Data Strucutres**. The former consists of the data that we have and the operation we can execute. The later is the concrete implementation, taking into account how computer memory works.
+
+A computer needs to allocate memory cells to data that it uses takign into account how much memory is needed. For example, storing the number 4000 will take more memory bits to stores compared to the number 8 (111110100000 vs 1000 in binary).
+
+Keeping track of the location of the memory cells that contain this data is also important. This is done using pointers, bits of data that correspond to specific memory cells in RAM.
+
+The above two points are crucial in building collection of data such as Stacks, Queues and Vectors.
+
+These data structures can be constrcted using Arrays or Linked List.
+
+### Arrays
+
+An array is method of storing collections of data in contiguous memory adresses. We assume the size of an array is immutable but we can always create new arrays (bigger/smaller).
+
+```{mermaid}
+  flowchart LR
+  001 --> 002 --> 003 --> 004 --> 005 --> 006
+    subgraph "001"
+      e1["01010100"]
+    end
+    subgraph "002"
+      e2["01010100"]
+    end
+    subgraph "003"
+      e3["01010100"]
+    end
+    subgraph "004"
+      e4["01010100"]
+    end
+    subgraph "005"
+      e5["01010100"]
+    end
+    subgraph "006"
+      e6["01010100"]
+    end
+```
+
+### Implementing Vector Data Strucutres Using Arrays
+
+We'll build the concret implementation of vector operations using arrays.
+
+1. LENGTH:
+   1. The first element (index 0) will contain the number of elements in the vector.
+   2. You avoid counting the number of elements each time you call the funtion
+   3. The vectore can only store N-1 elements
+2. SELECT: Find element at index k
+3. STORE: Assign value to vector element at index k
+
+```{mermaid}
+---
+title: Vector
+---
+flowchart LR
+l[length] --> 0
+0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6 
+subgraph "0"
+  e1["6"]
+end
+subgraph "1"
+  e2["Element 1"]
+end
+subgraph "2"
+  e3["Element 2"]
+end
+subgraph "3"
+  e4["Element 3"]
+end
+subgraph "4"
+  e5["Element 4"]
+end
+subgraph "5"
+  e6["Element 5"]
+end
+subgraph "6"
+  e7["Element 6"]
+end
+```
+
+### Implementing Stack Data Strucutres Using Arrays
+
+Unlike the abstract stack, the data structure is created using an array of fixed size. The stack can only grow as large as the array that was used to instanciate it. If you attempt to push more elements that there is space to accomodate, you will be face with a **Stack Overflow** error
+
+In the same manner as the vector, important values will be stored in dedicated memory cells. In this case **S.TOP** which will keep track of the index of the latest item that was added to the stack.
+
+```{mermaid}
+flowchart LR
+l[S.TOP = 3] --> 3
+0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6 
+subgraph "Stack"
+  subgraph "0"
+    s1["Element 0"]
+  end
+  subgraph "1"
+    s2["Element 1"]
+  end
+  subgraph "2"
+    s3["Element 2"]
+  end
+  subgraph "3"
+    s4["Element 3"]
+  end
+  subgraph "4"
+    s5["-"]
+  end
+  subgraph "5"
+    s6["-"]
+  end
+  subgraph "6"
+    s7["-"]
+  end
+end
+```
+
+#### Stack Operations (revisited)
+
+The concrete implementation of a stack depends on operations to its only accessible value, S.TOP.
+
+```bash
+PUSH(x,S)
+  if S.TOP + 1 > S.LENGTH
+    error "overflow"
+  else
+    S.TOP = S.TOP + 1
+    S[S.TOP] = x
+
+POP(S)
+  if EMPTY(S)
+    error "underflow"
+  else
+    S.TOP = S.TOP - 1
+      return S[S.TOP + 1]
+
+
+EMPTY(S)
+  # We decrement the top at every pop, if you pop the first element (index 0) S.top become negative
+  if S.TOP = -1     
+    return TRUE
+  else
+    return FALSE
+
+```
+
+### Implementing Queueu Data Strucutres Using Arrays
+
+Queues have to keep track of two additional memory addresses to run operation, the **HEAD** & **TAIL**. The **HEAD** keeps track of the element at the "front of the line", the next element to be dequeued. The **TAIL** keep track of the address that will receive the next element to be enqueued.
+
+```{mermaid}
+flowchart LR
+h[Q.HEAD = 3] --> 3
+t[Q.TAIL = 9] --> 9
+0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6 --> 7 --> 8 --> 9 --> 10 --> 11 
+subgraph "Queue"
+  subgraph "0"
+    s1["-"]
+  end
+  subgraph "1"
+    s2["-"]
+  end
+  subgraph "2"
+    s3["-"]
+  end
+  subgraph "3"
+    s4["3"]
+  end
+  subgraph "4"
+    s5["6"]
+  end
+  subgraph "5"
+    s6["12"]
+  end
+  subgraph "6"
+    s7["3"]
+  end
+  subgraph "7"
+    s8["12"]
+  end
+  subgraph "8"
+    s9["1"]
+  end
+  subgraph "9"
+    s10["-"]
+  end
+  subgraph "10"
+    s11["-"]
+  end
+  subgraph "11"
+    s12["-"]
+  end
+end
+```
+
+#### Queue Operations (revisited)
+
+```bash
+```
 
 ## Topic 5: Sorting Algorithms (part 1)
 
