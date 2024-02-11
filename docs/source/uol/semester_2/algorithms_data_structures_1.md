@@ -449,7 +449,7 @@ These data structures can be constrcted using Arrays or Linked List.
 
 An array is method of storing collections of data in contiguous memory adresses. We assume the size of an array is immutable but we can always create new arrays (bigger/smaller).
 
-```{mermaid}
+:::{mermaid}
   flowchart LR
   001 --> 002 --> 003 --> 004 --> 005 --> 006
     subgraph "001"
@@ -470,7 +470,7 @@ An array is method of storing collections of data in contiguous memory adresses.
     subgraph "006"
       e6["01010100"]
     end
-```
+:::
 
 ### Implementing Vector Data Strucutres Using Arrays
 
@@ -483,7 +483,7 @@ We'll build the concret implementation of vector operations using arrays.
 2. SELECT: Find element at index k
 3. STORE: Assign value to vector element at index k
 
-```{mermaid}
+:::{mermaid}
 ---
 title: Vector
 ---
@@ -511,7 +511,7 @@ end
 subgraph "6"
   e7["Element 6"]
 end
-```
+:::
 
 ### Implementing Stack Data Strucutres Using Arrays
 
@@ -519,7 +519,7 @@ Unlike the abstract stack, the data structure is created using an array of fixed
 
 In the same manner as the vector, important values will be stored in dedicated memory cells. In this case **S.TOP** which will keep track of the index of the latest item that was added to the stack.
 
-```{mermaid}
+:::{mermaid}
 flowchart LR
 l[S.TOP = 3] --> 3
 0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6 
@@ -546,7 +546,7 @@ subgraph "Stack"
     s7["-"]
   end
 end
-```
+:::
 
 #### Stack Operations (revisited)
 
@@ -581,7 +581,7 @@ EMPTY(S)
 
 Queues have to keep track of two additional memory addresses to run operation, the **HEAD** & **TAIL**. The **HEAD** keeps track of the element at the "front of the line", the next element to be dequeued. The **TAIL** keep track of the address that will receive the next element to be enqueued.
 
-```{mermaid}
+:::{mermaid}
 flowchart LR
 h[Q.HEAD = 3] --> 3
 t[Q.TAIL = 9] --> 9
@@ -624,7 +624,7 @@ subgraph "Queue"
     s12["-"]
   end
 end
-```
+:::
 
 #### Queue Operations (revisited)
 
