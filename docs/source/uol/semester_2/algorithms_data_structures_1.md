@@ -484,9 +484,6 @@ We'll build the concret implementation of vector operations using arrays.
 3. STORE: Assign value to vector element at index k
 
 :::{mermaid}
----
-title: Vector
----
 flowchart LR
 l[length] --> 0
 0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6 
@@ -522,7 +519,7 @@ In the same manner as the vector, important values will be stored in dedicated m
 :::{mermaid}
 flowchart LR
 l[S.TOP = 3] --> 3
-0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6 
+0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6
 subgraph "Stack"
   subgraph "0"
     s1["Element 0"]
@@ -577,7 +574,7 @@ EMPTY(S)
 
 ```
 
-### Implementing Queueu Data Strucutres Using Arrays
+### Implementing Queueu Data Strucutre Using Arrays
 
 Queues have to keep track of two additional memory addresses to run operation, the **HEAD** & **TAIL**. The **HEAD** keeps track of the element at the "front of the line", the next element to be dequeued. The **TAIL** keep track of the address that will receive the next element to be enqueued.
 
@@ -585,7 +582,7 @@ Queues have to keep track of two additional memory addresses to run operation, t
 flowchart LR
 h[Q.HEAD = 3] --> 3
 t[Q.TAIL = 9] --> 9
-0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6 --> 7 --> 8 --> 9 --> 10 --> 11 
+0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6 --> 7 --> 8 --> 9 --> 10
 subgraph "Queue"
   subgraph "0"
     s1["-"]
@@ -620,16 +617,249 @@ subgraph "Queue"
   subgraph "10"
     s11["-"]
   end
-  subgraph "11"
-    s12["-"]
+end
+:::
+
+#### Queue Operations Implementation In Code
+
+```bash
+EMPTY(Q)
+  if Q.TAIL = Q.HEAD
+    return TRUE
+  else
+    return FALSE
+
+FULL(Q)
+  if Q.TAIL = Q.LENGTH
+    NEXT_TAIL_POSITION <- 1
+  else
+    NEXT_TAIL_POSITION <- Q.TAIL + 1
+
+  if Q.HEAD = NEXT_TAIL_POSITION
+    return TRUE
+  else:
+    return FALSE
+
+ENQUEUE(x,Q)
+  if FULL(Q)
+    error "overflow"
+  else
+    Q.TAIL <- x
+    if Q.TAIL = Q.LENGTH
+      Q.TAIL <- 1
+    else
+      Q.TAIL <- Q.TAIL + 1
+
+DEQUEUE(Q)
+  if EMPTY(Q)
+    error "underflow"
+  else
+    x <-  Q[Q.HEAD]
+    if Q.HEAD = Q.LENGTH
+      Q.HEAD <- 1
+    else
+      Q.HEAD <- Q.HEAD + 1
+    return x
+```
+
+#### Queue Operations Visualy Representation
+
+We start with an empty queue
+
+:::{mermaid}
+flowchart LR
+h[Q.HEAD = 0] --> 0
+t[Q.TAIL = 0] --> 0
+0 --> 1 --> 2 --> 3 --> 4 --> 5
+subgraph "Queue"
+  subgraph "0"
+    s1["-"]
+  end
+  subgraph "1"
+    s2["-"]
+  end
+  subgraph "2"
+    s3["-"]
+  end
+  subgraph "3"
+    s4["-"]
+  end
+  subgraph "4"
+    s5["-"]
+  end
+  subgraph "5"
+    s6["-"]
+  end
+
+end
+:::
+
+The queueu is empty, Q.HEAD and Q.TAIL have the same index.
+
+```bash
+EMPTY(Q)
+
+TRUE
+```
+
+We enqueue a number of values.
+
+```bash
+ENQUEUE(65,Q)
+ENQUEUE(3,Q)
+ENQUEUE(21,Q)
+ENQUEUE(15,Q)
+ENQUEUE(999,Q)
+ENQUEUE(76,Q)
+overflow
+```
+
+The queue now looks as such.
+
+```{warning}
+Notice that we couldn't ENQUEUE the last elements and it raised an overflow error. That is because the queue is circular and if we enqueued an additional item which would lead to the TAIL and HEAD to be at the same index. Since empty queues have the same index for TAIL and HEAD, we can't use the same condition to test if the queueu is full. This is why we use this convention
+```
+
+:::{mermaid}
+flowchart LR
+h[Q.HEAD = 0] --> 0
+t[Q.TAIL = 5] --> 5
+0 --> 1 --> 2 --> 3 --> 4 --> 5
+subgraph "Queue"
+  subgraph "0"
+    s1["65"]
+  end
+  subgraph "1"
+    s2["3"]
+  end
+  subgraph "2"
+    s3["21"]
+  end
+  subgraph "3"
+    s4["15"]
+  end
+  subgraph "4"
+    s5["999"]
+  end
+  subgraph "5"
+    s6["-"]
   end
 end
 :::
 
-#### Queue Operations (revisited)
+We verify that it's not longer empty.
 
 ```bash
+EMPTY(Q)
+
+FALSE
 ```
+
+We dequeue all existing values.
+
+```bash
+DEQUEUE(Q)
+65
+
+DEQUEUE(Q)
+3
+
+DEQUEUE(Q)
+21
+
+DEQUEUE(Q)
+15
+
+DEQUEUE(Q)
+999
+```
+
+The queue is now empty again.
+
+:::{mermaid}
+flowchart LR
+h[Q.HEAD = 5] --> 5
+t[Q.TAIL = 5] --> 5
+0 --> 1 --> 2 --> 3 --> 4 --> 5
+subgraph "Queue"
+  subgraph "0"
+    s1["-"]
+  end
+  subgraph "1"
+    s2["-"]
+  end
+  subgraph "2"
+    s3["-"]
+  end
+  subgraph "3"
+    s4["-"]
+  end
+  subgraph "4"
+    s5["-"]
+  end
+  subgraph "5"
+    s6["-"]
+  end
+end
+:::
+
+We enqueu a few more elements to demontrate the circular nature of the queue.
+
+:::{mermaid}
+flowchart LR
+h[Q.HEAD = 5] --> 5
+t[Q.TAIL = 2] --> 2
+0 --> 1 --> 2 --> 3 --> 4 --> 5
+subgraph "Queue"
+  subgraph "0"
+    s1["4"]
+  end
+  subgraph "1"
+    s2["7"]
+  end
+  subgraph "2"
+    s3["-"]
+  end
+  subgraph "3"
+    s4["-"]
+  end
+  subgraph "4"
+    s5["-"]
+  end
+  subgraph "5"
+    s6["32"]
+  end
+end
+:::
+
+We dequeueu another time
+
+:::{mermaid}
+flowchart LR
+h[Q.HEAD = 0] --> 0
+t[Q.TAIL = 2] --> 2
+0 --> 1 --> 2 --> 3 --> 4 --> 5
+subgraph "Queue"
+  subgraph "0"
+    s1["4"]
+  end
+  subgraph "1"
+    s2["7"]
+  end
+  subgraph "2"
+    s3["-"]
+  end
+  subgraph "3"
+    s4["-"]
+  end
+  subgraph "4"
+    s5["-"]
+  end
+  subgraph "5"
+    s6["-"]
+  end
+end
+:::
 
 ## Topic 5: Sorting Algorithms (part 1)
 
