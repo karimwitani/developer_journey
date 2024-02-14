@@ -861,6 +861,165 @@ subgraph "Queue"
 end
 :::
 
+#### Challenge : implement a queue using two stacks
+
+#### Challenge : implement a stack using two queues
+
+### Dynamic Arrays
+
+An abstract data structure that, unlike the vectore, is extensible in size.
+
+#### Dynamic Array Operations
+
+| OPERATION   | PSEUDOCODE                        |
+|-------------|-----------------------------------|
+| length      | LENGTH[D]                         |
+| select[k]   | D[k]                              |
+| store[x, k] | D[k] <-- x  (0 <= k <= LENGTH[D]) |
+| remove[k]   | D[k] <-- NULL (k <= LENGTH[D])    |
+| insert[k]   | D[k] <-- x  (k <= LENGTH[D] + 1)  |
+
+### Search Algorithms
+
+Algorithms depend on the data passed into them. In the case of search we can answer two types of questions:
+
+1. Does a DS contain a given value?
+2. At which index of a DS is a value located (if any)?
+
+The second is only usefull for vectors and arrays since we can only access HEAD, TAIL and TOP in queue and stacks, respectivly.
+
+#### Implementing Linear Search On Arrays
+
+Problem: Is value x contained in vector V?
+
+Solution intuition: Iterate through elements untill you either find a match (and return TRUE) or run out of elements to inspect (and return FALSE)
+
+Solution flowchart:
+
+:::mermaid
+  flowchart TD
+  t1[start] --> s2[Set i = 0]
+  s2 --> s3{"Is i < LENGTH(V)" }
+  
+  s3 -- No --> s4[/return FALSE/] --> t2
+  s3 -- YES ----> s5{"Is SELECT[i] == x ?"}
+
+  s5 -- YES ---> s6[/return TRUE/] --> t2
+  s5 -- NO --> s7[Set i = i +1] --> s3  
+  
+  t2[end]
+:::
+
+Solution pseudocode:
+
+```bash
+function LinearSearch(V,x)
+  for 0 < i < LENGTH[V]
+    if V[i] = x
+      return TRUE
+    end if
+  end for
+  
+  return FALSE
+```
+
+#### Implementing Linear Search On Stack Or Queues
+
+Unlike vectors and the arrays, we can only access certain parts of stacks and queues. This makes it tricky to search stacks and queues without destroying the DS.
+
+To accomplish this we make use of a second stack that will hold the items being popped in order to maintain the original ordering within the first stack.
+
+Let's check if the value three is in Stack_1
+
+Initial State:
+
+:::mermaid
+flowchart LR
+l[S1.TOP = 5] --> y0
+y0 <--> y1 <--> y2 <--> y3
+subgraph "Stack_1"
+  direction LR
+  subgraph "y0"
+    s1["5"]
+  end
+  subgraph "y1"
+    s2["3"]
+  end
+  subgraph "y2"
+    s3["8"]
+  end
+  subgraph "y3"
+    s4["1"]
+  end
+end
+
+l2[S2.TOP = NULL] --> Stack_2
+subgraph "Stack_2"
+  direction LR
+  subgraph "-"
+    21["Null"]
+  end  
+end
+:::
+
+First iteration. The top from the first stack was popped, we check if its equal to 3. Since it's not we place it in the other queue
+
+:::mermaid
+flowchart LR
+l[S1.TOP = 3] --> y1
+y1 <--> y2 <--> y3
+subgraph "Stack_1"
+  direction LR
+  subgraph "y1"
+    s2["3"]
+  end
+  subgraph "y2"
+    s3["8"]
+  end
+  subgraph "y3"
+    s4["1"]
+  end
+end
+
+l2[S2.TOP = 5] --> Stack_2
+subgraph "Stack_2"
+  direction LR
+  subgraph "x0"
+    s1["5"]
+  end  
+end
+:::
+
+Second iteration, we pop a value and find that it is equal to 3. We return TRUE because we've proven that Stack_1 contains the value 3.
+
+:::mermaid
+flowchart LR
+l[S1.TOP = 3] --> y2
+y2 <--> y3
+subgraph "Stack_1"
+  direction LR
+  subgraph "y2"
+    s3["8"]
+  end
+  subgraph "y3"
+    s4["1"]
+  end
+end
+
+l2[S2.TOP = NULL] --> x0 <--> x1
+subgraph "Stack_2"
+  direction LR
+  subgraph "x0"
+    t2["3"]
+  end
+  subgraph "x1"
+    t1["5"]
+  end
+end
+:::
+
+In order to reconstruct Stack_1 in its original form we proceed to pop from Stack_2 untill we empty it and replace the values in Stack_1. Because stacks work in a last in first out manner the oldest items in Stack_2 are the newest items in Stack_1 and thus the order is preserved.
+
 ## Topic 5: Sorting Algorithms (part 1)
 
 ## Topic 6: Evaluating Algorithms
