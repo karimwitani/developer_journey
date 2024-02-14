@@ -896,7 +896,7 @@ Solution intuition: Iterate through elements untill you either find a match (and
 
 Solution flowchart:
 
-:::mermaid
+:::{mermaid}
   flowchart TD
   t1[start] --> s2[Set i = 0]
   s2 --> s3{"Is i < LENGTH(V)" }
@@ -933,7 +933,7 @@ Let's check if the value three is in Stack_1
 
 Initial State:
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 l[S1.TOP = 5] --> y0
 y0 <--> y1 <--> y2 <--> y3
@@ -964,7 +964,7 @@ end
 
 First iteration. The top from the first stack was popped, we check if its equal to 3. Since it's not we place it in the other queue
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 l[S1.TOP = 3] --> y1
 y1 <--> y2 <--> y3
@@ -992,7 +992,7 @@ end
 
 Second iteration, we pop a value and find that it is equal to 3. We return TRUE because we've proven that Stack_1 contains the value 3.
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 l[S1.TOP = 3] --> y2
 y2 <--> y3
@@ -1019,6 +1019,216 @@ end
 :::
 
 In order to reconstruct Stack_1 in its original form we proceed to pop from Stack_2 untill we empty it and replace the values in Stack_1. Because stacks work in a last in first out manner the oldest items in Stack_2 are the newest items in Stack_1 and thus the order is preserved.
+
+### Linked Lists
+
+So far arrays have been linear and elements occupy contiguous sections of memory cells. However this design has some limitations.
+
+**Limitation 1:** If we want to increase the size of the array, to accomodate more items, we need to create a new array of a bigger size and move all items into that new array.
+
+- Step 1: Create Array_2 of LENGTH 5
+- Step 2: Iterate over elements of Array_1 and copy them into Array_2
+- Step 3: Insert new value at the end of the Array_2
+
+:::{mermaid}
+  flowchart TD
+  subgraph "Initial State"
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[2] --> s3[3] --> s4[4]
+    end
+  end
+:::
+
+:::{mermaid}
+  flowchart TD
+  subgraph "Step 1: Create Array_2 of LENGTH 5"
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[2] --> s3[3] --> s4[4]
+    end
+    subgraph "Array_2"
+      t1[-] -->  t2[-] --> t3[-] --> t4[-] --> t5[-]
+    end
+  end
+:::
+:::{mermaid}
+  flowchart TD
+  subgraph "Step 2: Copy from Array_1 to Array_2"
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[2] --> s3[3] --> s4[4]
+    end
+    subgraph "Array_2"
+      t1[1] -->  t2[2] --> t3[3] --> t4[4] --> t5[-]
+    end
+  end
+:::
+:::{mermaid}
+  flowchart TD
+  subgraph "Step 3: Insert new element at the end of Array_2"
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[2] --> s3[3] --> s4[4]
+    end
+    subgraph "Array_2"
+      t1[1] -->  t2[2] --> t3[3] --> t4[4] --> t5[5]
+    end
+  end
+:::
+
+**Limitation 2:** If we want to insert or delete elements at any index other than the last we need to modify the positions of all elements stored in subsequent indexes.
+
+Let's demonstrate by example. First we delete the element at index 2 ( Array_1[2] = 2)
+
+- Step 1: Assign null to the value of Array_1[2]
+- Step 2: Shift all items in indexes greater than 2 (3 & 4) to the left
+  - Concretly: for each index i greater than 2, assign Array_1[i-1] <--Array_1[i]
+
+:::{mermaid}
+  flowchart TD
+  subgraph "Initial State"
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[2] --> s3[3] --> s4[4]
+    end
+  end
+:::
+
+:::{mermaid}
+  flowchart TD
+  subgraph "Step 1: Assign null to Array_1[2]"
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[-] --> s3[3] --> s4[4]
+    end
+  end
+:::
+
+:::{mermaid}
+  flowchart TD
+  subgraph "Step 2: Shift elements left"
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[3] --> s3[4]
+    end
+  end
+:::
+
+**Limitation 3:** Sometimes we can't even increase the size of an array because the neighboring memory cells have already been allocated to another process/DS.
+
+In below chart we see two array occupying 4 memory cells each.
+
+- Memory blocks of the two arrays neihgbor on each other
+- Initially, Array_1 was reserved 4 cells even though it only used 2
+- Subsequently, Array_1 contained 4 items but it's impossible to increase its size to accomodate 5+ items because those cells are allocated to Array_2.
+
+:::{mermaid}
+  flowchart LR
+  subgraph "Initial State"
+  direction LR
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[2] --> s3[-] --> s4[-]
+    end
+    Array_1 --- Array_2
+    subgraph "Array_2"
+      direction LR
+      s5[5] -->  s6[6] --> s7[7] --> s8[8]
+    end
+  end
+:::
+
+:::{mermaid}
+  flowchart LR
+  subgraph "Insert twice into Array_1"
+  direction LR
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[2] --> s3[3] --> s4[4]
+    end
+    Array_1 --- Array_2
+    subgraph "Array_2"
+      direction LR
+      s5[5] -->  s6[6] --> s7[7] --> s8[8]
+    end
+  end
+:::
+
+Arrays are good at read operations, selecting at arbitrary indexes, but very ineficient if we want to modify them.
+
+Linked list (LL) are different abstract data structure that works around these limitation. LLs allow us to store data anywhere in computer memory by using pointers.
+
+Pointers are references to the address of a specific memory cell. Linked lists use them in order to etablish the sequence order between its elements even if the don't occupy the contiguous memory cells.
+
+- Accessing the data in the memory address shown in the pointer is called dereferencing.
+
+Each item in a LL is called a **NODE**. Each node is made up of a value and pointer that references the address of the next item in the LLS.
+
+- LLs can be either singly linked our doubly linked:
+  - Nodes in singly linked list (SLLs) only have 1 pointer referencing the next item.
+  - Nodes in doubly linked lists (DLLS) have two pointers for previous and next items.
+- The first element of a linked list is the HEAD and the last element is NULL (similar to TAIL in queues).
+- If HEAD points to NULL then the LL (linked list) is empty
+- LLs are slower at reading but faster at insert/delete
+  - Reading requires traversing the links untill the indexed item i.e: O(N), unlike arrays where you can select at any index directly O(1).
+  - Insert & Delete are faster because you manipulate pointers at specific addresses as opposed to shifting all the content of an array
+
+:::{mermaid}
+  flowchart LR
+  subgraph "Singly Linked List"
+  H[HEAD] -- address_1 --> n1 -- address_2 --> n2 -- address_3 --> n3 -- address_4 --> n4 -- address_5 --> n5 --> N[NULL]
+  direction LR
+    subgraph "Node 1"
+      direction LR
+      n1["value"]
+    end
+    subgraph "Node 2"
+      direction LR
+      n2["value"]
+    end
+    subgraph "Node 3"
+      direction LR
+      n3["value"]
+    end
+    subgraph "Node 4"
+      direction LR
+      n4["value"]
+    end
+    subgraph "Node 5"
+      direction LR
+      n5["value"]
+    end
+  end
+:::
+
+:::{mermaid}
+  flowchart LR
+  subgraph "Doubly Linked List"
+  direction LR
+  N --> n5 -- address_4 --> n4 -- address_3 --> n3 -- address_2 --> n2 -- address_1 --> n1 --> H
+  H[HEAD] -- address_1 --> n1 -- address_2 --> n2 -- address_3 --> n3 -- address_4 --> n4 -- address_5 --> n5 --> N[NULL]
+    subgraph "Node 1"
+      n1["value"]
+    end
+    subgraph "Node 2"
+      n2["value"]
+    end
+    subgraph "Node 3"
+      n3["value"]
+    end
+    subgraph "Node 4"
+      n4["value"]
+    end
+    subgraph "Node 5"
+      n5["value"]
+    end
+  end
+:::
+
+Visually you can see that nodes can be placed anywhere in computer memory. The pointer provide a reference to the next item, wherever it is.
+
+![LL Memory Usage](../../static/images/ADS_1/linked_list_memory.png)
 
 ## Topic 5: Sorting Algorithms (part 1)
 

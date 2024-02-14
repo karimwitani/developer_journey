@@ -65,7 +65,8 @@ html_theme_options = {
 }
 myst_enable_extensions = [
     "dollarmath",
-    "colon_fence"
+    "colon_fence",
+    "attrs_inline"
 ]
 html_sidebars = {
     "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"]
