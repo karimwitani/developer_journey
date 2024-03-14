@@ -95,12 +95,12 @@ UML (Universal Modelling Language) is a standard way of representing systems des
   - Runs computation, send request
 
 :::{mermaid}
-    flowchart TD
-    id1(Start - enter room) --> id2[/Action - check light/]
-    id2 --> id3{Decision - Is it dark?}
-    id3 -- Yes --> id4[Action - Turn on light]
-    id3 -- CHOICE 1 --> id5[Action - Sit down]
-    id5 --> id2
+flowchart TD
+id1(Start - enter room) --> id2[/Action - check light/]
+id2 --> id3{Decision - Is it dark?}
+id3 -- Yes --> id4[Action - Turn on light]
+id3 -- CHOICE 1 --> id5[Action - Sit down]
+id5 --> id2
 :::
 
 #### Heron's method as a flowchart
@@ -108,16 +108,16 @@ UML (Universal Modelling Language) is a standard way of representing systems des
 Compute square root of integer X up to n.d.p
 
 :::{mermaid}
-    flowchart TD
-    id1(Start) --> id2[/Get X,n/]
-    id2 --> id3["Make guess g of sqrt(X)"]
-    id3 --> id4[Calculate X/g]
-    id4 --> id5{Does X/g differ from g up to n.d.p?}
-    id5 -- NO --> id6[Output g]
-    id6 --> id7(Stop)
-    id5 -- YES --> id8["Calculate average(X/g, g)"]
-    id8 --> id9["set g=average(X/g, g)"]
-    id9 --> id4
+flowchart TD
+id1(Start) --> id2[/Get X,n/]
+id2 --> id3["Make guess g of sqrt(X)"]
+id3 --> id4[Calculate X/g]
+id4 --> id5{Does X/g differ from g up to n.d.p?}
+id5 -- NO --> id6[Output g]
+id6 --> id7(Stop)
+id5 -- YES --> id8["Calculate average(X/g, g)"]
+id8 --> id9["set g=average(X/g, g)"]
+id9 --> id4
 :::
 
 ### Euclid's algorithm as a flowchart
@@ -129,20 +129,20 @@ This is a case of looking for the greatest common divisor for both sweets and to
 This is a generalisable problem for ressource allocation. Euclid proposed an algotihm to find the GCD over 2000 years ago. It goes like this:
 
 :::{mermaid}
-  flowchart TD
-  t1(Start) --> s1{Is A=B}
-  s1 -- YES --> s2[Output A]
-  s2 --> t2
-  s3 --> YES --> s4[Set A = A-B]
-  s1 -- NO --> s3{Is A>B}
-  s3 --> NO --> s5[Set B = B-A]
-  s4 & s5 --> s1
-  t2(End)
+flowchart TD
+t1(Start) --> s1{Is A=B}
+s1 -- YES --> s2[Output A]
+s2 --> t2
+s3 --> YES --> s4[Set A = A-B]
+s1 -- NO --> s3{Is A>B}
+s3 --> NO --> s5[Set B = B-A]
+s4 & s5 --> s1
+t2(End)
 :::
 
 Intuitivly, if the larger number divided by the second has no remainder then the division result is a common divisor.
 
-Untill the two number are not equal, repplace larger number with  remainder and repeat untill both numbers are equal in wich case that is the GCD.
+Untill the two number are not equal, repplace larger number with remainder and repeat untill both numbers are equal in wich case that is the GCD.
 
 Mathmatically it can be explained as such. If $A = B+C$, then $A \mod  N \equiv (B \mod N )+ (C \mod N)$.
 
@@ -202,8 +202,8 @@ Iteration is the process of repeating a set of steps multiple times untill a con
 They are also called "loops" and in flowchart representation you can see that by following the arrows forming a loops such as the below chart:
 
 :::{mermaid}
-  flowchart LR
-  t1(Start) --> s1 --> s2 --> s3 -- LOOP --> t1
+flowchart LR
+t1(Start) --> s1 --> s2 --> s3 -- LOOP --> t1
 :::
 
 There are two type of loops, "For Loops" and "While Loops".
@@ -320,17 +320,17 @@ A finite, fixed sized, data collection.
 The position of an element in the vector is called the **index**.
 
 :::{mermaid}
-  flowchart LR
-    subgraph "Vector"
-      direction LR
-      v1 ---v2--- v3
-    end
+flowchart LR
+subgraph "Vector"
+direction LR
+v1 ---v2--- v3
+end
 :::
 
 #### Vector Operations
 
 | OPERATION  | PSEUDOCODE          |
-|------------|---------------------|
+| ---------- | ------------------- |
 | length     | LENGTH              |
 | select[k]  | V[k]                |
 | store[o,k] | V[k] $\leftarrow$ o |
@@ -347,18 +347,18 @@ Queue differ from vectors:
 2. Not all element are accessible. You can add elements at the tail and remove them from the head.
 
 :::{mermaid}
-  flowchart LR
-    Tail <--> q1
-    q4 <--> Head
-    subgraph "Queue"
-      q1["Q[1]"] <--> q2["Q[2]"] <--> q3["Q[3]"] <--> q4["Q[4]"]
-    end
+flowchart LR
+Tail <--> q1
+q4 <--> Head
+subgraph "Queue"
+q1["Q[1]"] <--> q2["Q[2]"] <--> q3["Q[3]"] <--> q4["Q[4]"]
+end
 :::
 
 #### Queue Operations
 
 | OPERATION  | PSEUDOCODE   |
-|------------|--------------|
+| ---------- | ------------ |
 | head       | HEAD[Q]      |
 | dequeue    | DEQUEUE[Q]   |
 | enqueue[x] | ENQUEUE[x,Q] |
@@ -371,17 +371,17 @@ Stacks are similar to queue but only one element is accessible, the top (equival
 Stacks operate in a last-in first-out models (LIFO). The most recent element added to the stack can be accessed.
 
 :::{mermaid}
-  flowchart LR
-    Top <--> s1
-    subgraph "Stack"
-      s1 <--> s2 <--> s3
-    end
+flowchart LR
+Top <--> s1
+subgraph "Stack"
+s1 <--> s2 <--> s3
+end
 :::
 
 #### Stack Operations
 
 | OPERATION | PSEUDOCODE |
-|-----------|------------|
+| --------- | ---------- |
 | push[x]   | PUSH(x,S)  |
 | top       | TOP(S)     |
 | pop       | POP(S)     |
@@ -396,7 +396,7 @@ Solution intuition: We know that to convert decimal (base 10) to binary (base 2)
 Example: Convert $13_{10}$ to binary.
 
 | Division by 2 | Quotient | Remainder | Bit # |
-|---------------|----------|-----------|-------|
+| ------------- | -------- | --------- | ----- |
 | 13/2          | 6        | 1         | 0     |
 | 6/2           | 3        | 0         | 1     |
 | 3/2           | 1        | 1         | 2     |
@@ -412,11 +412,11 @@ function ConvertDecimalToBinary(n)
 
   while TRUE do # Start while loop that will iterate untill we hit break
     remainder <-- n % 2
-    ENQUEUE[remainder, s]    
+    ENQUEUE[remainder, s]
 
     quotient <-- n // 2
 
-    if quotient = 0 then # Check quotient is zero to control break from 
+    if quotient = 0 then # Check quotient is zero to control break from
       break
     else
       n <-- quotient # Reassign n to be the quotient for next loop
@@ -450,26 +450,26 @@ These data structures can be constrcted using Arrays or Linked List.
 An array is method of storing collections of data in contiguous memory adresses. We assume the size of an array is immutable but we can always create new arrays (bigger/smaller).
 
 :::{mermaid}
-  flowchart LR
-  001 --> 002 --> 003 --> 004 --> 005 --> 006
-    subgraph "001"
-      e1["01010100"]
-    end
-    subgraph "002"
-      e2["01010100"]
-    end
-    subgraph "003"
-      e3["01010100"]
-    end
-    subgraph "004"
-      e4["01010100"]
-    end
-    subgraph "005"
-      e5["01010100"]
-    end
-    subgraph "006"
-      e6["01010100"]
-    end
+flowchart LR
+001 --> 002 --> 003 --> 004 --> 005 --> 006
+subgraph "001"
+e1["01010100"]
+end
+subgraph "002"
+e2["01010100"]
+end
+subgraph "003"
+e3["01010100"]
+end
+subgraph "004"
+e4["01010100"]
+end
+subgraph "005"
+e5["01010100"]
+end
+subgraph "006"
+e6["01010100"]
+end
 :::
 
 ### Implementing Vector Data Strucutres Using Arrays
@@ -486,27 +486,27 @@ We'll build the concret implementation of vector operations using arrays.
 :::{mermaid}
 flowchart LR
 l[length] --> 0
-0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6 
+0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6
 subgraph "0"
-  e1["6"]
+e1["6"]
 end
 subgraph "1"
-  e2["Element 1"]
+e2["Element 1"]
 end
 subgraph "2"
-  e3["Element 2"]
+e3["Element 2"]
 end
 subgraph "3"
-  e4["Element 3"]
+e4["Element 3"]
 end
 subgraph "4"
-  e5["Element 4"]
+e5["Element 4"]
 end
 subgraph "5"
-  e6["Element 5"]
+e6["Element 5"]
 end
 subgraph "6"
-  e7["Element 6"]
+e7["Element 6"]
 end
 :::
 
@@ -521,27 +521,27 @@ flowchart LR
 l[S.TOP = 3] --> 3
 0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6
 subgraph "Stack"
-  subgraph "0"
-    s1["Element 0"]
-  end
-  subgraph "1"
-    s2["Element 1"]
-  end
-  subgraph "2"
-    s3["Element 2"]
-  end
-  subgraph "3"
-    s4["Element 3"]
-  end
-  subgraph "4"
-    s5["-"]
-  end
-  subgraph "5"
-    s6["-"]
-  end
-  subgraph "6"
-    s7["-"]
-  end
+subgraph "0"
+s1["Element 0"]
+end
+subgraph "1"
+s2["Element 1"]
+end
+subgraph "2"
+s3["Element 2"]
+end
+subgraph "3"
+s4["Element 3"]
+end
+subgraph "4"
+s5["-"]
+end
+subgraph "5"
+s6["-"]
+end
+subgraph "6"
+s7["-"]
+end
 end
 :::
 
@@ -567,7 +567,7 @@ POP(S)
 
 EMPTY(S)
   # We decrement the top at every pop, if you pop the first element (index 0) S.top become negative
-  if S.TOP = -1     
+  if S.TOP = -1
     return TRUE
   else
     return FALSE
@@ -584,39 +584,39 @@ h[Q.HEAD = 3] --> 3
 t[Q.TAIL = 9] --> 9
 0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6 --> 7 --> 8 --> 9 --> 10
 subgraph "Queue"
-  subgraph "0"
-    s1["-"]
-  end
-  subgraph "1"
-    s2["-"]
-  end
-  subgraph "2"
-    s3["-"]
-  end
-  subgraph "3"
-    s4["3"]
-  end
-  subgraph "4"
-    s5["6"]
-  end
-  subgraph "5"
-    s6["12"]
-  end
-  subgraph "6"
-    s7["3"]
-  end
-  subgraph "7"
-    s8["12"]
-  end
-  subgraph "8"
-    s9["1"]
-  end
-  subgraph "9"
-    s10["-"]
-  end
-  subgraph "10"
-    s11["-"]
-  end
+subgraph "0"
+s1["-"]
+end
+subgraph "1"
+s2["-"]
+end
+subgraph "2"
+s3["-"]
+end
+subgraph "3"
+s4["3"]
+end
+subgraph "4"
+s5["6"]
+end
+subgraph "5"
+s6["12"]
+end
+subgraph "6"
+s7["3"]
+end
+subgraph "7"
+s8["12"]
+end
+subgraph "8"
+s9["1"]
+end
+subgraph "9"
+s10["-"]
+end
+subgraph "10"
+s11["-"]
+end
 end
 :::
 
@@ -672,24 +672,24 @@ h[Q.HEAD = 0] --> 0
 t[Q.TAIL = 0] --> 0
 0 --> 1 --> 2 --> 3 --> 4 --> 5
 subgraph "Queue"
-  subgraph "0"
-    s1["-"]
-  end
-  subgraph "1"
-    s2["-"]
-  end
-  subgraph "2"
-    s3["-"]
-  end
-  subgraph "3"
-    s4["-"]
-  end
-  subgraph "4"
-    s5["-"]
-  end
-  subgraph "5"
-    s6["-"]
-  end
+subgraph "0"
+s1["-"]
+end
+subgraph "1"
+s2["-"]
+end
+subgraph "2"
+s3["-"]
+end
+subgraph "3"
+s4["-"]
+end
+subgraph "4"
+s5["-"]
+end
+subgraph "5"
+s6["-"]
+end
 
 end
 :::
@@ -726,24 +726,24 @@ h[Q.HEAD = 0] --> 0
 t[Q.TAIL = 5] --> 5
 0 --> 1 --> 2 --> 3 --> 4 --> 5
 subgraph "Queue"
-  subgraph "0"
-    s1["65"]
-  end
-  subgraph "1"
-    s2["3"]
-  end
-  subgraph "2"
-    s3["21"]
-  end
-  subgraph "3"
-    s4["15"]
-  end
-  subgraph "4"
-    s5["999"]
-  end
-  subgraph "5"
-    s6["-"]
-  end
+subgraph "0"
+s1["65"]
+end
+subgraph "1"
+s2["3"]
+end
+subgraph "2"
+s3["21"]
+end
+subgraph "3"
+s4["15"]
+end
+subgraph "4"
+s5["999"]
+end
+subgraph "5"
+s6["-"]
+end
 end
 :::
 
@@ -782,24 +782,24 @@ h[Q.HEAD = 5] --> 5
 t[Q.TAIL = 5] --> 5
 0 --> 1 --> 2 --> 3 --> 4 --> 5
 subgraph "Queue"
-  subgraph "0"
-    s1["-"]
-  end
-  subgraph "1"
-    s2["-"]
-  end
-  subgraph "2"
-    s3["-"]
-  end
-  subgraph "3"
-    s4["-"]
-  end
-  subgraph "4"
-    s5["-"]
-  end
-  subgraph "5"
-    s6["-"]
-  end
+subgraph "0"
+s1["-"]
+end
+subgraph "1"
+s2["-"]
+end
+subgraph "2"
+s3["-"]
+end
+subgraph "3"
+s4["-"]
+end
+subgraph "4"
+s5["-"]
+end
+subgraph "5"
+s6["-"]
+end
 end
 :::
 
@@ -811,24 +811,24 @@ h[Q.HEAD = 5] --> 5
 t[Q.TAIL = 2] --> 2
 0 --> 1 --> 2 --> 3 --> 4 --> 5
 subgraph "Queue"
-  subgraph "0"
-    s1["4"]
-  end
-  subgraph "1"
-    s2["7"]
-  end
-  subgraph "2"
-    s3["-"]
-  end
-  subgraph "3"
-    s4["-"]
-  end
-  subgraph "4"
-    s5["-"]
-  end
-  subgraph "5"
-    s6["32"]
-  end
+subgraph "0"
+s1["4"]
+end
+subgraph "1"
+s2["7"]
+end
+subgraph "2"
+s3["-"]
+end
+subgraph "3"
+s4["-"]
+end
+subgraph "4"
+s5["-"]
+end
+subgraph "5"
+s6["32"]
+end
 end
 :::
 
@@ -840,24 +840,24 @@ h[Q.HEAD = 0] --> 0
 t[Q.TAIL = 2] --> 2
 0 --> 1 --> 2 --> 3 --> 4 --> 5
 subgraph "Queue"
-  subgraph "0"
-    s1["4"]
-  end
-  subgraph "1"
-    s2["7"]
-  end
-  subgraph "2"
-    s3["-"]
-  end
-  subgraph "3"
-    s4["-"]
-  end
-  subgraph "4"
-    s5["-"]
-  end
-  subgraph "5"
-    s6["-"]
-  end
+subgraph "0"
+s1["4"]
+end
+subgraph "1"
+s2["7"]
+end
+subgraph "2"
+s3["-"]
+end
+subgraph "3"
+s4["-"]
+end
+subgraph "4"
+s5["-"]
+end
+subgraph "5"
+s6["-"]
+end
 end
 :::
 
@@ -871,13 +871,13 @@ An abstract data structure that, unlike the vectore, is extensible in size.
 
 #### Dynamic Array Operations
 
-| OPERATION   | PSEUDOCODE                        |
-|-------------|-----------------------------------|
-| length      | LENGTH[D]                         |
-| select[k]   | D[k]                              |
-| store[x, k] | D[k] <-- x  (0 <= k <= LENGTH[D]) |
-| remove[k]   | D[k] <-- NULL (k <= LENGTH[D])    |
-| insert[k]   | D[k] <-- x  (k <= LENGTH[D] + 1)  |
+| OPERATION   | PSEUDOCODE                       |
+| ----------- | -------------------------------- |
+| length      | LENGTH[D]                        |
+| select[k]   | D[k]                             |
+| store[x, k] | D[k] <-- x (0 <= k <= LENGTH[D]) |
+| remove[k]   | D[k] <-- NULL (k <= LENGTH[D])   |
+| insert[k]   | D[k] <-- x (k <= LENGTH[D] + 1)  |
 
 ### Search Algorithms
 
@@ -897,17 +897,17 @@ Solution intuition: Iterate through elements untill you either find a match (and
 Solution flowchart:
 
 :::{mermaid}
-  flowchart TD
-  t1[start] --> s2[Set i = 0]
-  s2 --> s3{"Is i < LENGTH(V)" }
-  
-  s3 -- No --> s4[/return FALSE/] --> t2
-  s3 -- YES ----> s5{"Is SELECT[i] == x ?"}
+flowchart TD
+t1[start] --> s2[Set i = 0]
+s2 --> s3{"Is i < LENGTH(V)" }
 
-  s5 -- YES ---> s6[/return TRUE/] --> t2
-  s5 -- NO --> s7[Set i = i +1] --> s3  
-  
-  t2[end]
+s3 -- No --> s4[/return FALSE/] --> t2
+s3 -- YES ----> s5{"Is SELECT[i] == x ?"}
+
+s5 -- YES ---> s6[/return TRUE/] --> t2
+s5 -- NO --> s7[Set i = i +1] --> s3
+
+t2[end]
 :::
 
 Solution pseudocode:
@@ -919,7 +919,7 @@ function LinearSearch(V,x)
       return TRUE
     end if
   end for
-  
+
   return FALSE
 ```
 
@@ -938,27 +938,27 @@ flowchart LR
 l[S1.TOP = 5] --> y0
 y0 <--> y1 <--> y2 <--> y3
 subgraph "Stack_1"
-  direction LR
-  subgraph "y0"
-    s1["5"]
-  end
-  subgraph "y1"
-    s2["3"]
-  end
-  subgraph "y2"
-    s3["8"]
-  end
-  subgraph "y3"
-    s4["1"]
-  end
+direction LR
+subgraph "y0"
+s1["5"]
+end
+subgraph "y1"
+s2["3"]
+end
+subgraph "y2"
+s3["8"]
+end
+subgraph "y3"
+s4["1"]
+end
 end
 
 l2[S2.TOP = NULL] --> Stack_2
 subgraph "Stack_2"
-  direction LR
-  subgraph "-"
-    21["Null"]
-  end  
+direction LR
+subgraph "-"
+21["Null"]
+end  
 end
 :::
 
@@ -969,24 +969,24 @@ flowchart LR
 l[S1.TOP = 3] --> y1
 y1 <--> y2 <--> y3
 subgraph "Stack_1"
-  direction LR
-  subgraph "y1"
-    s2["3"]
-  end
-  subgraph "y2"
-    s3["8"]
-  end
-  subgraph "y3"
-    s4["1"]
-  end
+direction LR
+subgraph "y1"
+s2["3"]
+end
+subgraph "y2"
+s3["8"]
+end
+subgraph "y3"
+s4["1"]
+end
 end
 
 l2[S2.TOP = 5] --> Stack_2
 subgraph "Stack_2"
-  direction LR
-  subgraph "x0"
-    s1["5"]
-  end  
+direction LR
+subgraph "x0"
+s1["5"]
+end  
 end
 :::
 
@@ -997,24 +997,24 @@ flowchart LR
 l[S1.TOP = 3] --> y2
 y2 <--> y3
 subgraph "Stack_1"
-  direction LR
-  subgraph "y2"
-    s3["8"]
-  end
-  subgraph "y3"
-    s4["1"]
-  end
+direction LR
+subgraph "y2"
+s3["8"]
+end
+subgraph "y3"
+s4["1"]
+end
 end
 
 l2[S2.TOP = NULL] --> x0 <--> x1
 subgraph "Stack_2"
-  direction LR
-  subgraph "x0"
-    t2["3"]
-  end
-  subgraph "x1"
-    t1["5"]
-  end
+direction LR
+subgraph "x0"
+t2["3"]
+end
+subgraph "x1"
+t1["5"]
+end
 end
 :::
 
@@ -1031,50 +1031,50 @@ So far arrays have been linear and elements occupy contiguous sections of memory
 - Step 3: Insert new value at the end of the Array_2
 
 :::{mermaid}
-  flowchart TD
-  subgraph "Initial State"
-    subgraph "Array_1"
-      direction LR
-      s1[1] -->  s2[2] --> s3[3] --> s4[4]
-    end
-  end
+flowchart TD
+subgraph "Initial State"
+subgraph "Array_1"
+direction LR
+s1[1] --> s2[2] --> s3[3] --> s4[4]
+end
+end
 :::
 
 :::{mermaid}
-  flowchart TD
-  subgraph "Step 1: Create Array_2 of LENGTH 5"
-    subgraph "Array_1"
-      direction LR
-      s1[1] -->  s2[2] --> s3[3] --> s4[4]
-    end
-    subgraph "Array_2"
-      t1[-] -->  t2[-] --> t3[-] --> t4[-] --> t5[-]
-    end
-  end
+flowchart TD
+subgraph "Step 1: Create Array_2 of LENGTH 5"
+subgraph "Array_1"
+direction LR
+s1[1] --> s2[2] --> s3[3] --> s4[4]
+end
+subgraph "Array_2"
+t1[-] --> t2[-] --> t3[-] --> t4[-] --> t5[-]
+end
+end
 :::
 :::{mermaid}
-  flowchart TD
-  subgraph "Step 2: Copy from Array_1 to Array_2"
-    subgraph "Array_1"
-      direction LR
-      s1[1] -->  s2[2] --> s3[3] --> s4[4]
-    end
-    subgraph "Array_2"
-      t1[1] -->  t2[2] --> t3[3] --> t4[4] --> t5[-]
-    end
-  end
+flowchart TD
+subgraph "Step 2: Copy from Array_1 to Array_2"
+subgraph "Array_1"
+direction LR
+s1[1] --> s2[2] --> s3[3] --> s4[4]
+end
+subgraph "Array_2"
+t1[1] --> t2[2] --> t3[3] --> t4[4] --> t5[-]
+end
+end
 :::
 :::{mermaid}
-  flowchart TD
-  subgraph "Step 3: Insert new element at the end of Array_2"
-    subgraph "Array_1"
-      direction LR
-      s1[1] -->  s2[2] --> s3[3] --> s4[4]
-    end
-    subgraph "Array_2"
-      t1[1] -->  t2[2] --> t3[3] --> t4[4] --> t5[5]
-    end
-  end
+flowchart TD
+subgraph "Step 3: Insert new element at the end of Array_2"
+subgraph "Array_1"
+direction LR
+s1[1] --> s2[2] --> s3[3] --> s4[4]
+end
+subgraph "Array_2"
+t1[1] --> t2[2] --> t3[3] --> t4[4] --> t5[5]
+end
+end
 :::
 
 **Limitation 2:** If we want to insert or delete elements at any index other than the last we need to modify the positions of all elements stored in subsequent indexes.
@@ -1086,33 +1086,33 @@ Let's demonstrate by example. First we delete the element at index 2 ( Array_1[2
   - Concretly: for each index i greater than 2, assign Array_1[i-1] <--Array_1[i]
 
 :::{mermaid}
-  flowchart TD
-  subgraph "Initial State"
-    subgraph "Array_1"
-      direction LR
-      s1[1] -->  s2[2] --> s3[3] --> s4[4]
-    end
-  end
+flowchart TD
+subgraph "Initial State"
+subgraph "Array_1"
+direction LR
+s1[1] --> s2[2] --> s3[3] --> s4[4]
+end
+end
 :::
 
 :::{mermaid}
-  flowchart TD
-  subgraph "Step 1: Assign null to Array_1[2]"
-    subgraph "Array_1"
-      direction LR
-      s1[1] -->  s2[-] --> s3[3] --> s4[4]
-    end
-  end
+flowchart TD
+subgraph "Step 1: Assign null to Array_1[2]"
+subgraph "Array_1"
+direction LR
+s1[1] --> s2[-] --> s3[3] --> s4[4]
+end
+end
 :::
 
 :::{mermaid}
-  flowchart TD
-  subgraph "Step 2: Shift elements left"
-    subgraph "Array_1"
-      direction LR
-      s1[1] -->  s2[3] --> s3[4]
-    end
-  end
+flowchart TD
+subgraph "Step 2: Shift elements left"
+subgraph "Array_1"
+direction LR
+s1[1] --> s2[3] --> s3[4]
+end
+end
 :::
 
 **Limitation 3:** Sometimes we can't even increase the size of an array because the neighboring memory cells have already been allocated to another process/DS.
@@ -1124,35 +1124,35 @@ In below chart we see two array occupying 4 memory cells each.
 - Subsequently, Array_1 contained 4 items but it's impossible to increase its size to accomodate 5+ items because those cells are allocated to Array_2.
 
 :::{mermaid}
-  flowchart LR
-  subgraph "Initial State"
-  direction LR
-    subgraph "Array_1"
-      direction LR
-      s1[1] -->  s2[2] --> s3[-] --> s4[-]
-    end
-    Array_1 --- Array_2
-    subgraph "Array_2"
-      direction LR
-      s5[5] -->  s6[6] --> s7[7] --> s8[8]
-    end
-  end
+flowchart LR
+subgraph "Initial State"
+direction LR
+subgraph "Array_1"
+direction LR
+s1[1] --> s2[2] --> s3[-] --> s4[-]
+end
+Array_1 --- Array_2
+subgraph "Array_2"
+direction LR
+s5[5] --> s6[6] --> s7[7] --> s8[8]
+end
+end
 :::
 
 :::{mermaid}
-  flowchart LR
-  subgraph "Insert twice into Array_1"
-  direction LR
-    subgraph "Array_1"
-      direction LR
-      s1[1] -->  s2[2] --> s3[3] --> s4[4]
-    end
-    Array_1 --- Array_2
-    subgraph "Array_2"
-      direction LR
-      s5[5] -->  s6[6] --> s7[7] --> s8[8]
-    end
-  end
+flowchart LR
+subgraph "Insert twice into Array_1"
+direction LR
+subgraph "Array_1"
+direction LR
+s1[1] --> s2[2] --> s3[3] --> s4[4]
+end
+Array_1 --- Array_2
+subgraph "Array_2"
+direction LR
+s5[5] --> s6[6] --> s7[7] --> s8[8]
+end
+end
 :::
 
 Arrays are good at read operations, selecting at arbitrary indexes, but very ineficient if we want to modify them.
@@ -1175,55 +1175,55 @@ Each item in a LL is called a **NODE**. Each node is made up of a value and poin
   - Insert & Delete are faster because you manipulate pointers at specific addresses as opposed to shifting all the content of an array
 
 :::{mermaid}
-  flowchart LR
-  subgraph "Singly Linked List"
-  H[HEAD] -- address_1 --> n1 -- address_2 --> n2 -- address_3 --> n3 -- address_4 --> n4 -- address_5 --> n5 --> N[NULL]
-  direction LR
-    subgraph "Node 1"
-      direction LR
-      n1["value"]
-    end
-    subgraph "Node 2"
-      direction LR
-      n2["value"]
-    end
-    subgraph "Node 3"
-      direction LR
-      n3["value"]
-    end
-    subgraph "Node 4"
-      direction LR
-      n4["value"]
-    end
-    subgraph "Node 5"
-      direction LR
-      n5["value"]
-    end
-  end
+flowchart LR
+subgraph "Singly Linked List"
+H[HEAD] -- address_1 --> n1 -- address_2 --> n2 -- address_3 --> n3 -- address_4 --> n4 -- address_5 --> n5 --> N[NULL]
+direction LR
+subgraph "Node 1"
+direction LR
+n1["value"]
+end
+subgraph "Node 2"
+direction LR
+n2["value"]
+end
+subgraph "Node 3"
+direction LR
+n3["value"]
+end
+subgraph "Node 4"
+direction LR
+n4["value"]
+end
+subgraph "Node 5"
+direction LR
+n5["value"]
+end
+end
 :::
 
 :::{mermaid}
-  flowchart LR
-  subgraph "Doubly Linked List"
-  direction LR
-  N --> n5 -- address_4 --> n4 -- address_3 --> n3 -- address_2 --> n2 -- address_1 --> n1 --> H
-  H[HEAD] -- address_1 --> n1 -- address_2 --> n2 -- address_3 --> n3 -- address_4 --> n4 -- address_5 --> n5 --> N[NULL]
-    subgraph "Node 1"
-      n1["value"]
-    end
-    subgraph "Node 2"
-      n2["value"]
-    end
-    subgraph "Node 3"
-      n3["value"]
-    end
-    subgraph "Node 4"
-      n4["value"]
-    end
-    subgraph "Node 5"
-      n5["value"]
-    end
-  end
+flowchart LR
+subgraph "Doubly Linked List"
+direction LR
+N --> n5 -- address_4 --> n4 -- address_3 --> n3 -- address_2 --> n2 -- address_1 --> n1 --> H
+H[HEAD] -- address_1 --> n1 -- address_2 --> n2 -- address_3 --> n3 -- address_4 --> n4 -- address_5 --> n5 --> N[NULL]
+subgraph "Node 1"
+n1["value"]
+end
+subgraph "Node 2"
+n2["value"]
+end
+subgraph "Node 3"
+n3["value"]
+end
+subgraph "Node 4"
+n4["value"]
+end
+subgraph "Node 5"
+n5["value"]
+end
+end
 :::
 
 Visually you can see that nodes can be placed anywhere in computer memory. The pointer provide a reference to the next item, wherever it is.
@@ -1232,12 +1232,299 @@ Visually you can see that nodes can be placed anywhere in computer memory. The p
 
 ## Topic 5: Sorting Algorithms (part 1)
 
+We cover:
+
+- Bubble sort
+- Insertion sort
+
+### Bubble Sort
+
+Bubble sort works on the principle of comparing an item inside an array to the next item in the array and swapping them accordingly
+
+```bash
+function Swap(vector, i, j)
+  x <- vector[j]
+  vector[j] <- vector[i]
+  vector[i] <- x
+  return vector
+end function
+
+function BubbleSort(vector)
+  n <- LENGTH[vector]
+  for 1 <= i < n-1 do
+    count <-0
+    for 1 <= j < n-1 do
+      if vector[j+1] < vector[j] then
+        Swap(vector, j, j+1)
+        count <- count + 1
+      end if
+    end for
+    if count = 0 then
+      break
+    end if
+  end for
+  return vector
+end function
+```
+
+Notes:
+
+- At the end of each pass (iteration of i) the largest element "bubbles up" to the end of vector
+- The count variable keeps track the number of swap operations that we execute on each pass (iteration of i)
+  - If no swaps executed then the array is sorted, we can exit/break early.
+- Worst case scenario is running i=n-1 passes, each pass executes j=n-1 comparisons/swaps
+  - This occurs if arrays is sorted in reverse order
+- Below animation starts from the end and not the start of array
+  - smallest element at correct position at the end of the first pass
+
+![bubble_sort](../../static/images/ADS_1/bubble_sort.gif)
+
+### Insertion Sort
+
+A simplification can help us undertstand bubble sort.
+
+- Imagine a deck of cards in your hands, start from the left and move right.
+- Every time you evaluate a new card, compare it to the cards to its left.
+- If the card to its left is larger, move left.
+- Keep moving left untill you find a card that isn't larger. Insert the card in that position before the smaller card.
+- NOTE: We can't really "Insert" value into arbitrary positions of the array.
+  - We re-write values and "SHIFT" them as needed.
+
+```bash 
+function Shift(array,i,j)
+  if i <= j then 
+    return array
+  enf if 
+  store <- array[i]
+  for 0 <= k <=(i-j-1) do
+    array[i-k] <-array[i-k-1]
+  end for
+  array[j] <- store
+  return array
+end function
+  
+
+function InsertionSort(vector)
+  for 2 <= i <= LENGTH(vector) do
+    j <- i
+    while (vector[i] < vector[j-1]) AND (j>1) do
+      j <- j - 1
+    end while
+
+    Shift(vector,i,j)
+  end for
+  return vector
+end function
+```
+
+![insertion_sort](../../static/images/ADS_1/insertion_sort.gif)
+
 ## Topic 6: Evaluating Algorithms
+
+The manner that machine conduct operation has a lot of bearing on how algorithms perform. The Finite State Automaton & Universal Turing Machines are two models of computations, however the Random Access Model is the closest to how computers actually operate. This is why we evaluate algorithms off that basis.
+
+### Random Access Machines
+
+Modern computers use the Von Neuman architecture (CPU, RAM & hard disks)
+
+- RAM is the memory accessible to the CPU
+  - Data is represented as bits (0 or 1) and bytes ( 8 bits)
+    - Each byte has its own address in the RAM's registers (individual memory addresses)
+  - The computer loads both the program and the data needed to run them into RAM
+- CPU operates on bytes that are passed into it from RAM
+  - It has a limited number of registers to store data.  
+    - Some store data that is being computed upon (control unit)
+    - Other will keep track of the progress/count of the computations (program counter)
+- Each operation is a time step:
+  - read / write
+  - add, subtract, mutliply, divide,
+  - if/else comparisons
+
+The RAM model can be used to "count" the operations and arrive at a general idea of how long a program would take to execute.
+
+### Growth of functions
+
+Time and space are the two main things that we measure in program execution.
+
+However counting the exact number of operations can be tedious and error prone (storing a value, storing another value, adding the two ...). What is important though is how the number of operatios grows with respect to the number of inputs.
+
+There ar e groups in which we can glassify the growth of functions:
+- linear
+- quadtratic/polynomials
+- exponentials
+- logartithmic
+
+#### Big O notation
+
+At large numbers of inputs the largest part  of the growth of a function would dominate:
+- For example $2ˆn + 3n$, $2ˆn$ would dominate for $n>4$. This function's groth is carachterised by the expontial $2ˆn$
+
+When comparing growth of two function we compare the fastest growing element in each:
+- $2ˆn + 3n$ vs $1000nˆ2 +n$. $2ˆn$ dominates $1000n$ when n goes to infinity
+
+Thus we have :
+- $2ˆn + 3n$ is O($2ˆn$)
+- $1000nˆ2 +n$ is O($nˆ2$)
+
+![big_o_families](../../static/images/ADS_1/big_o_families.png)
+
+Formal notation:
+
+$ f(n) \in O(g(n)) \\ \exists k > 0  \\ \exists n_0  \\ such that \\ \forall n > n_0 \\ f(n) \le k *g(n)$
+
+
+![big_o_families_2](../../static/images/ADS_1/big_o_families_2.png)
+
+#### Worst case time complexity
+
+The time taken to do a computation can vary, even if we keep passing inputs of the same size.
+
+Take for example bubble sort:
+- The best case is linear
+  - If we pass an array of size n that is already sorted then we only need to do n-1 comparisons (a single pass) and no swaps.
+  - f(n) = n-1 --> O(n)  
+- The worst case is polynomial
+  - If we pass an array that is reverse sorted we run n passes and do (n-1)/2 swaps each time time.
+
+  - f(n) = n(n-1)/2 --> O(nˆ2)
+
+Worst case analysis provides us with a ceiling on how much the algorithm will take to execute. 
+
 
 ## Topic 7: Searching Algorithms (part 2)
 
+In cases where we have sorted arrays, we can conduct searchs in much fewer steps than regular linear search.Binary search is an algorithm that can accomplish this.
+ 
+The central logid is that the number of times we can divide a number in two is given by a logarithm.
+
+Because the array being searched is already sorted, we can split it in half, check the value at the midpoint and if that value is smaller/larger than the searched value we know that we only need to search in one half of the array to the left/right of the midpoint.
+
+This partitionining around the the midpoint leads to smaller and smaller sub-arrays in which the searched value may be located.
+
+In a worst case scenario (the array doesn't contain the searched value), we only execute $log_2n$ operations (the number of possible halvings of n) as compared to n operaions in linear search.
+
+```bash
+def BinarySearch(v, item)
+  n <- LENGTH[n]
+  R <- n
+  L <- 1
+  while R >= L do
+    m = floor((L+R)/2)
+    if v[m] = item then
+      return True
+    else if v[m] < item then
+      R <- m -1
+    else
+      L <- m + 1
+    end if
+  end while
+  return false
+end function
+```
+
 ## Topic 8: Recursion
+
+Recursion: It's like looking for your keys in the dark, but using a flashlight that you lost while looking for your keys.
+
+Recursion is when a function in a program calls itself within the function body on a smaller subset of the problem. This leads to working on a smaller chunk of the problem. Binary search falls in this category, as we rerun the same search process on smaller and smaller sub-arrays from the main arrays that we're searching.
+
+### Decrease & conquer
+
+Recursion can be used to reach smaller and smaller sub-sets of the original problem untill we reach the simplest form of it, the base case.
+
+A simple example would be factorial:
+
+$ n! = n * (n -1 ) * (n - 2 ) ... * 2 * 1 \\ n! = n * (n - 1)! $
+
+```bash
+function Factorial_Old(n) # none recursive version
+  a <- 1
+  for 1 <= i <= n do
+    a < a*i
+  end for
+  return a
+end function
+
+function Factorial(n) #recurisive
+  if n = 0 then
+    return 1
+  else
+    return n * Factorial(n-1)
+  end if
+end function
+```
+
+### Recursive Binary Search
+
+```bash 
+function Search(v, item, L, R)
+  if L > R then  
+    return FALSE
+  end if
+
+  m = floor((L+R)/2)
+  
+  if v[m] = item then
+    return TRUE
+  else if v[m]>item then
+    R <- m - 1
+  else
+    L <- m + 1
+  end if
+  return Search(v, item, L, R)
+end function
+
+function BinarySearch(v, item)
+  n <- LENGTH[v]
+  R <- n
+  L <- 1
+  return Search(v, item, L, R)
+end function
+```
+
+### Call stack
+
+Every time a function is called, all its variables and arguments are pushed in a stack frame and recorded in the call stack (simply, a memory location). The call stack keeps track of all the functions that have been called. When a function returns a value the call frame memory locaiton is cleared (popped from stack).ﬁ
+
+When a recursive function is called, the child calls to itself found within the function body are added to the call stack as call frame. When the function finally hits the base case, the recursive calls end and the return variables from each call frame is popped and fed into the next frame which had originally called it.
+
+![call_stack](../../static/images/ADS_1/call_stack.png)
+
 
 ## Topic 9: Sorting Algorithms (part 2)
 
+### Quick Sort
+
+1. Choose an arbitrary pivot
+2. partition the array around the pivot, adding all elements samller/larger than the pivot to the left/right subarrays
+3. keep reccursvily calling the quicksort on the new subarrays until you hit the base case
+  - base case is array of length 1 (trivially sorted) 
+
+### Merge Sort
+
+### worst case time complexity
+
+- quicksort
+  - worst case :O(nˆ2)
+    - if every pivot is the largest element
+    - we keep getting 1 subarray of n - 1
+  - average case : nlogn
+- mergesort
+  - worst case: O(nlogn)
+    - worst case for mergesort is the average case for quicksort
+  - average case: O(nlong)
+
+
+for mergesort we store n vectors of size 1 while in quicksort we only keep track of the positions of the pivot and indexes --> merge sort has more space complexity
+
+
+reading: chapter 7 Cormen, T.H., C.E. Leierson, R.L. Rivest and C. Stein Introduction to algorithms. (Cambridge, MA: MIT Press, 2009) 3rd edition.
+
 ## Topic 10: Computational Complexity
+
+It is possible ot study the limits of possiblities of algos without making specific references to speciic algos. is it possible to know ahead of time if a problem is even solveable
+
+grouping problem into complexity classes. 
+
+
+reading: chapter 34 Cormen, T.H., C.E. Leierson, R.L. Rivest and C. Stein Introduction to algorithms. (Cambridge, MA: MIT Press, 2009) 3rd edition.
