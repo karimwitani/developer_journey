@@ -320,11 +320,11 @@ A finite, fixed sized, data collection.
 The position of an element in the vector is called the **index**.
 
 :::{mermaid}
-flowchart LR
-subgraph "Vector"
-direction LR
-v1 ---v2--- v3
-end
+  flowchart LR
+    subgraph "Vector"
+      direction LR
+      v1 ---v2--- v3
+    end
 :::
 
 #### Vector Operations
@@ -483,7 +483,7 @@ We'll build the concret implementation of vector operations using arrays.
 2. SELECT: Find element at index k
 3. STORE: Assign value to vector element at index k
 
-:::{mermaid}
+:::mermaid
 flowchart LR
 l[length] --> 0
 0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6
@@ -516,7 +516,7 @@ Unlike the abstract stack, the data structure is created using an array of fixed
 
 In the same manner as the vector, important values will be stored in dedicated memory cells. In this case **S.TOP** which will keep track of the index of the latest item that was added to the stack.
 
-:::{mermaid}
+:::mermaid
 flowchart LR
 l[S.TOP = 3] --> 3
 0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6
@@ -578,7 +578,7 @@ EMPTY(S)
 
 Queues have to keep track of two additional memory addresses to run operation, the **HEAD** & **TAIL**. The **HEAD** keeps track of the element at the "front of the line", the next element to be dequeued. The **TAIL** keep track of the address that will receive the next element to be enqueued.
 
-:::{mermaid}
+:::mermaid
 flowchart LR
 h[Q.HEAD = 3] --> 3
 t[Q.TAIL = 9] --> 9
@@ -666,7 +666,7 @@ DEQUEUE(Q)
 
 We start with an empty queue
 
-:::{mermaid}
+:::mermaid
 flowchart LR
 h[Q.HEAD = 0] --> 0
 t[Q.TAIL = 0] --> 0
@@ -720,7 +720,7 @@ The queue now looks as such.
 Notice that we couldn't ENQUEUE the last elements and it raised an overflow error. That is because the queue is circular and if we enqueued an additional item which would lead to the TAIL and HEAD to be at the same index. Since empty queues have the same index for TAIL and HEAD, we can't use the same condition to test if the queueu is full. This is why we use this convention
 ```
 
-:::{mermaid}
+:::mermaid
 flowchart LR
 h[Q.HEAD = 0] --> 0
 t[Q.TAIL = 5] --> 5
@@ -776,7 +776,7 @@ DEQUEUE(Q)
 
 The queue is now empty again.
 
-:::{mermaid}
+:::mermaid
 flowchart LR
 h[Q.HEAD = 5] --> 5
 t[Q.TAIL = 5] --> 5
@@ -805,7 +805,7 @@ end
 
 We enqueu a few more elements to demontrate the circular nature of the queue.
 
-:::{mermaid}
+:::mermaid
 flowchart LR
 h[Q.HEAD = 5] --> 5
 t[Q.TAIL = 2] --> 2
@@ -834,7 +834,7 @@ end
 
 We dequeueu another time
 
-:::{mermaid}
+:::mermaid
 flowchart LR
 h[Q.HEAD = 0] --> 0
 t[Q.TAIL = 2] --> 2
@@ -933,7 +933,7 @@ Let's check if the value three is in Stack_1
 
 Initial State:
 
-:::{mermaid}
+:::mermaid
 flowchart LR
 l[S1.TOP = 5] --> y0
 y0 <--> y1 <--> y2 <--> y3
@@ -964,7 +964,7 @@ end
 
 First iteration. The top from the first stack was popped, we check if its equal to 3. Since it's not we place it in the other queue
 
-:::{mermaid}
+:::mermaid
 flowchart LR
 l[S1.TOP = 3] --> y1
 y1 <--> y2 <--> y3
@@ -992,7 +992,7 @@ end
 
 Second iteration, we pop a value and find that it is equal to 3. We return TRUE because we've proven that Stack_1 contains the value 3.
 
-:::{mermaid}
+:::mermaid
 flowchart LR
 l[S1.TOP = 3] --> y2
 y2 <--> y3
@@ -1065,16 +1065,16 @@ end
 end
 :::
 :::{mermaid}
-flowchart TD
-subgraph "Step 3: Insert new element at the end of Array_2"
-subgraph "Array_1"
-direction LR
-s1[1] --> s2[2] --> s3[3] --> s4[4]
-end
-subgraph "Array_2"
-t1[1] --> t2[2] --> t3[3] --> t4[4] --> t5[5]
-end
-end
+  flowchart TD
+  subgraph "Step 3: Insert new element at the end of Array_2"
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[2] --> s3[3] --> s4[4]
+    end
+    subgraph "Array_2"
+      t1[1] -->  t2[2] --> t3[3] --> t4[4] --> t5[5]
+    end
+  end
 :::
 
 **Limitation 2:** If we want to insert or delete elements at any index other than the last we need to modify the positions of all elements stored in subsequent indexes.
@@ -1096,23 +1096,23 @@ end
 :::
 
 :::{mermaid}
-flowchart TD
-subgraph "Step 1: Assign null to Array_1[2]"
-subgraph "Array_1"
-direction LR
-s1[1] --> s2[-] --> s3[3] --> s4[4]
-end
-end
+  flowchart TD
+  subgraph "Step 1: Assign null to Array_1[2]"
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[-] --> s3[3] --> s4[4]
+    end
+  end
 :::
 
 :::{mermaid}
-flowchart TD
-subgraph "Step 2: Shift elements left"
-subgraph "Array_1"
-direction LR
-s1[1] --> s2[3] --> s3[4]
-end
-end
+  flowchart TD
+  subgraph "Step 2: Shift elements left"
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[3] --> s3[4]
+    end
+  end
 :::
 
 **Limitation 3:** Sometimes we can't even increase the size of an array because the neighboring memory cells have already been allocated to another process/DS.
@@ -1124,35 +1124,35 @@ In below chart we see two array occupying 4 memory cells each.
 - Subsequently, Array_1 contained 4 items but it's impossible to increase its size to accomodate 5+ items because those cells are allocated to Array_2.
 
 :::{mermaid}
-flowchart LR
-subgraph "Initial State"
-direction LR
-subgraph "Array_1"
-direction LR
-s1[1] --> s2[2] --> s3[-] --> s4[-]
-end
-Array_1 --- Array_2
-subgraph "Array_2"
-direction LR
-s5[5] --> s6[6] --> s7[7] --> s8[8]
-end
-end
+  flowchart LR
+  subgraph "Initial State"
+  direction LR
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[2] --> s3[-] --> s4[-]
+    end
+    Array_1 --- Array_2
+    subgraph "Array_2"
+      direction LR
+      s5[5] -->  s6[6] --> s7[7] --> s8[8]
+    end
+  end
 :::
 
 :::{mermaid}
-flowchart LR
-subgraph "Insert twice into Array_1"
-direction LR
-subgraph "Array_1"
-direction LR
-s1[1] --> s2[2] --> s3[3] --> s4[4]
-end
-Array_1 --- Array_2
-subgraph "Array_2"
-direction LR
-s5[5] --> s6[6] --> s7[7] --> s8[8]
-end
-end
+  flowchart LR
+  subgraph "Insert twice into Array_1"
+  direction LR
+    subgraph "Array_1"
+      direction LR
+      s1[1] -->  s2[2] --> s3[3] --> s4[4]
+    end
+    Array_1 --- Array_2
+    subgraph "Array_2"
+      direction LR
+      s5[5] -->  s6[6] --> s7[7] --> s8[8]
+    end
+  end
 :::
 
 Arrays are good at read operations, selecting at arbitrary indexes, but very ineficient if we want to modify them.
@@ -1175,60 +1175,99 @@ Each item in a LL is called a **NODE**. Each node is made up of a value and poin
   - Insert & Delete are faster because you manipulate pointers at specific addresses as opposed to shifting all the content of an array
 
 :::{mermaid}
-flowchart LR
-subgraph "Singly Linked List"
-H[HEAD] -- address_1 --> n1 -- address_2 --> n2 -- address_3 --> n3 -- address_4 --> n4 -- address_5 --> n5 --> N[NULL]
-direction LR
-subgraph "Node 1"
-direction LR
-n1["value"]
-end
-subgraph "Node 2"
-direction LR
-n2["value"]
-end
-subgraph "Node 3"
-direction LR
-n3["value"]
-end
-subgraph "Node 4"
-direction LR
-n4["value"]
-end
-subgraph "Node 5"
-direction LR
-n5["value"]
-end
-end
+  flowchart LR
+  subgraph "Singly Linked List"
+  H[HEAD] -- address_1 --> n1 -- address_2 --> n2 -- address_3 --> n3 -- address_4 --> n4 -- address_5 --> n5 --> N[NULL]
+  direction LR
+    subgraph "Node 1"
+      direction LR
+      n1["value"]
+    end
+    subgraph "Node 2"
+      direction LR
+      n2["value"]
+    end
+    subgraph "Node 3"
+      direction LR
+      n3["value"]
+    end
+    subgraph "Node 4"
+      direction LR
+      n4["value"]
+    end
+    subgraph "Node 5"
+      direction LR
+      n5["value"]
+    end
+  end
 :::
 
 :::{mermaid}
-flowchart LR
-subgraph "Doubly Linked List"
-direction LR
-N --> n5 -- address_4 --> n4 -- address_3 --> n3 -- address_2 --> n2 -- address_1 --> n1 --> H
-H[HEAD] -- address_1 --> n1 -- address_2 --> n2 -- address_3 --> n3 -- address_4 --> n4 -- address_5 --> n5 --> N[NULL]
-subgraph "Node 1"
-n1["value"]
-end
-subgraph "Node 2"
-n2["value"]
-end
-subgraph "Node 3"
-n3["value"]
-end
-subgraph "Node 4"
-n4["value"]
-end
-subgraph "Node 5"
-n5["value"]
-end
-end
+  flowchart LR
+  subgraph "Doubly Linked List"
+  direction LR
+  N --> n5 -- address_4 --> n4 -- address_3 --> n3 -- address_2 --> n2 -- address_1 --> n1 --> H
+  H[HEAD] -- address_1 --> n1 -- address_2 --> n2 -- address_3 --> n3 -- address_4 --> n4 -- address_5 --> n5 --> N[NULL]
+    subgraph "Node 1"
+      n1["value"]
+    end
+    subgraph "Node 2"
+      n2["value"]
+    end
+    subgraph "Node 3"
+      n3["value"]
+    end
+    subgraph "Node 4"
+      n4["value"]
+    end
+    subgraph "Node 5"
+      n5["value"]
+    end
+  end
 :::
 
 Visually you can see that nodes can be placed anywhere in computer memory. The pointer provide a reference to the next item, wherever it is.
 
 ![LL Memory Usage](../../static/images/ADS_1/linked_list_memory.png)
+
+#### Linked List Operations
+
+##### Searching a linked list
+
+The procedure LIST-SEARCH(L, x) will find the first occurance of value x and return the pointer to the address that stores it. If x is not within the list, it returns NULL
+
+```bash
+function LIST-SEARCH(L, x)
+  x <-- L.head
+  while x != NULL AND x.value != x
+    x <-- x.next
+  return x
+```
+
+##### Inserting into a linked list
+
+Inserting at the front of a list:
+
+```bash
+function LIST-INSERT(L, x)
+  x.next <-- L.head
+  if L.head != NULL # list not empty
+    L.head.prev <-- x # the old head points back to the new element as prev
+  L.head <-- x # assign x as the new head
+  x.prev <-- NULL # first element, in non circular LLs, don't have previous elements
+```
+
+##### Deleting from a linked list
+
+Assuming we already have the pointer to the element that we wish to delete, we can run LIST-DELETE
+
+```bash
+function LIST-DELETE(L, x)
+  if x.prev != NULL  # if is not the fist element
+    x.prev.next <-- x.next # instead of pointing next to x itself, the previous element points to the element following x
+  else
+    L.head <-- x.next
+```
 
 ## Topic 5: Sorting Algorithms (part 1)
 
@@ -1290,7 +1329,7 @@ A simplification can help us undertstand bubble sort.
 - NOTE: We can't really "Insert" value into arbitrary positions of the array.
   - We re-write values and "SHIFT" them as needed.
 
-```bash 
+```bash
 function Shift(array,i,j)
   if i <= j then 
     return array
@@ -1349,6 +1388,7 @@ Time and space are the two main things that we measure in program execution.
 However counting the exact number of operations can be tedious and error prone (storing a value, storing another value, adding the two ...). What is important though is how the number of operatios grows with respect to the number of inputs.
 
 There ar e groups in which we can glassify the growth of functions:
+
 - linear
 - quadtratic/polynomials
 - exponentials
@@ -1357,12 +1397,15 @@ There ar e groups in which we can glassify the growth of functions:
 #### Big O notation
 
 At large numbers of inputs the largest part  of the growth of a function would dominate:
+
 - For example $2ˆn + 3n$, $2ˆn$ would dominate for $n>4$. This function's groth is carachterised by the expontial $2ˆn$
 
 When comparing growth of two function we compare the fastest growing element in each:
+
 - $2ˆn + 3n$ vs $1000nˆ2 +n$. $2ˆn$ dominates $1000n$ when n goes to infinity
 
 Thus we have :
+
 - $2ˆn + 3n$ is O($2ˆn$)
 - $1000nˆ2 +n$ is O($nˆ2$)
 
@@ -1380,6 +1423,7 @@ $ f(n) \in O(g(n)) \\ \exists k > 0  \\ \exists n_0  \\ such that \\ \forall n >
 The time taken to do a computation can vary, even if we keep passing inputs of the same size.
 
 Take for example bubble sort:
+
 - The best case is linear
   - If we pass an array of size n that is already sorted then we only need to do n-1 comparisons (a single pass) and no swaps.
   - f(n) = n-1 --> O(n)  
@@ -1388,13 +1432,12 @@ Take for example bubble sort:
 
   - f(n) = n(n-1)/2 --> O(nˆ2)
 
-Worst case analysis provides us with a ceiling on how much the algorithm will take to execute. 
-
+Worst case analysis provides us with a ceiling on how much the algorithm will take to execute.
 
 ## Topic 7: Searching Algorithms (part 2)
 
 In cases where we have sorted arrays, we can conduct searchs in much fewer steps than regular linear search.Binary search is an algorithm that can accomplish this.
- 
+
 The central logid is that the number of times we can divide a number in two is given by a logarithm.
 
 Because the array being searched is already sorted, we can split it in half, check the value at the midpoint and if that value is smaller/larger than the searched value we know that we only need to search in one half of the array to the left/right of the midpoint.
@@ -1490,7 +1533,6 @@ When a recursive function is called, the child calls to itself found within the 
 
 ![call_stack](../../static/images/ADS_1/call_stack.png)
 
-
 ## Topic 9: Sorting Algorithms (part 2)
 
 ### Quick Sort
@@ -1498,7 +1540,7 @@ When a recursive function is called, the child calls to itself found within the 
 1. Choose an arbitrary pivot
 2. partition the array around the pivot, adding all elements samller/larger than the pivot to the left/right subarrays
 3. keep reccursvily calling the quicksort on the new subarrays until you hit the base case
-  - base case is array of length 1 (trivially sorted) 
+   1. base case is array of length 1 (trivially sorted)
 
 ### Merge Sort
 
@@ -1514,9 +1556,7 @@ When a recursive function is called, the child calls to itself found within the 
     - worst case for mergesort is the average case for quicksort
   - average case: O(nlong)
 
-
 for mergesort we store n vectors of size 1 while in quicksort we only keep track of the positions of the pivot and indexes --> merge sort has more space complexity
-
 
 reading: chapter 7 Cormen, T.H., C.E. Leierson, R.L. Rivest and C. Stein Introduction to algorithms. (Cambridge, MA: MIT Press, 2009) 3rd edition.
 
@@ -1524,7 +1564,6 @@ reading: chapter 7 Cormen, T.H., C.E. Leierson, R.L. Rivest and C. Stein Introdu
 
 It is possible ot study the limits of possiblities of algos without making specific references to speciic algos. is it possible to know ahead of time if a problem is even solveable
 
-grouping problem into complexity classes. 
-
+grouping problem into complexity classes.
 
 reading: chapter 34 Cormen, T.H., C.E. Leierson, R.L. Rivest and C. Stein Introduction to algorithms. (Cambridge, MA: MIT Press, 2009) 3rd edition.
