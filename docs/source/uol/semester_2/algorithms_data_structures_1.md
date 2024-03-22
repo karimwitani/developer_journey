@@ -1477,7 +1477,7 @@ Recursion can be used to reach smaller and smaller sub-sets of the original prob
 
 A simple example would be factorial:
 
-$ n! = n * (n -1 ) * (n - 2 ) ... * 2 * 1 \\ n! = n * (n - 1)! $
+$$n! = n * (n -1 ) * (n - 2 ) ... * 2 * 1 \\ n! = n * (n - 1)!$$
 
 ```bash
 function Factorial_Old(n) # none recursive version

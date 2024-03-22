@@ -1,123 +1,3 @@
-# intro what is machine learning and how does it learn?
-
-Machine learning is when machines get better at a task by learning from data instead of relying on explicit rules set in advance.
-
-Instead of manually programing all possible scenarios that a program may encounter ahead of time we allow the algorithm to have a lower error rate as it gets shown more instances of the problem.
-
-this approach is powerfull when the problem at hand is either too complex or there is no known algorithm to solve it yet.
-
-key concepts:
-- error function
-- training sets
-
-# examples of applications
-
-- image classification:
-  - identify items on a production line that are defective
-  - identify tumors in scans
-  - usualy uses CNNs
-- text classification
-  - classify articles, detect spam emails, detect offensive comments on social media
-  - uses NLP and RNNs
-- generating text
-  - chatbots and GPTs
-  - Natural language understanding
-- Forecasting time series
-  - company revenues
-  - regressions (liner, poly, SVMm random forests, Neural nets)
-- Anomaly detection
-  - credit card fraud
-- clusteing
-  - segmenting clients based on behavior
-- reccomender systems
-  - e-commerce
-- game bots
-  - GANs and re-inforcement learning
-
-# Types of machine learning
-
-## supervised
-
-training data is labeled by a human and the machine will try and guess the category. It will learn by comparing its prediction to the **truth value** that the human supervisor has provided it. It will try to minimize the **error rate** by computing a accuracy score (true prediction - wrong predictions)
-
-## unsupervised
-
-training data is provided with no labels and the machine will use various techniques to group instances in buckets of similarity
-
-## semi-supervided
-
-some of data provided would be labeled and the  machine will use a combination of supervised and unsupervised learning techniques to put labels on the unlabeled data
-
-## reinforcement
-
-reinforcement learning is when a machine (called an agent) is given a reward/punishment function and is allowd to take actions in given situation. the machine would observe the impact of its actions on the reward function score and update its **policy** accordingly. This technique allows the machine to learn the **rules of the game** through discovery. reiforcement learning can pit two machines against one another and through that process both machines become better players of the game (think go and chess)
-
-## online vs offline learning
-
-The ability of a machine to keep learning incrementaly from new experiences is what distinguishes batch from online learning
-
-In batch learning the machine is trained on a set of data and once it is deployed it does not reflect upon the accuracy of its prediction or improve from them.
-
-In cases where you want your machine to react to changing circumstances and scenarios that it may not have encounterd during training is to feed it data iunstances sequentially. This is called **mini-batches**. The upside here is that the learning step is faster and the system can learn as new data comes in.
-
-## Instance based vs model based
-
-categorising by how models **generalize** 
-
-instance based models compare instances of the problems and rely on measures of similarity. The  model learns the examples by heart and compares new instances to learned examples.
-
-model based learning constructs a model of reality and uses that to make predictions of the world
-
-# challenges in runnin AI models
-
-## insufficient data
-
-A human will learn to drive with 20 hours of personaly experience behind the wheel. Tesla has still to achieve this capability even though it fed its model millions and billions of hours of recorded driving. Why is that?
-
-The honest answer is: we don't yet know. Human are able to process and learn from a much smaller set of data.
-
-Under this current constraint, ML models need a lot of data to produce good predictions. This makes the collection of good quality data in sufficient quantity a challenge.
-
-## nonrepresenetative data
-
-If a training dataset is missing example about an important part of the population it will not generalize well. Imagine a dataset of dog and cat pictures, if no images of chinhuawas are present then the model may predict images of chihuahuas as very angry cats with pointy faces (an undertandable mistake that any of us can make)
-
-## poor quality data
-
-training data may contain a lot of noise, errors and outliers. These will skew the learning accuracy and degrade prediction quality. practitioners spend lots of time cleaning data. This can be the removal of outliers, the averaging out of missing data, the removal of instances that contain errors or missing data.
-
-## irrelevant features
-
-garbage-in, garbage out. That is the moto.
-
-To tackle this problem, ML enginers would resort to:
-
-- selecting the most usefull features and dropping the rest (feature selection)
-- combining features to increase usefullness (feature extraction)
-
-## overfitting
-
-a fancy way for saying "overgeneralizing". The model would be very good at fitting the training data but not generalize well. 
-
-this happens when the model is too complex compared to the size and noisiness of the training data, the model will pickup on patterns within the noise itself that is not necessarily present in the general case. 
-
-You can either simplify the model, get more data, reduce the noice in the data (cleanup) or use **reularisation** techniques
-
-Regularization methods introduce penalties on the model if it overfits. This is done by:
-
-- L1 & L2 regularization: opreventing models relying too much on a few parameter
-- dropout: randomly exclude some nodes of a neural network from some training runs so as to discourage co-adapations
-- early stopping: monioting performance during training and stoping the process when performance starts degrading
-
-# testing and validating
-
-optimisign **hyper-parameters** is called fine-tuning. A mistake that often occrus is training multiple models, each with its own set of hyperparameters, and choosing the model with the lowest error rate. This generaly would lead to poor generalization because the hyper-parameters were optimised foir this particular set of training data but not the general population.
-
-A solution is **holdout validation**, keeping a subset iof the data outside of training and evaluate candidate models on this data, called **validation set**, that none of them have previously seen. 
-
-finding the right proportion of the dataset to allocate to the validation set is more of an art than science. The more data you have, the validation can make up a smaller proportion of the data.
-
-If the validation set is too small the evaluation of the model could be inaccurate. If the validation set is too large, then you may have trained the model on too little data.
 
 ## V2
 
@@ -161,18 +41,95 @@ The inverse of clustering is anomaly detection, how disimilar is somethign to wh
 Finally, a notable type of ML applications are game bots. Most of us played video games against non-human players. Have you ever wondered how they understood the game and got good at it? That's because they've been trained using **Reinforcement Learning** where a machine makes sequential decisions and tries to maximise its reward (in this example, the game score). The machine thus learns with time which actions lead it to higher scores and that is called its **policy**  
 
 ### Types of machine learning
-####  supervised
-#### unsupervised
-#### semi-supervided
-#### reinforcement
+
+#### Learning Mode
+
+ML algorithm can be classified a few different ways.
+
+The first relates to how the model is trained. The four major buckets are:
+
+
+1. supervised
+2. unsupervised
+3. semi-supervised
+4. reinforcement
+
+##### supervised
+
+training data is labeled by a human and the machine will try and guess the category. It will learn by comparing its prediction to the **truth value** that the human supervisor has provided it. It will try to minimize the **error rate** by computing a accuracy score (true prediction - wrong predictions)
+
+##### unsupervised
+
+training data is provided with no labels and the machine will use various techniques to group instances in buckets of similarity
+
+##### semi-supervised
+
+some of data provided would be labeled and the  machine will use a combination of supervised and unsupervised learning techniques to put labels on the unlabeled data
+
+##### reinforcement
+
+reinforcement learning is when a machine (called an agent) is given a reward/punishment function and is allowd to take actions in given situation. the machine would observe the impact of its actions on the reward function score and update its **policy** accordingly. This technique allows the machine to learn the **rules of the game** through discovery. reiforcement learning can pit two machines against one another and through that process both machines become better players of the game (think go and chess)
+
 #### online vs offline learning
+
+The ability of a machine to keep learning incrementaly from new experiences is what distinguishes batch from online learning
+
+In batch learning the machine is trained on a set of data and once it is deployed it does not reflect upon the accuracy of its prediction or improve from them.
+
+In cases where you want your machine to react to changing circumstances and scenarios that it may not have encounterd during training is to feed it data iunstances sequentially. This is called **mini-batches**. The upside here is that the learning step is faster and the system can learn as new data comes in.
+
 #### Instance based vs model based
 
+Finally ML models can be classified as either instance based or model based. 
+
+Instance based models compare incoming to data examples that exist already in their training sets while model based application derive a model of the world from their training and attempt to predict/classifyy the new instances that they encounter into "regions" that they learned.
+
 ### challenges in runnin AI models
+
 #### insufficient data
+A human will learn to drive with 20 hours of personaly experience behind the wheel. Tesla has still to achieve this capability even though it fed its model millions and billions of hours of recorded driving. Why is that?
+
+The honest answer is: we don't yet know. Human are able to process and learn from a much smaller set of data.
+
+Under this current constraint, ML models need a lot of data to produce good predictions. This makes the collection of good quality data in sufficient quantity a challenge.
+
 #### nonrepresenetative data
+
+If a training dataset is missing example about an important part of the population it will not generalize well. Imagine a dataset of dog and cat pictures, if no images of chinhuawas are present then the model may predict images of chihuahuas as very angry cats with pointy faces (an undertandable mistake that any of us can make)
+
 #### poor quality data
+
+training data may contain a lot of noise, errors and outliers. These will skew the learning accuracy and degrade prediction quality. practitioners spend lots of time cleaning data. This can be the removal of outliers, the averaging out of missing data, the removal of instances that contain errors or missing data.
+
 #### irrelevant features
+
+garbage-in, garbage out. That is the moto.
+
+To tackle this problem, ML enginers would resort to:
+
+- selecting the most usefull features and dropping the rest (feature selection)
+- combining features to increase usefullness (feature extraction)
+
 #### overfitting
 
+a fancy way for saying "overgeneralizing". The model would be very good at fitting the training data but not generalize well. 
+
+this happens when the model is too complex compared to the size and noisiness of the training data, the model will pickup on patterns within the noise itself that is not necessarily present in the general case. 
+
+You can either simplify the model, get more data, reduce the noice in the data (cleanup) or use **reularisation** techniques
+
+Regularization methods introduce penalties on the model if it overfits. This is done by:
+
+- L1 & L2 regularization: opreventing models relying too much on a few parameter
+- dropout: randomly exclude some nodes of a neural network from some training runs so as to discourage co-adapations
+- early stopping: monioting performance during training and stoping the process when performance starts degrading
+
 ### testing and validating
+
+optimisign **hyper-parameters** is called fine-tuning. A mistake that often occrus is training multiple models, each with its own set of hyperparameters, and choosing the model with the lowest error rate. This generaly would lead to poor generalization because the hyper-parameters were optimised foir this particular set of training data but not the general population.
+
+A solution is **holdout validation**, keeping a subset iof the data outside of training and evaluate candidate models on this data, called **validation set**, that none of them have previously seen. 
+
+finding the right proportion of the dataset to allocate to the validation set is more of an art than science. The more data you have, the validation can make up a smaller proportion of the data.
+
+If the validation set is too small the evaluation of the model could be inaccurate. If the validation set is too large, then you may have trained the model on too little data.
