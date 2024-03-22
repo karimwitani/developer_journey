@@ -22,9 +22,7 @@ Machine learning has existed for decades now and some of the technologies that w
 
 A common task is image classification. In hospitals, radiology scanners use ML to detect if a scan image contains a tumor. This uses **Convolutional Neural Networks** which scan the pixels of an image as groups and identifies patterns in them.
 
-```todo:: edit
 Another task is text classification. Your email service can detect if an incoming email ressembles other emails that were previously flagged as spam. If the **similarity score** is above a threshold, that email will automatically get sent to the spam bucket. **Natural Language Processing** is used to interpret the text of an email and this is done using **Reccurent Neural Networks**.
-```
 
 **Reccurent Neural Networks**, (aka RNN) interpret text units (words and subwords) as numbers called **tokens**, The process of converting words into tokens is called **tokenisation**. This creates an **embeddings** for each word which are high dimensional vectors.
 
@@ -48,29 +46,49 @@ ML algorithm can be classified a few different ways.
 
 The first relates to how the model is trained. The four major buckets are:
 
-
 1. supervised
 2. unsupervised
 3. semi-supervised
 4. reinforcement
 
-##### supervised
+##### Supervised Learning
 
-training data is labeled by a human and the machine will try and guess the category. It will learn by comparing its prediction to the **truth value** that the human supervisor has provided it. It will try to minimize the **error rate** by computing a accuracy score (true prediction - wrong predictions)
+The data provided to the mode during training contains the correct answer ahead of time. These are called **labels** and the model will compare its prediction to the truth value of the label and try to minimize its **error rate**.
 
-##### unsupervised
+Neural network learning happens by repeating a two step process untill a satisfactory error rate is reached. These two steps are called:
 
-training data is provided with no labels and the machine will use various techniques to group instances in buckets of similarity
+1. Forward propagation
+2. Backwards propagation
 
-##### semi-supervised
+Forward progation is the process of running computations through the neural network from input to output and then finally comparing the prediction to the truth value of the label.
 
-some of data provided would be labeled and the  machine will use a combination of supervised and unsupervised learning techniques to put labels on the unlabeled data
+Backwards propagation is the process of incrementally updating the paramters of the network, backwards from output to input. This is what allows the model to optimise its paramters and lower its error rate.
 
-##### reinforcement
+Each successive forward and backwards pass allows the model to try a prediction, judge its accuracy and then update its paramters in order to have better predictions on the next run.
 
-reinforcement learning is when a machine (called an agent) is given a reward/punishment function and is allowd to take actions in given situation. the machine would observe the impact of its actions on the reward function score and update its **policy** accordingly. This technique allows the machine to learn the **rules of the game** through discovery. reiforcement learning can pit two machines against one another and through that process both machines become better players of the game (think go and chess)
+##### Unsupervised
 
-#### online vs offline learning
+The opposite of supervised learning. The training data is provided with no labels and the machine will use various techniques to group instances in buckets of similarity.
+
+For example a clustenring algorithm will group users of an application such as youtube by the channels that they listen to. The algorithm will automatically be able to pickup on people with variying interests (cat videos, DIY videos, etc) without the need for a human to label the instances.
+
+That is the basis of how the Youtube/Netflix reccomendations systems can find video/series that you may want to watch with very good accuracy.
+
+##### Semi-supervised Learning
+
+Semi-supervised learning was developed to take advantage of the best of both worlds. Labeling data is often time consuming while un-labeled data is harder to work with. Some algorithms can deal with data that is partially labeled.
+
+Take for example the photo application on your phone. Nowadays the application can find all pictures showing the same person even though it may not know their name. However if the user labels one (or a few pictures) of the same person, the application is able to label all the picture in the catalogue that show this person.
+
+This is the same technology that underlies the Facebook album algorithm where you can get tag one of your friends once but the next time you upload a picture of that person, Facebook can predict and reccomend that you tag them automatically.
+
+##### Reinforcement Learning
+
+Reinforcement learning is when a machine (called an agent) is given a reward/punishment function and is allowd to take actions in given situation.
+
+The machine would observe the impact of its actions on the reward function score and update its **policy** accordingly. This technique allows the machine to learn the **rules of the game** through discovery. Reiforcement learning can pit two machines against one another and through that process both machines become better players of the game (think go or chess)
+
+#### Online vs Offline Learning
 
 The ability of a machine to keep learning incrementaly from new experiences is what distinguishes batch from online learning
 
@@ -84,24 +102,25 @@ Finally ML models can be classified as either instance based or model based.
 
 Instance based models compare incoming to data examples that exist already in their training sets while model based application derive a model of the world from their training and attempt to predict/classifyy the new instances that they encounter into "regions" that they learned.
 
-### challenges in runnin AI models
+### Challenges in runnin AI models
 
-#### insufficient data
+#### Insufficient Data
+
 A human will learn to drive with 20 hours of personaly experience behind the wheel. Tesla has still to achieve this capability even though it fed its model millions and billions of hours of recorded driving. Why is that?
 
 The honest answer is: we don't yet know. Human are able to process and learn from a much smaller set of data.
 
 Under this current constraint, ML models need a lot of data to produce good predictions. This makes the collection of good quality data in sufficient quantity a challenge.
 
-#### nonrepresenetative data
+#### Nonrepresenetative Data
 
 If a training dataset is missing example about an important part of the population it will not generalize well. Imagine a dataset of dog and cat pictures, if no images of chinhuawas are present then the model may predict images of chihuahuas as very angry cats with pointy faces (an undertandable mistake that any of us can make)
 
-#### poor quality data
+#### Poor Quality Data
 
-training data may contain a lot of noise, errors and outliers. These will skew the learning accuracy and degrade prediction quality. practitioners spend lots of time cleaning data. This can be the removal of outliers, the averaging out of missing data, the removal of instances that contain errors or missing data.
+Training data may contain a lot of noise, errors and outliers. These will skew the learning accuracy and degrade prediction quality. practitioners spend lots of time cleaning data. This can be the removal of outliers, the averaging out of missing data, the removal of instances that contain errors or missing data.
 
-#### irrelevant features
+#### Irrelevant Features
 
 garbage-in, garbage out. That is the moto.
 
@@ -112,7 +131,7 @@ To tackle this problem, ML enginers would resort to:
 
 #### overfitting
 
-a fancy way for saying "overgeneralizing". The model would be very good at fitting the training data but not generalize well. 
+A fancy way for saying "overgeneralizing". The model would be very good at fitting the training data but not generalize well. 
 
 this happens when the model is too complex compared to the size and noisiness of the training data, the model will pickup on patterns within the noise itself that is not necessarily present in the general case. 
 
@@ -126,10 +145,10 @@ Regularization methods introduce penalties on the model if it overfits. This is 
 
 ### testing and validating
 
-optimisign **hyper-parameters** is called fine-tuning. A mistake that often occrus is training multiple models, each with its own set of hyperparameters, and choosing the model with the lowest error rate. This generaly would lead to poor generalization because the hyper-parameters were optimised foir this particular set of training data but not the general population.
+Optimising **hyper-parameters** is called fine-tuning. A mistake that often occrus is training multiple models, each with its own set of hyperparameters, and choosing the model with the lowest error rate. This generaly would lead to poor generalization because the hyper-parameters were optimised foir this particular set of training data but not the general population.
 
-A solution is **holdout validation**, keeping a subset iof the data outside of training and evaluate candidate models on this data, called **validation set**, that none of them have previously seen. 
+A solution is **holdout validation**, keeping a subset iof the data outside of training and evaluate candidate models on this data, called **validation set**, that none of them have previously seen.
 
-finding the right proportion of the dataset to allocate to the validation set is more of an art than science. The more data you have, the validation can make up a smaller proportion of the data.
+Finding the right proportion of the dataset to allocate to the validation set is more of an art than science. The more data you have, the validation can make up a smaller proportion of the data.
 
 If the validation set is too small the evaluation of the model could be inaccurate. If the validation set is too large, then you may have trained the model on too little data.
