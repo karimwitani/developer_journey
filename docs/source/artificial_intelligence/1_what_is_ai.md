@@ -168,6 +168,6 @@ Finding the right proportion of the dataset to allocate to the validation set is
 
 If the validation set is too small the evaluation of the model could be inaccurate. If the validation set is too large, then you may have trained the model on too little data.
 
-Conclusion
+## Conclusion
 
 Overall we’ve covered, on a high level, the landscape of modern machine learning. We’ve seen that ML models can serve a multitude of applications and can be categorized by how they learn, predict or get deployed.
