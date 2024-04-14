@@ -418,15 +418,15 @@ recursion: when functions are described byt their values for smaller inputs
 
 master theorem: a method of modeling out reccurence relations.
 
-$$ T(n) = aT(n/b) + O(nˆd)$$, a >= 1, b>1, d>=0 $$
+<!-- $$ T(n) = aT(n/b) + O(nˆd)$$, a >= 1, b>1, d>=0 $$
 
 d < log_bˆa --> T(n) = O(nˆlog_b a)
 
 d = log_bˆa --> T(n) = O(nˆd \* logn)
 
-d > log_bˆa --> T(n) = O(nˆd)
+d > log_bˆa --> T(n) = O(nˆd) -->
 
-![10_301_master_theorem.png](../../static/images/FCS/10_301_master_theorem.png)
+<!-- ![10_301_master_theorem.png](../../static/images/FCS/10_301_master_theorem.png)
 
 10.304 efficiency: quicksort, merge sort
 
@@ -459,4 +459,4 @@ merge sort: worst and best case have same asymptotic bounds
 
 10.305 Essential reading
 
-Chang, S. (ed) Data structures and algorithms. (New Jersey: World Scientific Publishing, 2003), Chapters 8 and 9, pp.161–200.
+Chang, S. (ed) Data structures and algorithms. (New Jersey: World Scientific Publishing, 2003), Chapters 8 and 9, pp.161–200. -->

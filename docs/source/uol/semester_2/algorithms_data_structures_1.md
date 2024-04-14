@@ -1398,7 +1398,7 @@ There ar e groups in which we can glassify the growth of functions:
 
 At large numbers of inputs the largest part  of the growth of a function would dominate:
 
-- For example $2ˆn + 3n$, $2ˆn$ would dominate for $n>4$. This function's groth is carachterised by the expontial $2ˆn$
+<!-- - For example $2ˆn + 3n$, $2ˆn$ would dominate for $n>4$. This function's groth is carachterised by the expontial $2ˆn$
 
 When comparing growth of two function we compare the fastest growing element in each:
 
@@ -1407,13 +1407,13 @@ When comparing growth of two function we compare the fastest growing element in 
 Thus we have :
 
 - $2ˆn + 3n$ is O($2ˆn$)
-- $1000nˆ2 +n$ is O($nˆ2$)
+- $1000nˆ2 +n$ is O($nˆ2$) -->
 
 ![big_o_families](../../static/images/ADS_1/big_o_families.png)
 
 Formal notation:
 
-$ f(n) \in O(g(n)) \\ \exists k > 0  \\ \exists n_0  \\ such that \\ \forall n > n_0 \\ f(n) \le k *g(n)$
+<!-- $ f(n) \in O(g(n)) \\ \exists k > 0  \\ \exists n_0  \\ such that \\ \forall n > n_0 \\ f(n) \le k *g(n)$ -->
 
 ![big_o_families_2](../../static/images/ADS_1/big_o_families_2.png)
 
