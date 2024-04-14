@@ -20,6 +20,7 @@ Contents
 
 .. toctree::
    uol/index
+   artificial_intelligence/index
 
 Index
 --------

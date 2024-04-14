@@ -218,13 +218,6 @@ heapify logic:
 - we take the lower item in the remaining strucutre (bottom right) and place it at the root of the tree (where the smallest item was previously)
 - repeat process
 
-TODO:
-
-1. write pseudocode of heap sort
-2. how many tree do we heapify?
-3. how many swaps did we execute in each tree
-4. what is the advantage of heap sort over insertion sort?
-
 ## Week 17 - Algos II - Part 1
 
 9.101 recursion

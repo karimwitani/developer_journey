@@ -43,7 +43,7 @@ The word algorithm traces its root to the persian mathematician Al-Khawarizmi (9
 
 Euclid (300 BCE) created and alogrithm to find the greatest common divisor of two numbers.
 
-### Converting mathematics to digital representations.
+### Converting mathematics to digital representations
 
 Whole and rational numbers (integers and fractions) can be stored in finite numbers of computer memory cells. The later represented as the division of two integers. But how do we represent irrational numbers, such as $\pi$, which extend infinitley after the decimal?
 
@@ -1415,7 +1415,6 @@ Formal notation:
 
 $ f(n) \in O(g(n)) \\ \exists k > 0  \\ \exists n_0  \\ such that \\ \forall n > n_0 \\ f(n) \le k *g(n)$
 
-
 ![big_o_families_2](../../static/images/ADS_1/big_o_families_2.png)
 
 #### Worst case time complexity
@@ -1499,7 +1498,7 @@ end function
 
 ### Recursive Binary Search
 
-```bash 
+```bash
 function Search(v, item, L, R)
   if L > R then  
     return FALSE
