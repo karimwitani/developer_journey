@@ -211,18 +211,18 @@ There are two type of loops, "For Loops" and "While Loops".
 - "For loops" iterate over specific number of steps, predefined at the top.
 
 ```bash
-x <-- 1
+x = 1
 for 2 < i < 10 do
-  x <-- x + 1
+  x = x + 1
 end for
 ```
 
 - "While Loops" iterate untill a condition is met. The execution of the code in the loop will modify values that the "While loop" will examin at the start of each iteration.
 
 ```bash
-x <-- 1
+x = 1
 while x < 10 do
-  x <-- x + 1
+  x = x + 1
 end while
 ```
 
@@ -233,7 +233,7 @@ During execution we can stop iterating early, if a certain condition has been me
 ```bash
 function TestBreak()
   for i <= 10 do
-    y <-- i
+    y = i
     if i = 5 then
       break
     end if
@@ -268,10 +268,10 @@ Our solution would be to start with the first integer, 1, and iterate untill n. 
 
 ```bash
 function IsXInteger(n)
-  y <-- FALSE
+  y = FALSE
   for 1 <= i <=n do
     if i*i = n then
-      y <-- TRUE
+      y = TRUE
       break
     end if
   end for
@@ -285,9 +285,9 @@ end function
 function GreatestCommonDivisor(A,B)
   while A != B do
     if A > B then
-      A <-- A - B
+      A = A - B
     else
-      B <-- B - A
+      B = B - A
     end if
   end while
   return A
@@ -408,18 +408,18 @@ In algorithmic form, using a stack and floor division/modulo operator ( // & % r
 
 ```bash
 function ConvertDecimalToBinary(n)
-  s <-- new Stack
+  s = new Stack
 
   while TRUE do # Start while loop that will iterate untill we hit break
-    remainder <-- n % 2
-    ENQUEUE[remainder, s]
+    remainder = n % 2
+    ENQUEUE(remainder, s)
 
-    quotient <-- n // 2
+    quotient = n // 2
 
     if quotient = 0 then # Check quotient is zero to control break from
       break
     else
-      n <-- quotient # Reassign n to be the quotient for next loop
+      n = quotient # Reassign n to be the quotient for next loop
   return s
 ```
 
@@ -875,9 +875,9 @@ An abstract data structure that, unlike the vectore, is extensible in size.
 | ----------- | -------------------------------- |
 | length      | LENGTH[D]                        |
 | select[k]   | D[k]                             |
-| store[x, k] | D[k] <-- x (0 <= k <= LENGTH[D]) |
-| remove[k]   | D[k] <-- NULL (k <= LENGTH[D])   |
-| insert[k]   | D[k] <-- x (k <= LENGTH[D] + 1)  |
+| store[x, k] | D[k] = x (0 <= k <= LENGTH[D]) |
+| remove[k]   | D[k] = NULL (k <= LENGTH[D])   |
+| insert[k]   | D[k] = x (k <= LENGTH[D] + 1)  |
 
 ### Search Algorithms
 
@@ -1083,7 +1083,7 @@ Let's demonstrate by example. First we delete the element at index 2 ( Array_1[2
 
 - Step 1: Assign null to the value of Array_1[2]
 - Step 2: Shift all items in indexes greater than 2 (3 & 4) to the left
-  - Concretly: for each index i greater than 2, assign Array_1[i-1] <--Array_1[i]
+  - Concretly: for each index i greater than 2, assign Array_1[i-1] =Array_1[i]
 
 :::{mermaid}
 flowchart TD
@@ -1238,9 +1238,9 @@ The procedure LIST-SEARCH(L, x) will find the first occurance of value x and ret
 
 ```bash
 function LIST-SEARCH(L, x)
-  x <-- L.head
+  x = L.head
   while x != NULL AND x.value != x
-    x <-- x.next
+    x = x.next
   return x
 ```
 
@@ -1250,11 +1250,11 @@ Inserting at the front of a list:
 
 ```bash
 function LIST-INSERT(L, x)
-  x.next <-- L.head
+  x.next = L.head
   if L.head != NULL # list not empty
-    L.head.prev <-- x # the old head points back to the new element as prev
-  L.head <-- x # assign x as the new head
-  x.prev <-- NULL # first element, in non circular LLs, don't have previous elements
+    L.head.prev = x # the old head points back to the new element as prev
+  L.head = x # assign x as the new head
+  x.prev = NULL # first element, in non circular LLs, don't have previous elements
 ```
 
 ##### Deleting from a linked list
@@ -1264,9 +1264,9 @@ Assuming we already have the pointer to the element that we wish to delete, we c
 ```bash
 function LIST-DELETE(L, x)
   if x.prev != NULL  # if is not the fist element
-    x.prev.next <-- x.next # instead of pointing next to x itself, the previous element points to the element following x
+    x.prev.next = x.next # instead of pointing next to x itself, the previous element points to the element following x
   else
-    L.head <-- x.next
+    L.head = x.next
 ```
 
 ## Topic 5: Sorting Algorithms (part 1)
@@ -1398,7 +1398,7 @@ There ar e groups in which we can glassify the growth of functions:
 
 At large numbers of inputs the largest part  of the growth of a function would dominate:
 
-<!-- - For example $2ˆn + 3n$, $2ˆn$ would dominate for $n>4$. This function's groth is carachterised by the expontial $2ˆn$
+- For example $2ˆn + 3n$, $2ˆn$ would dominate for $n>4$. This function's groth is carachterised by the expontial $2ˆn$
 
 When comparing growth of two function we compare the fastest growing element in each:
 
@@ -1407,13 +1407,13 @@ When comparing growth of two function we compare the fastest growing element in 
 Thus we have :
 
 - $2ˆn + 3n$ is O($2ˆn$)
-- $1000nˆ2 +n$ is O($nˆ2$) -->
+- $1000nˆ2 +n$ is O($nˆ2$)
 
 ![big_o_families](../../static/images/ADS_1/big_o_families.png)
 
 Formal notation:
 
-<!-- $ f(n) \in O(g(n)) \\ \exists k > 0  \\ \exists n_0  \\ such that \\ \forall n > n_0 \\ f(n) \le k *g(n)$ -->
+$ f(n) \in O(g(n)) \\ \exists k > 0  \\ \exists n_0  \\ such that \\ \forall n > n_0 \\ f(n) \le k *g(n)$
 
 ![big_o_families_2](../../static/images/ADS_1/big_o_families_2.png)
 
