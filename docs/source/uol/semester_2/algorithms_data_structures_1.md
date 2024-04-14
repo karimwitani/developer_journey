@@ -483,7 +483,7 @@ We'll build the concret implementation of vector operations using arrays.
 2. SELECT: Find element at index k
 3. STORE: Assign value to vector element at index k
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 l[length] --> 0
 0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6
@@ -516,7 +516,7 @@ Unlike the abstract stack, the data structure is created using an array of fixed
 
 In the same manner as the vector, important values will be stored in dedicated memory cells. In this case **S.TOP** which will keep track of the index of the latest item that was added to the stack.
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 l[S.TOP = 3] --> 3
 0 --> 1 --> 2 --> 3 --> 4 --> 5 --> 6
@@ -578,7 +578,7 @@ EMPTY(S)
 
 Queues have to keep track of two additional memory addresses to run operation, the **HEAD** & **TAIL**. The **HEAD** keeps track of the element at the "front of the line", the next element to be dequeued. The **TAIL** keep track of the address that will receive the next element to be enqueued.
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 h[Q.HEAD = 3] --> 3
 t[Q.TAIL = 9] --> 9
@@ -666,7 +666,7 @@ DEQUEUE(Q)
 
 We start with an empty queue
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 h[Q.HEAD = 0] --> 0
 t[Q.TAIL = 0] --> 0
@@ -720,7 +720,7 @@ The queue now looks as such.
 Notice that we couldn't ENQUEUE the last elements and it raised an overflow error. That is because the queue is circular and if we enqueued an additional item which would lead to the TAIL and HEAD to be at the same index. Since empty queues have the same index for TAIL and HEAD, we can't use the same condition to test if the queueu is full. This is why we use this convention
 ```
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 h[Q.HEAD = 0] --> 0
 t[Q.TAIL = 5] --> 5
@@ -776,7 +776,7 @@ DEQUEUE(Q)
 
 The queue is now empty again.
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 h[Q.HEAD = 5] --> 5
 t[Q.TAIL = 5] --> 5
@@ -805,7 +805,7 @@ end
 
 We enqueu a few more elements to demontrate the circular nature of the queue.
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 h[Q.HEAD = 5] --> 5
 t[Q.TAIL = 2] --> 2
@@ -834,7 +834,7 @@ end
 
 We dequeueu another time
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 h[Q.HEAD = 0] --> 0
 t[Q.TAIL = 2] --> 2
@@ -933,7 +933,7 @@ Let's check if the value three is in Stack_1
 
 Initial State:
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 l[S1.TOP = 5] --> y0
 y0 <--> y1 <--> y2 <--> y3
@@ -964,7 +964,7 @@ end
 
 First iteration. The top from the first stack was popped, we check if its equal to 3. Since it's not we place it in the other queue
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 l[S1.TOP = 3] --> y1
 y1 <--> y2 <--> y3
@@ -992,7 +992,7 @@ end
 
 Second iteration, we pop a value and find that it is equal to 3. We return TRUE because we've proven that Stack_1 contains the value 3.
 
-:::mermaid
+:::{mermaid}
 flowchart LR
 l[S1.TOP = 3] --> y2
 y2 <--> y3
