@@ -67,7 +67,7 @@ Each successive forward and backwards pass allows the model to try a prediction,
 
 The opposite of supervised learning. The training data is provided with no labels and the machine will use various techniques to group instances in buckets of similarity.
 
-For example a clustering algorithm will group users 
+For example a clustering algorithm will group users
 of an application such as youtube by the channels that they listen to. The algorithm will automatically be able to pick up on people with varying interests (cat videos, DIY videos, etc) without the need for a human to label the instances.
 
 That is the basis of how the Youtube/Netflix recommendations systems can find videos/series that you may want to watch with very good accuracy.
