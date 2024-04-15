@@ -91,3 +91,5 @@ pwd #short for "print working directory"
 g++ main.cpp -o app #compile,assemble & link c++ file and output to app
 ./app #run the newly compiled app
 ```
+
+**The Linux Documenation Project** provides a very extensive and in-depth introduction to the bash command line language: [link](https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html)
