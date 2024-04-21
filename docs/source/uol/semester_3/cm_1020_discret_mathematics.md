@@ -76,3 +76,71 @@ There are 4 set operations: Intersection ($\cap$), Union ($\cup$), Difference ($
 - Union: the set of elements that appears in **EITHER** sets: $A \cup B = \{x | x \in A \lor x \in B\}$
 - Difference: the set of elements in the first set that **DONT** appear in the second $A - B = \{x | x \in A \land x \notin B\}$
 - Symetric Difference: the set of element in **EITHER** sets but **NOT** in both $A \otimes B = \{x | (x \in \{A\cup B\}) \land (x \notin \{A\cap B\})\}$
+
+![set_operations](../../static/images/CM1020_DM/set_operations.png)
+
+### Set Complement
+
+The complement of a set $A$ is all elements that belong to the universal $U$ set but not to the set $A$. It is noted as  
+$\=A$ or $A'$. Formaly $\=A = \{x | x \in \mathbb{U} \land x \notin A\}$
+
+![set_complement](../../static/images/CM1020_DM/set_complement.png)
+
+### De Morgan's Laws
+
+De Morgan's law are a set of rules usefull in negating set expressions. They were formalized by Augustus de Morgan in the  
+19th century.
+
+- The complement of a union of two sets is the intersection of the complements of each of the two sets
+  - $(A \cup B)' = A' \cap B'$
+- The complement of an intersection of two sets is the union of the complement of each of the two sets
+  - $(A \cap B)' = A' \cup B'$
+
+This can be demonstrated using membership tables
+
+| $A$ | $B$ | $A'$ | $B'$ | $A\cup B$ | $(A\cup B)'$ | $A'\cap B'$ | $A\cap B$ | $(A\cap B)'$ | $A'\cap B'$ |
+|-----|-----|------|------|-----------|--------------|-------------|-----------|--------------|-------------|
+| 0   | 0   | 1    | 1    | 0         | 1            | 1           | 0         | 1            | 1           |
+| 0   | 1   | 1    | 0    | 1         | 0            | 1           | 0         | 1            | 0           |
+| 1   | 0   | 0    | 1    | 1         | 0            | 1           | 0         | 1            | 0           |
+| 1   | 1   | 0    | 0    | 1         | 0            | 0           | 1         | 0            | 0           |
+
+### Commutative, Distributive & Associative Properties of Operators
+
+The properties of sets are curcial in simplifying and manipulating expressions and equations using sets.
+
+**Commutativity** is the property where the order of set involved in an operation does not affect the outcome
+
+- Unions, intersection and symetric differences are commutative
+  - $A \cup B = B \cup A$
+  - $A \cap B = B \cap A$
+  - $A \otimes B = B \otimes A$
+- Differences are **NOT** commutative $A - B \ne B - A$
+  - If $A = \{1,2\}$ & $B = \{1,3\}$ then $A-B=\{2\}$ & $B-A=\{3\}$
+
+**Associativity** is the property where the order of the operations does not affect the outcome as long of the sequence of sets  
+remains the same.
+
+- Unions, intersection and symetric differences are assocaitive
+  - $A \cup (B \cup C) = (A \cup B) \cup C$
+  - $A \cap (B \cap C) = (A \cap B) \cap C$
+  - $A \otimes (B \otimes C) = (A \otimes B) \otimes C$
+- Differences are **NOT** associative  $A - (B - C) \ne (A - B) - C$
+  - If $A = \{1,2\}$, $B = \{1,3\}$ & $C = \{2,3\}$ then:
+    - $A - (B - C) = \{1, 2\} - \{2\} = \{2\}$
+    - $(A - B) - C = \{2\} - \{2, 3\} = \emptyset$
+
+**Distributivity**  is the property where one operation can be distributed over another operation, combining the elements in a way  
+that maintains the equivalence.
+
+- Intersection over union: $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$
+- Union over intersection: $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+
+### Set Partitions
+
+A paritioning of a set is enumerating a set of subsets that collectivly contain all the elements of the original set but  
+have no overlap among them.
+
+Formally we have $A_1 \cup A_2 \cup ... A_n = A$ and $A_i \cap A_j = \emptyset$ for all $i \ne j$ and $i,j \in [1..n]$
+
+![set_partitioning](../../static/images/CM1020_DM/set_partitioning.png)
