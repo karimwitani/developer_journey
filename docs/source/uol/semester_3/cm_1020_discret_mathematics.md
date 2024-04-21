@@ -49,11 +49,11 @@ B is a subset of A or $B \subseteq A$
 Some sets are finite (the students of a class) while some are infinite (all possible integers). There are a few special  
 sets that we should keep in mind
 
-- Set of integers : $\mathbb{Z} = \{...,-1,0,1,2,...\}$
-- Set of positive integers : $\mathbb{N} = \mathbb{Z^+} = \{1,2,3,4\}$
-- Set of whole numbers : $\mathbb{W} = \{0,1,2,...\}$
-- Set of rational numbers : $\mathbb{Q} = \{\frac{p}{q} | p,q \in \mathbb{Z} \land q \neq 0\}$
-- Set of real numbers : $\mathbb{R}$
+- Set of integers : $\Z = \{...,-1,0,1,2,...\}$
+- Set of positive integers : $\N = \Z^+ = \{1,2,3,4\}$
+- Set of whole numbers : $W = \{0,1,2,...\}$
+- Set of rational numbers : $Q = \{\frac{p}{q} | p,q \in \Z \land q \neq 0\}$
+- Set of real numbers : $\R$
 
 ### Methods to Build Sets
 
@@ -82,7 +82,7 @@ There are 4 set operations: Intersection ($\cap$), Union ($\cup$), Difference ($
 ### Set Complement
 
 The complement of a set $A$ is all elements that belong to the universal $U$ set but not to the set $A$. It is noted as  
-$\=A$ or $A'$. Formaly $\=A = \{x | x \in \mathbb{U} \land x \notin A\}$
+$\=A$ or $A'$. Formaly $\=A = \{x | x \in U \land x \notin A\}$
 
 ![set_complement](../../static/images/CM1020_DM/set_complement.png)
 
