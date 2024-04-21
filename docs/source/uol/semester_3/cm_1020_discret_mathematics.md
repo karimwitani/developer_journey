@@ -82,7 +82,7 @@ There are 4 set operations: Intersection ($\cap$), Union ($\cup$), Difference ($
 ### Set Complement
 
 The complement of a set $A$ is all elements that belong to the universal $U$ set but not to the set $A$. It is noted as  
-$\=A$ or $A'$. Formaly $\=A = \{x | x \in U \land x \notin A\}$
+$A'$. Formaly $A' = \{x | x \in U \land x \notin A\}$
 
 ![set_complement](../../static/images/CM1020_DM/set_complement.png)
 
