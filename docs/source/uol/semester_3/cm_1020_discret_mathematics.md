@@ -49,11 +49,11 @@ B is a subset of A or $B \subseteq A$
 Some sets are finite (the students of a class) while some are infinite (all possible integers). There are a few special  
 sets that we should keep in mind
 
-- Set of integers : $\Z = \{...,-1,0,1,2,...\}$
-- Set of positive integers : $\N = \Z^+ = \{1,2,3,4\}$
+- Set of integers : $Z = \{...,-1,0,1,2,...\}$
+- Set of positive integers : $N = Z^+ = \{1,2,3,4\}$
 - Set of whole numbers : $W = \{0,1,2,...\}$
 - Set of rational numbers : $Q = \{\frac{p}{q} | p,q \in Z \land q \neq 0\}$
-- Set of real numbers : $\R$
+- Set of real numbers : $R$
 
 ### Methods to Build Sets
 
