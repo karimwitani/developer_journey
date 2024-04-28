@@ -260,3 +260,162 @@ enum Direction {
     West
 };
 ```
+
+### Vectors
+
+Vectors are a dynamic array-like data structure that offer dynamic resizing, allowing you to add and remove elements efficiently.
+
+```cpp
+#include <vector> // Include the vector header
+
+int main() {
+    // Declare an empty vector of integers
+    std::vector<int> myVector;
+
+    // Add elements to the vector using push_back
+    myVector.push_back(10);
+    myVector.push_back(20);
+    myVector.push_back(30);
+
+    // Access elements using the [] operator or the at() function
+    std::cout << "First element: " << myVector[0] << std::endl;
+    std::cout << "Second element: " << myVector.at(1) << std::endl;
+
+    // Iterate over the vector
+    for (int i = 0; i < myVector.size(); ++i) {
+        std::cout << "Element " << i << ": " << myVector[i] << std::endl;
+    }
+
+    // Modify elements
+    myVector[1] = 25;
+
+    // Remove elements using erase
+    myVector.erase(myVector.begin() + 1); // Remove the second element
+
+    // Size of the vector
+    std::cout << "Size of the vector: " << myVector.size() << std::endl;
+
+    // Clear the vector
+    myVector.clear();
+
+    // Check if the vector is empty
+    if (myVector.empty()) {
+        std::cout << "Vector is empty." << std::endl;
+    }
+
+    return 0;
+}
+```
+
+### Classes
+
+Classes act as blueprint for creating gobjects in object oriented programing. They define the data that comes into those objects as well as the methods/functions that they can execute.
+
+- They can define public or private members
+  - private attributes/methods can only be accessed within the object itself
+  - public method can be called outside of the object
+- Constructor functions define how objects are created
+  - They are function within classes that have the same name as the class that i initialises.
+  - Can make use of `initializer lists` to assign arguments to class attributes
+  - The opposite are desctructor classes and define how they are disposed.
+- The `this` keyword is used to reference the object itself from within it
+- Classes can be derived from other classes, this is called `inheritance`
+
+```cpp
+#include <iostream>
+#include <string>
+#include <vector>
+
+// Enum to represent the type of order book entry
+enum class OrderBookType { Bid, Ask };
+
+class OrderBookEntry {
+    public:
+        // Constructor with initializer list to initialize member variables
+        OrderBookEntry(
+            double _price,
+            double _amount,
+            std::string _timestamp,
+            std::string _product,
+            OrderBookType _orderType)
+            : price(_price),
+            amount(_amount),
+            timestamp(_timestamp),
+            product(_product),
+            orderType(_orderType) {}
+    
+    // Getter functions
+    double getPrice() const { return price; }
+    double getAmount() const { return amount; }
+    std::string getTimestamp() const { return timestamp; }
+    std::string getProduct() const { return product; }
+    OrderBookType getOrderType() const { return orderType; }
+
+
+    // private attribute cannot be access from outside the class itself
+    // for example: order1.price would lead to an error
+    private:
+        double price;
+        double amount;
+        std::string timestamp;
+        std::string product;
+        OrderBookType orderType;
+};
+
+// Derived class representing a trade entry, inheriting from OrderBookEntry
+class TradeEntry : public OrderBookEntry {
+    public:
+        // Constructor with initializer list, calling base class constructor
+        TradeEntry(
+            double _price,
+            double _amount,
+            std::string _timestamp,
+            std::string _product,
+            OrderBookType _orderType,
+            std::string _tradeId,
+            std::string _buyer,
+            std::string _seller)
+            : OrderBookEntry(_price, _amount, _timestamp, _product, _orderType),
+            tradeId(_tradeId),
+            buyer(_buyer),
+            seller(_seller) {}
+
+        // Getter functions specific to TradeEntry
+        std::string getTradeId() const { return tradeId; }
+        std::string getBuyer() const { return buyer; }
+        std::string getSeller() const { return seller; }
+
+    private:
+        std::string tradeId;
+        std::string buyer;
+        std::string seller;
+};
+
+int main() {
+    // Create an OrderBookEntry object using the constructor
+    OrderBookEntry entry1(100.0, 10.0, "2024-04-28 09:00:00", "BTC/USD", OrderBookType::Bid);
+
+    // Create another OrderBookEntry object
+    OrderBookEntry entry2(150.0, 8.0, "2024-04-28 09:05:00", "ETH/USD", OrderBookType::Ask);
+
+    // Create a vector to store OrderBookEntry objects
+    std::vector<OrderBookEntry> orderBook;
+
+    // Add the entries to the vector
+    orderBook.push_back(entry1);
+    orderBook.push_back(entry2);
+
+    // Create a TradeEntry object using the constructor
+    TradeEntry trade1(150.0, 8.0, "2024-04-28 09:05:00", "ETH/USD", OrderBookType::Ask, "123456", "Alice", "Bob");
+
+    return 0;
+}
+```
+
+Additional references:
+
+- W3CSchools [C++ constructors](https://www.w3schools.com/cpp/cpp_constructors.asp)
+- CPP Reference [Default Constructors](https://en.cppreference.com/w/cpp/language/default_constructor)
+- CPP Reference [Initializer Lists](https://en.cppreference.com/w/cpp/language/constructor)
+- GeeksForGeeks [Initializer Lists](https://www.geeksforgeeks.org/when-do-we-use-initializer-list-in-c/)
+- TutorialsPoint [C++ Class Objects](https://www.tutorialspoint.com/cplusplus/cpp_classes_objects.htm)
