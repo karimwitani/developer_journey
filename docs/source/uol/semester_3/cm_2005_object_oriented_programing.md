@@ -448,7 +448,100 @@ A **library** has **books**. The Libray class is an **aggregation** of books, ho
 
 On the other can a **house** has **rooms**. The House class is a **composition** of **Room** classes.
 
-TODO: ADD CODE EXAMPLE FOR THE ABOVE
+Let's dive into some code examples:
+
+#### Inheritance
+
+```cpp
+#include <iostream>
+
+// Base class
+class Animal {
+public:
+    void speak() const {
+        std::cout << "Some sound" << std::endl;
+    }
+};
+
+// Derived class
+class Dog : public Animal {
+public:
+    void speak() const {
+        std::cout << "Woof" << std::endl;
+    }
+};
+
+int main() {
+    Animal myAnimal;
+    Dog myDog;
+
+    myAnimal.speak();  // Outputs: Some sound
+    myDog.speak();     // Outputs: Woof (overrides the base class method)
+
+    return 0;
+}
+```
+
+#### Aggregation
+
+The `Library` class is defined as having a vector of `Books`. The books themselves are logically separate from the library class but the library class has a member that is defined using the books class.
+
+```cpp
+#include <iostream>
+#include <vector>
+
+class Book {
+public:
+    std::string title;
+    Book(std::string t) : title(t) {}
+};
+
+class Library {
+public:
+    std::vector<Book*> books;  // Library "has" books
+};
+
+int main() {
+    Library library;
+    library.books.push_back(new Book("1984"));
+    library.books.push_back(new Book("Brave New World"));
+
+    for (Book* book : library.books) {
+        std::cout << "Book: " << book->title << std::endl;
+    }
+
+    return 0;
+}
+```
+
+#### Composition
+
+In the case of compostion we can enforce that instances of the `Room` class can only be instanciated within the `House` class by making the Room constructor private and thus only accessible to `friend` classes such as the `House` class.
+
+```cpp
+class Room {
+    friend class House;
+private:
+    Room(std::string name) : name(name) {}  // Private constructor
+public:
+    std::string name;
+};
+
+class House {
+    std::vector<Room> rooms;
+public:
+    House() {
+        rooms.emplace_back("Living Room");
+        rooms.emplace_back("Kitchen");
+        rooms.emplace_back("Bedroom");
+    }
+    void listRooms() const {
+        for (const Room& room : rooms) {
+            std::cout << "Room: " << room.name << std::endl;
+        }
+    }
+};
+```
 
 ### For Loops
 
@@ -610,3 +703,7 @@ When we compile the code we need to include the new `OrderBookEntry.cpp` in the 
 > .\a.exe
 Order type:BTC/USD
 ```
+
+### Scopes
+
+### Fragile Base Class Problem
