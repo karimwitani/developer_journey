@@ -218,13 +218,13 @@ Let's consider an example, the number 6.75
 
 - 6.75 in binary is 110.11
 - We normalize it: 1.1011
-  - Normalisation works by shifting the number to the left of right so that the leftmost bit is a 1.
+  - Normalisation works by shifting the decimal point to the left or right so that the leftmost bit is a 1.
   - Keep track of the number of the number of shifts executed to update the exponent
   - Example: 0000.101 becomes 1.01 and the exponent value is updated by -4
   - Example: 1000.1 becomes 1.0001 and the exponent value is updated by +3
 - The expoenent bias is updated by +2 (2 shifts left)
-  - The expoenent bias is by default 127 (1111 1111), number under 127 denote negative exponents
-- The significand is right padded with zeros untill 23 bits are used
+  - The exponent bias is by default 127 (1111 1111), number under 127 denote negative exponents
+- The significand is right padded with zeros until 23 bits are used
 
 | Sign (1 bit) | Exponent (8 bits) | Significand (23 bits)   |
 |--------------|-------------------|-------------------------|
@@ -246,19 +246,33 @@ In C++, enums (short for enumerations) provide a way to define a set of named co
 
 ```cpp
 // Define an enum named Color with constants Red, Green, and Blue
-enum Color {
+enum class Color {
     Red,
     Green,
     Blue
 };
 
-// Define an enum named Direction with constants North, South, East, and West
-enum Direction {
-    North,
-    South,
-    East,
-    West
+// Enums can be assigned integer values. In the below example a human would care to know
+// the HTTP response was OK but for a machine the integer code 200 is what is usefull
+enum class HTTPResponse {
+    OK = 200,
+    BadRequest = 400,
+    Unauthorized = 401,
+    Forbidden = 403,
+    NotFound = 404,
+    InternalServerError = 500,
+    NotImplemented = 501,
+    BadGateway = 502,
+    ServiceUnavailable = 503
 };
+
+int main() {
+    if (responseCode == HTTPResponse::OK) {
+        std::cout << "200 OK - Request succeeded" << std::endl;
+    } else {
+        // something else
+    }
+}
 ```
 
 ### Vectors
@@ -319,7 +333,7 @@ Classes act as blueprint for creating gobjects in object oriented programing. Th
   - Can make use of `initializer lists` to assign arguments to class attributes
   - The opposite are desctructor classes and define how they are disposed.
 - The `this` keyword is used to reference the object itself from within it
-- Classes can be derived from other classes, this is called `inheritance`
+- Classes can be derived from other classes, this is called `inheritance`. More on that later.
 
 ```cpp
 #include <iostream>
@@ -419,3 +433,180 @@ Additional references:
 - CPP Reference [Initializer Lists](https://en.cppreference.com/w/cpp/language/constructor)
 - GeeksForGeeks [Initializer Lists](https://www.geeksforgeeks.org/when-do-we-use-initializer-list-in-c/)
 - TutorialsPoint [C++ Class Objects](https://www.tutorialspoint.com/cplusplus/cpp_classes_objects.htm)
+
+#### Class Inheritance, Composition & Aggregation
+
+A point needs to be made about over-simplifying what inheritance means because it goes beyond just a class inheriting the characteristics of another class.
+
+Inheritance implies a `is a` relation but there are other manner that classes can be related to others such as aggregation & composition which imply a `has a` relation.
+
+The difference between composition and aggregation lies in the strengh of the "ownership" relation between the two.
+
+Let's first provide a simple conceptual example. A **dog** is an **animal**, the Dog class is an **inheritance** from the Animal class.
+
+A **library** has **books**. The Libray class is an **aggregation** of books, however, their relation is loose and books can exist without a library.
+
+On the other can a **house** has **rooms**. The House class is a **composition** of **Room** classes.
+
+TODO: ADD CODE EXAMPLE FOR THE ABOVE
+
+### For Loops
+
+There are three ways of iterating over objects stored in arrays/vectors
+
+```cpp
+#include <vector>
+
+// Declare an empty vector of orders
+std::vector<OrderBookEntry> orders;
+
+// .... add orders to vectors
+
+// Apporach #1: classic array style syntax 
+// Iterate over the indexes of range 0 to orders.size() and increment along the way 
+// Note that ++i is more efficient the i++. The former increments in place while the second
+// creates a copy, increments it and then assigns it back (1 vs 3 operations)
+for (unsigned int i = 0; i < orders.size(); ++i) {
+    std:coutn << "The price is:" << orders[i].price << std::endl;
+}
+
+// Apporach #2: Iterate over the items in the order vectors
+// This approach makes a copy of the order object at each iteration
+// Less desirable behavior if processing large amount of data
+for (OrderBookEntry order: orders){
+    std:coutn << "The price is:" << order.price << std::endl;
+}
+
+// Apporach #3: Same as #2 but avoid making copies of the objects in vector
+// by adding the & operator which is a "call by reference" which accesses the original copy
+// in the vector
+for (OrderBookEntry& order: orders){
+    std:coutn << "The price is:" << order.price << std::endl;
+}
+```
+
+### Header Files
+
+The specification of a class and its implementation are separate in C++. In `.h` header files we specify a classe's architecture while in the corresponding `.cpp` files we define the actual implementation.
+
+This is useful in order to make the code more modular. First we move the specification of the `OrderBookEntry` into a new file `OrderBookEntry.h`
+
+```cpp
+//OrderBookEntry.h
+#include <iostream>
+#include <string>
+#include <vector>
+
+enum class OrderBookType
+{
+    Bid,
+    Ask
+};
+
+class OrderBookEntry
+{
+public:
+    OrderBookEntry(
+        double _price,
+        double _amount,
+        std::string _timestamp,
+        std::string _product,
+        OrderBookType _orderType);
+
+    // Getter functions
+    double getPrice() const;
+    double getAmount() const;
+    std::string getTimestamp() const;
+    std::string getProduct() const;
+    OrderBookType getOrderType() const;
+
+private:
+    double price;
+    double amount;
+    std::string timestamp;
+    std::string product;
+    OrderBookType orderType;
+};
+```
+
+Note that we don't write the logic of the constructor and class methods in here. We only define what the system should **expect** from this class in terms of class methods, their return type and wether they are private of public.
+
+We then define the implementation of in a new file OrderBookEntry.cpp
+
+1. We include the header file in the .cpp so that the preprocessor is aware of the specifications during the compilation process
+2. We write the logic of the class within each of its member methods and its constructor function
+   1. We use the OrderBookEntry:: notation to resolve to the namespace of the class from the header file
+
+```cpp
+//OrderBookEntry.cpp
+#include "OrderBookEntry.h"
+
+OrderBookEntry::OrderBookEntry(
+    double _price,
+    double _amount,
+    std::string _timestamp,
+    std::string _product,
+    OrderBookType _orderType)
+    : price(_price),
+      amount(_amount),
+      timestamp(_timestamp),
+      product(_product),
+      orderType(_orderType)
+{
+    // Do something
+}
+
+// Getter functions
+double OrderBookEntry::getPrice() const { 
+    return price; 
+};
+
+double OrderBookEntry::getAmount() const {
+    return amount;
+}
+
+std::string OrderBookEntry::getTimestamp() const {
+    return timestamp;
+};
+
+std::string OrderBookEntry::getProduct() const {
+    return product;
+};
+
+OrderBookType OrderBookEntry::getOrderType() const {
+    return orderType; 
+};
+```
+
+We include the header in the main.cpp file so that we can make use of the OrderBookEntry class
+
+```cpp
+//main.cpp
+#include "OrderBookEntry.h"
+
+int main()
+{
+    // Create an OrderBookEntry object using the constructor
+    OrderBookEntry entry1(100.0, 10.0, "2024-04-28 09:00:00", "BTC/USD", OrderBookType::Bid);
+
+    // Create another OrderBookEntry object
+    OrderBookEntry entry2(150.0, 8.0, "2024-04-28 09:05:00", "ETH/USD", OrderBookType::Ask);
+
+    // Create a vector to store OrderBookEntry objects
+    std::vector<OrderBookEntry> orderBook;
+
+    // Add the entries to the vector
+    orderBook.push_back(entry1);
+    orderBook.push_back(entry2);
+
+    std::cout << "Order type:" << orderBook[0].getProduct() << std::endl;
+}
+```
+
+When we compile the code we need to include the new `OrderBookEntry.cpp` in the compile command
+
+```powershell
+> g++ --std=c++17 .\main.cpp .\OrderBookEntry.cpp
+> .\a.exe
+Order type:BTC/USD
+```
