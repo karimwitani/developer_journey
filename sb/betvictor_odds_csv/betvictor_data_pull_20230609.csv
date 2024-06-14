@@ -1,0 +1,32 @@
+data_pull_date ,meet_name      ,meet_date  ,competitor_1_name      ,competitor_1_odds ,competitor_2_name    ,competitor_2_odds
+2023-06-09     ,UFC 289        ,2023-06-10 ,Diana Belbita          ,5/6               ,Maria Oliveira       ,20/21
+2023-06-09     ,UFC 289        ,2023-06-10 ,David Dvorak           ,4/11              ,Stephen Erceg        ,21/10
+2023-06-09     ,UFC 289        ,2023-06-10 ,Blake Bilder           ,4/11              ,Kyle Nelson          ,21/10
+2023-06-09     ,UFC 289        ,2023-06-10 ,Aiemann Zahabi         ,20/21             ,Aori Qileng          ,5/6
+2023-06-09     ,UFC 289        ,2023-06-10 ,Miranda Maverick       ,1/3               ,Jasmine Jasudavicius ,9/4
+2023-06-09     ,UFC 289        ,2023-06-10 ,Nassourdine Imavov     ,8/13              ,Chris Curtis         ,5/4
+2023-06-09     ,UFC 289        ,2023-06-10 ,Marc-Andre Barriault   ,8/11              ,Eryk Anders          ,11/10
+2023-06-09     ,UFC 289        ,2023-06-10 ,Dan Ige                ,4/11              ,Nate Landwehr        ,21/10
+2023-06-09     ,UFC 289        ,2023-06-10 ,Mike Malott            ,4/9               ,Adam Fugitt          ,7/4
+2023-06-09     ,UFC 289        ,2023-06-10 ,Charles Oliveira       ,6/5               ,Beneil Dariush       ,4/6
+2023-06-09     ,UFC 289        ,2023-06-10 ,Amanda Nunes           ,2/7               ,Irene Aldana         ,13/5
+2023-06-09     ,UFC 290        ,2023-07-08 ,Bo Nickal              ,1/9               ,Tresean Gore         ,11/2
+2023-06-09     ,UFC 290        ,2023-07-08 ,Jalin Turner           ,8/15              ,Dan Hooker           ,6/4
+2023-06-09     ,UFC 290        ,2023-07-08 ,Robert Whittaker       ,2/7               ,Dricus Du Plessis    ,13/5
+2023-06-09     ,UFC 290        ,2023-07-08 ,Brandon Moreno         ,8/15              ,Alexandre Pantoja    ,6/4
+2023-06-09     ,UFC 290        ,2023-07-08 ,Alexander Volkanovski  ,1/5               ,Yair Rodriguez       ,7/2
+2023-06-09     ,UFC on ESPN 47 ,2023-06-17 ,Cristian Quinonez      ,8/15              ,Kyung Ho Kang        ,6/4
+2023-06-09     ,UFC on ESPN 47 ,2023-06-17 ,Alessandro Costa       ,4/9               ,Jimmy Flick          ,7/4
+2023-06-09     ,UFC on ESPN 47 ,2023-06-17 ,Raoni Barcelos         ,4/9               ,Miles Johns          ,7/4
+2023-06-09     ,UFC on ESPN 47 ,2023-06-17 ,Muslim Salikhov        ,1/2               ,Nicolas Dalby        ,13/8
+2023-06-09     ,UFC on ESPN 47 ,2023-06-17 ,Manuel Torres          ,8/13              ,Nikolas Motta        ,13/10
+2023-06-09     ,UFC on ESPN 47 ,2023-06-17 ,Pat Sabatini           ,8/15              ,Lucas Almeida        ,6/4
+2023-06-09     ,UFC on ESPN 47 ,2023-06-17 ,Christian Leroy Duncan ,8/13              ,Armen Petrosyan      ,13/10
+2023-06-09     ,UFC on ESPN 47 ,2023-06-17 ,Arman Tsarukyan        ,1/10              ,Joaquim Silva        ,6/1
+2023-06-09     ,UFC on ESPN 47 ,2023-06-17 ,Marvin Vettori         ,4/6               ,Jared Cannonier      ,6/5
+2023-06-09     ,UFC on ABC 5   ,2023-06-24 ,Ilia Topuria           ,3/10              ,Josh Emmett          ,5/2
+2023-06-09     ,UFC 291        ,2023-07-29 ,Stephen Thompson       ,4/9               ,Michel Pereira       ,7/4
+2023-06-09     ,UFC 291        ,2023-07-29 ,Ikram Aliskerov        ,4/5               ,Paulo Costa          ,1/1
+2023-06-09     ,UFC 291        ,2023-07-29 ,Bobby Green            ,1/5               ,Tony Ferguson        ,7/2
+2023-06-09     ,UFC 291        ,2023-07-29 ,Jan Blachowicz         ,4/6               ,Alex Pereira         ,6/5
+2023-06-09     ,UFC 291        ,2023-07-29 ,Dustin Poirier         ,4/5               ,Justin Gaethje       ,1/1

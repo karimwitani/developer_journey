@@ -707,3 +707,5 @@ Order type:BTC/USD
 ### Scopes
 
 ### Fragile Base Class Problem
+
+## Topic 3

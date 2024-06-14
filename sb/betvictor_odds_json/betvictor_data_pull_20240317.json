@@ -1,0 +1,209 @@
+{
+    "data_pull_date": "2024-03-17",
+    "betting_data": [
+        {
+            "meet_name": "Oktagon 55",
+            "meet_url": "https://www.betvictor.com/en-gb/sports/1327866/meetings/704833410/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "Jacinta Austin",
+                        "odds": "1/1"
+                    },
+                    "competitor_2": {
+                        "name": "Karolina Wojcik",
+                        "odds": "4/5"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Jakub Bahnik",
+                        "odds": "4/6"
+                    },
+                    "competitor_2": {
+                        "name": "Wahid Najand",
+                        "odds": "11/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Lucia Szabova",
+                        "odds": "1/3"
+                    },
+                    "competitor_2": {
+                        "name": "Roza Gumienna",
+                        "odds": "11/5"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Michael Deiga-Scheck",
+                        "odds": "6/4"
+                    },
+                    "competitor_2": {
+                        "name": "Nikolaos Serbezis",
+                        "odds": "1/2"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Jorick Montagnac",
+                        "odds": "1/10"
+                    },
+                    "competitor_2": {
+                        "name": "Sebastian Heil",
+                        "odds": "5/1"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Karol Rysavy",
+                        "odds": "2/5"
+                    },
+                    "competitor_2": {
+                        "name": "Arijan Topallaj",
+                        "odds": "7/4"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Zdenek Polivka",
+                        "odds": "6/5"
+                    },
+                    "competitor_2": {
+                        "name": "Ion Taburceanu",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Jamie Cordero",
+                        "odds": "2/5"
+                    },
+                    "competitor_2": {
+                        "name": "Dominic Schober",
+                        "odds": "7/4"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Mate Kertesz",
+                        "odds": "5/4"
+                    },
+                    "competitor_2": {
+                        "name": "Niklas Stolze",
+                        "odds": "4/7"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Alexander Poppeck",
+                        "odds": "2/5"
+                    },
+                    "competitor_2": {
+                        "name": "Jeremy Kimball",
+                        "odds": "15/8"
+                    }
+                }
+            ],
+            "meet_date": "2024-03-23"
+        },
+        {
+            "meet_name": "UFC 300",
+            "meet_url": "https://www.betvictor.com/en-gb/sports/1327866/meetings/698750710/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "Holly Holm",
+                        "odds": "7/2"
+                    },
+                    "competitor_2": {
+                        "name": "Kayla Harrison",
+                        "odds": "2/9"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Bobby Green",
+                        "odds": "1/2"
+                    },
+                    "competitor_2": {
+                        "name": "Jim Miller",
+                        "odds": "6/4"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Calvin Kattar",
+                        "odds": "1/1"
+                    },
+                    "competitor_2": {
+                        "name": "Aljamain Sterling",
+                        "odds": "4/5"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Deiveson Figueiredo",
+                        "odds": "1/4"
+                    },
+                    "competitor_2": {
+                        "name": "Cody Garbrandt",
+                        "odds": "5/2"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Bo Nickal",
+                        "odds": "1/14"
+                    },
+                    "competitor_2": {
+                        "name": "Cody Brundage",
+                        "odds": "15/2"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Charles Oliveira",
+                        "odds": "6/4"
+                    },
+                    "competitor_2": {
+                        "name": "Arman Tsarukyan",
+                        "odds": "1/2"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Weili Zhang",
+                        "odds": "2/7"
+                    },
+                    "competitor_2": {
+                        "name": "Xiaonan Yan",
+                        "odds": "11/4"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Jiri Prochazka",
+                        "odds": "1/1"
+                    },
+                    "competitor_2": {
+                        "name": "Aleksandar Rakic",
+                        "odds": "8/11"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Justin Gaethje",
+                        "odds": "4/9"
+                    },
+                    "competitor_2": {
+                        "name": "Max Holloway",
+                        "odds": "13/8"
+                    }
+                }
+            ],
+            "meet_date": "2024-04-13"
+        }
+    ]
+}

@@ -1,0 +1,420 @@
+{
+    "data_pull_date": "2023-10-24",
+    "betting_data": [
+        {
+            "meet_name": "Oktagon 48",
+            "meet_url": "https://www.betvictor.com/en-ca/sports/1327866/meetings/663582210/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "Lee Chadwick",
+                        "odds": "11/20"
+                    },
+                    "competitor_2": {
+                        "name": "Zdenek Polivka",
+                        "odds": "13/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Shoaib Yousaf",
+                        "odds": "3/10"
+                    },
+                    "competitor_2": {
+                        "name": "Konmon Deh",
+                        "odds": "12/5"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Alex Lohore",
+                        "odds": "11/10"
+                    },
+                    "competitor_2": {
+                        "name": "Ion Surdu",
+                        "odds": "13/20"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Jaroslav Pokorny",
+                        "odds": "15/4"
+                    },
+                    "competitor_2": {
+                        "name": "Shem Rock",
+                        "odds": "9/50"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Jack Cartwright",
+                        "odds": "33/40"
+                    },
+                    "competitor_2": {
+                        "name": "Antun Racic",
+                        "odds": "33/40"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Jakub Bahnik",
+                        "odds": "27/20"
+                    },
+                    "competitor_2": {
+                        "name": "Akonne Wanliss",
+                        "odds": "21/40"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Scott Askham",
+                        "odds": "2/5"
+                    },
+                    "competitor_2": {
+                        "name": "Marc Doussis",
+                        "odds": "7/4"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Aaron Aby",
+                        "odds": "7/5"
+                    },
+                    "competitor_2": {
+                        "name": "Elias Garcia",
+                        "odds": "8/15"
+                    }
+                }
+            ],
+            "meet_date": "2023-11-04"
+        },
+        {
+            "meet_name": "UFC Fight Night 231",
+            "meet_url": "https://www.betvictor.com/en-ca/sports/1327866/meetings/666455010/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "Kaue Fernandes",
+                        "odds": "27/20"
+                    },
+                    "competitor_2": {
+                        "name": "Marc Diakiese",
+                        "odds": "11/20"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Eduarda Moura",
+                        "odds": "1/4"
+                    },
+                    "competitor_2": {
+                        "name": "Montserrat Ruiz",
+                        "odds": "3/1"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Lucas Alexander",
+                        "odds": "13/8"
+                    },
+                    "competitor_2": {
+                        "name": "David Onama",
+                        "odds": "1/2"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Angela Hill",
+                        "odds": "1/1"
+                    },
+                    "competitor_2": {
+                        "name": "Denise Gomes",
+                        "odds": "4/5"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Vitor Petrino",
+                        "odds": "2/5"
+                    },
+                    "competitor_2": {
+                        "name": "Modestas Bukauskas",
+                        "odds": "37/20"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Elizeu Zaleski",
+                        "odds": "9/4"
+                    },
+                    "competitor_2": {
+                        "name": "Rinat Fakhretdinov",
+                        "odds": "3/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Victor Hugo",
+                        "odds": "9/5"
+                    },
+                    "competitor_2": {
+                        "name": "Daniel Marcos",
+                        "odds": "2/5"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Elves Brenner",
+                        "odds": "7/10"
+                    },
+                    "competitor_2": {
+                        "name": "Esteban Ribovics",
+                        "odds": "11/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Ismael Bonfim",
+                        "odds": "11/50"
+                    },
+                    "competitor_2": {
+                        "name": "Vinc Pichel",
+                        "odds": "33/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Rodolfo Vieira",
+                        "odds": "1/1"
+                    },
+                    "competitor_2": {
+                        "name": "Armen Petrosyan",
+                        "odds": "3/4"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Caio Borralho",
+                        "odds": "3/10"
+                    },
+                    "competitor_2": {
+                        "name": "Abus Magomedov",
+                        "odds": "12/5"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Rodrigo Nascimento",
+                        "odds": "4/9"
+                    },
+                    "competitor_2": {
+                        "name": "Don'Tale Mayes",
+                        "odds": "7/4"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Gabriel Bonfim",
+                        "odds": "1/5"
+                    },
+                    "competitor_2": {
+                        "name": "Nicolas Dalby",
+                        "odds": "7/2"
+                    }
+                }
+            ],
+            "meet_date": "2023-11-04"
+        },
+        {
+            "meet_name": "UFC 295",
+            "meet_url": "https://www.betvictor.com/en-ca/sports/1327866/meetings/645654710/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "Joshua Van",
+                        "odds": "9/25"
+                    },
+                    "competitor_2": {
+                        "name": "Kevin Borjas",
+                        "odds": "21/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Jared Gordon",
+                        "odds": "1/2"
+                    },
+                    "competitor_2": {
+                        "name": "Mark Madsen",
+                        "odds": "8/5"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Dennis Buzukja",
+                        "odds": "12/5"
+                    },
+                    "competitor_2": {
+                        "name": "Jamall Emmers",
+                        "odds": "3/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Mateusz Rebecki",
+                        "odds": "11/20"
+                    },
+                    "competitor_2": {
+                        "name": "Nurullo Aliev",
+                        "odds": "7/5"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Tabatha Ricci",
+                        "odds": "13/10"
+                    },
+                    "competitor_2": {
+                        "name": "Lupita Godinez",
+                        "odds": "3/5"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Matt Schnell",
+                        "odds": "9/5"
+                    },
+                    "competitor_2": {
+                        "name": "Stephen Erceg",
+                        "odds": "5/12"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Nazim Sadykhov",
+                        "odds": "13/20"
+                    },
+                    "competitor_2": {
+                        "name": "Viacheslav Borshchev",
+                        "odds": "5/4"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Jessica Andrade",
+                        "odds": "9/5"
+                    },
+                    "competitor_2": {
+                        "name": "Mackenzie Dern",
+                        "odds": "5/12"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Matt Frevola",
+                        "odds": "9/5"
+                    },
+                    "competitor_2": {
+                        "name": "Benoit Saint-Denis",
+                        "odds": "5/12"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Diego Lopes",
+                        "odds": "11/10"
+                    },
+                    "competitor_2": {
+                        "name": "Pat Sabatini",
+                        "odds": "7/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Jiri Prochazka",
+                        "odds": "11/10"
+                    },
+                    "competitor_2": {
+                        "name": "Alex Pereira",
+                        "odds": "7/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Jon Jones",
+                        "odds": "11/50"
+                    },
+                    "competitor_2": {
+                        "name": "Stipe Miocic",
+                        "odds": "3/1"
+                    }
+                }
+            ],
+            "meet_date": "2023-11-11"
+        },
+        {
+            "meet_name": "UFC Fight Night 232",
+            "meet_url": "https://www.betvictor.com/en-ca/sports/1327866/meetings/673589410/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "Brendan Allen",
+                        "odds": "9/25"
+                    },
+                    "competitor_2": {
+                        "name": "Paul Craig",
+                        "odds": "9/4"
+                    }
+                }
+            ],
+            "meet_date": "2023-11-18"
+        },
+        {
+            "meet_name": "UFC 296",
+            "meet_url": "https://www.betvictor.com/en-ca/sports/1327866/meetings/668017010/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "Shavkat Rakhmonov",
+                        "odds": "11/50"
+                    },
+                    "competitor_2": {
+                        "name": "Stephen Thompson",
+                        "odds": "33/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Tony Ferguson",
+                        "odds": "12/5"
+                    },
+                    "competitor_2": {
+                        "name": "Paddy Pimblett",
+                        "odds": "3/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Alexandre Pantoja",
+                        "odds": "5/12"
+                    },
+                    "competitor_2": {
+                        "name": "Brandon Royval",
+                        "odds": "37/20"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Leon Edwards",
+                        "odds": "4/5"
+                    },
+                    "competitor_2": {
+                        "name": "Colby Covington",
+                        "odds": "1/1"
+                    }
+                }
+            ],
+            "meet_date": "2023-12-15"
+        }
+    ]
+}

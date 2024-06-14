@@ -1,0 +1,141 @@
+{
+    "data_pull_date": "2023-09-17",
+    "betting_data": [
+        {
+            "meet_name": "UFC Fight Night 228",
+            "meet_url": "https://www.betvictor.com/en-ca/sports/1327866/meetings/661880210/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "Tim Means",
+                        "odds": "17/10"
+                    },
+                    "competitor_2": {
+                        "name": "Andre Fialho",
+                        "odds": "1/2"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Daniel Argueta",
+                        "odds": "4/9"
+                    },
+                    "competitor_2": {
+                        "name": "Miles Johns",
+                        "odds": "13/8"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Ricardo Ramos",
+                        "odds": "19/20"
+                    },
+                    "competitor_2": {
+                        "name": "Charles Jourdain",
+                        "odds": "4/5"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Bryan Battle",
+                        "odds": "1/2"
+                    },
+                    "competitor_2": {
+                        "name": "AJ Fletcher",
+                        "odds": "13/8"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Marina Rodriguez",
+                        "odds": "3/10"
+                    },
+                    "competitor_2": {
+                        "name": "Michelle Waterson",
+                        "odds": "5/2"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Bryce Mitchell",
+                        "odds": "7/10"
+                    },
+                    "competitor_2": {
+                        "name": "Dan Ige",
+                        "odds": "21/20"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Rafael Fiziev",
+                        "odds": "8/11"
+                    },
+                    "competitor_2": {
+                        "name": "Mateusz Gamrot",
+                        "odds": "11/10"
+                    }
+                }
+            ],
+            "meet_date": "2023-09-23"
+        },
+        {
+            "meet_name": "UFC 294",
+            "meet_url": "https://www.betvictor.com/en-ca/sports/1327866/meetings/662870510/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "Paulo Costa",
+                        "odds": "See More Markets"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Islam Makhachev",
+                        "odds": "See More Markets"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "See More Markets"
+                    }
+                }
+            ],
+            "meet_date": "2023-10-21"
+        },
+        {
+            "meet_name": "UFC Fight Night 230",
+            "meet_url": "https://www.betvictor.com/en-ca/sports/1327866/meetings/643662110/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "Curtis Blaydes",
+                        "odds": "2/1"
+                    },
+                    "competitor_2": {
+                        "name": "Jailton Almeida",
+                        "odds": "2/5"
+                    }
+                }
+            ],
+            "meet_date": "2023-11-04"
+        },
+        {
+            "meet_name": "UFC 295",
+            "meet_url": "https://www.betvictor.com/en-ca/sports/1327866/meetings/645654710/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "Jon Jones",
+                        "odds": "3/10"
+                    },
+                    "competitor_2": {
+                        "name": "Stipe Miocic",
+                        "odds": "5/2"
+                    }
+                }
+            ],
+            "meet_date": "2023-11-12"
+        }
+    ]
+}

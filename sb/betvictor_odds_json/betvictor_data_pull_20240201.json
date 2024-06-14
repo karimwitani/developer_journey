@@ -1,0 +1,3016 @@
+{
+    "data_pull_date": "2024-02-01",
+    "betting_data": [
+        {
+            "meet_name": "UFC Fight Night 235",
+            "meet_url": "https://www.betvictor.com/en-ca/sports/1327866/meetings/693717310/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Thomas Petersen",
+                        "odds": "4/7"
+                    },
+                    "competitor_2": {
+                        "name": "Jamal Pogues",
+                        "odds": "11/8"
+                    },
+                    "competitor_3": {
+                        "name": "Landon Quinones",
+                        "odds": "11/10"
+                    },
+                    "competitor_4": {
+                        "name": "Marquel Mederos",
+                        "odds": "8/11"
+                    },
+                    "competitor_5": {
+                        "name": "Luana Carolina",
+                        "odds": "11/10"
+                    },
+                    "competitor_6": {
+                        "name": "Julija Stoliarenko",
+                        "odds": "8/11"
+                    },
+                    "competitor_7": {
+                        "name": "Jeongyeong Lee",
+                        "odds": "4/6"
+                    },
+                    "competitor_8": {
+                        "name": "Blake Bilder",
+                        "odds": "6/5"
+                    },
+                    "competitor_9": {
+                        "name": "Themba Gorimbo",
+                        "odds": "2/5"
+                    },
+                    "competitor_10": {
+                        "name": "Pete Rodriguez",
+                        "odds": "15/8"
+                    },
+                    "competitor_11": {
+                        "name": "Azat Maksum",
+                        "odds": "4/9"
+                    },
+                    "competitor_12": {
+                        "name": "Charles Johnson",
+                        "odds": "7/4"
+                    },
+                    "competitor_13": {
+                        "name": "Molly McCann",
+                        "odds": "4/11"
+                    },
+                    "competitor_14": {
+                        "name": "Diana Delbita",
+                        "odds": "21/10"
+                    },
+                    "competitor_15": {
+                        "name": "Viviane Araujo",
+                        "odds": "11/4"
+                    },
+                    "competitor_16": {
+                        "name": "Natalia Silva",
+                        "odds": "2/7"
+                    },
+                    "competitor_17": {
+                        "name": "Gilbert Urbina",
+                        "odds": "1/2"
+                    },
+                    "competitor_18": {
+                        "name": "Charles Radtke",
+                        "odds": "6/4"
+                    },
+                    "competitor_19": {
+                        "name": "Aliaskhab Khizriev",
+                        "odds": "8/13"
+                    },
+                    "competitor_20": {
+                        "name": "Makhmud Muradov",
+                        "odds": "5/4"
+                    },
+                    "competitor_21": {
+                        "name": "Randy Brown",
+                        "odds": "2/5"
+                    },
+                    "competitor_22": {
+                        "name": "Muslim Salikhov",
+                        "odds": "15/8"
+                    },
+                    "competitor_23": {
+                        "name": "Renato Moicano",
+                        "odds": "8/15"
+                    },
+                    "competitor_24": {
+                        "name": "Drew Dober",
+                        "odds": "6/4"
+                    },
+                    "competitor_25": {
+                        "name": "Roman Dolidze",
+                        "odds": "5/4"
+                    },
+                    "competitor_26": {
+                        "name": "Nassourdine Imavov",
+                        "odds": "8/13"
+                    }
+                }
+            ],
+            "meet_date": "2024-02-03"
+        },
+        {
+            "meet_name": "UFC 298",
+            "meet_url": "https://www.betvictor.com/en-ca/sports/1327866/meetings/692746810/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "Andrea Lee",
+                        "odds": "11/8"
+                    },
+                    "competitor_2": {
+                        "name": "Miranda Maverick",
+                        "odds": "4/7"
+                    },
+                    "competitor_3": {
+                        "name": "Mingyang Zhang",
+                        "odds": "4/6"
+                    },
+                    "competitor_4": {
+                        "name": "Brendson Ribeiro",
+                        "odds": "5/4"
+                    },
+                    "competitor_5": {
+                        "name": "Marcos Rogerio de Lima",
+                        "odds": "5/8"
+                    },
+                    "competitor_6": {
+                        "name": "Justin Tafa",
+                        "odds": "13/10"
+                    },
+                    "competitor_7": {
+                        "name": "Anthony Hernandez",
+                        "odds": "11/8"
+                    },
+                    "competitor_8": {
+                        "name": "Ikram Aliskerov",
+                        "odds": "4/7"
+                    },
+                    "competitor_9": {
+                        "name": "Geoff Neal",
+                        "odds": "17/10"
+                    },
+                    "competitor_10": {
+                        "name": "Ian Machado Garry",
+                        "odds": "1/2"
+                    },
+                    "competitor_11": {
+                        "name": "Merab Dvalishvili",
+                        "odds": "8/15"
+                    },
+                    "competitor_12": {
+                        "name": "Henry Cejudo",
+                        "odds": "6/4"
+                    },
+                    "competitor_13": {
+                        "name": "Alexander Volkanovski",
+                        "odds": "7/10"
+                    },
+                    "competitor_14": {
+                        "name": "Ilia Topuria",
+                        "odds": "11/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Andrea Lee",
+                        "odds": "11/8"
+                    },
+                    "competitor_2": {
+                        "name": "Miranda Maverick",
+                        "odds": "4/7"
+                    },
+                    "competitor_3": {
+                        "name": "Mingyang Zhang",
+                        "odds": "4/6"
+                    },
+                    "competitor_4": {
+                        "name": "Brendson Ribeiro",
+                        "odds": "5/4"
+                    },
+                    "competitor_5": {
+                        "name": "Marcos Rogerio de Lima",
+                        "odds": "5/8"
+                    },
+                    "competitor_6": {
+                        "name": "Justin Tafa",
+                        "odds": "13/10"
+                    },
+                    "competitor_7": {
+                        "name": "Anthony Hernandez",
+                        "odds": "11/8"
+                    },
+                    "competitor_8": {
+                        "name": "Ikram Aliskerov",
+                        "odds": "4/7"
+                    },
+                    "competitor_9": {
+                        "name": "Geoff Neal",
+                        "odds": "17/10"
+                    },
+                    "competitor_10": {
+                        "name": "Ian Machado Garry",
+                        "odds": "1/2"
+                    },
+                    "competitor_11": {
+                        "name": "Merab Dvalishvili",
+                        "odds": "8/15"
+                    },
+                    "competitor_12": {
+                        "name": "Henry Cejudo",
+                        "odds": "6/4"
+                    },
+                    "competitor_13": {
+                        "name": "Alexander Volkanovski",
+                        "odds": "7/10"
+                    },
+                    "competitor_14": {
+                        "name": "Ilia Topuria",
+                        "odds": "11/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Andrea Lee",
+                        "odds": "11/8"
+                    },
+                    "competitor_2": {
+                        "name": "Miranda Maverick",
+                        "odds": "4/7"
+                    },
+                    "competitor_3": {
+                        "name": "Mingyang Zhang",
+                        "odds": "4/6"
+                    },
+                    "competitor_4": {
+                        "name": "Brendson Ribeiro",
+                        "odds": "5/4"
+                    },
+                    "competitor_5": {
+                        "name": "Marcos Rogerio de Lima",
+                        "odds": "5/8"
+                    },
+                    "competitor_6": {
+                        "name": "Justin Tafa",
+                        "odds": "13/10"
+                    },
+                    "competitor_7": {
+                        "name": "Anthony Hernandez",
+                        "odds": "11/8"
+                    },
+                    "competitor_8": {
+                        "name": "Ikram Aliskerov",
+                        "odds": "4/7"
+                    },
+                    "competitor_9": {
+                        "name": "Geoff Neal",
+                        "odds": "17/10"
+                    },
+                    "competitor_10": {
+                        "name": "Ian Machado Garry",
+                        "odds": "1/2"
+                    },
+                    "competitor_11": {
+                        "name": "Merab Dvalishvili",
+                        "odds": "8/15"
+                    },
+                    "competitor_12": {
+                        "name": "Henry Cejudo",
+                        "odds": "6/4"
+                    },
+                    "competitor_13": {
+                        "name": "Alexander Volkanovski",
+                        "odds": "7/10"
+                    },
+                    "competitor_14": {
+                        "name": "Ilia Topuria",
+                        "odds": "11/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Andrea Lee",
+                        "odds": "11/8"
+                    },
+                    "competitor_2": {
+                        "name": "Miranda Maverick",
+                        "odds": "4/7"
+                    },
+                    "competitor_3": {
+                        "name": "Mingyang Zhang",
+                        "odds": "4/6"
+                    },
+                    "competitor_4": {
+                        "name": "Brendson Ribeiro",
+                        "odds": "5/4"
+                    },
+                    "competitor_5": {
+                        "name": "Marcos Rogerio de Lima",
+                        "odds": "5/8"
+                    },
+                    "competitor_6": {
+                        "name": "Justin Tafa",
+                        "odds": "13/10"
+                    },
+                    "competitor_7": {
+                        "name": "Anthony Hernandez",
+                        "odds": "11/8"
+                    },
+                    "competitor_8": {
+                        "name": "Ikram Aliskerov",
+                        "odds": "4/7"
+                    },
+                    "competitor_9": {
+                        "name": "Geoff Neal",
+                        "odds": "17/10"
+                    },
+                    "competitor_10": {
+                        "name": "Ian Machado Garry",
+                        "odds": "1/2"
+                    },
+                    "competitor_11": {
+                        "name": "Merab Dvalishvili",
+                        "odds": "8/15"
+                    },
+                    "competitor_12": {
+                        "name": "Henry Cejudo",
+                        "odds": "6/4"
+                    },
+                    "competitor_13": {
+                        "name": "Alexander Volkanovski",
+                        "odds": "7/10"
+                    },
+                    "competitor_14": {
+                        "name": "Ilia Topuria",
+                        "odds": "11/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Andrea Lee",
+                        "odds": "11/8"
+                    },
+                    "competitor_2": {
+                        "name": "Miranda Maverick",
+                        "odds": "4/7"
+                    },
+                    "competitor_3": {
+                        "name": "Mingyang Zhang",
+                        "odds": "4/6"
+                    },
+                    "competitor_4": {
+                        "name": "Brendson Ribeiro",
+                        "odds": "5/4"
+                    },
+                    "competitor_5": {
+                        "name": "Marcos Rogerio de Lima",
+                        "odds": "5/8"
+                    },
+                    "competitor_6": {
+                        "name": "Justin Tafa",
+                        "odds": "13/10"
+                    },
+                    "competitor_7": {
+                        "name": "Anthony Hernandez",
+                        "odds": "11/8"
+                    },
+                    "competitor_8": {
+                        "name": "Ikram Aliskerov",
+                        "odds": "4/7"
+                    },
+                    "competitor_9": {
+                        "name": "Geoff Neal",
+                        "odds": "17/10"
+                    },
+                    "competitor_10": {
+                        "name": "Ian Machado Garry",
+                        "odds": "1/2"
+                    },
+                    "competitor_11": {
+                        "name": "Merab Dvalishvili",
+                        "odds": "8/15"
+                    },
+                    "competitor_12": {
+                        "name": "Henry Cejudo",
+                        "odds": "6/4"
+                    },
+                    "competitor_13": {
+                        "name": "Alexander Volkanovski",
+                        "odds": "7/10"
+                    },
+                    "competitor_14": {
+                        "name": "Ilia Topuria",
+                        "odds": "11/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Andrea Lee",
+                        "odds": "11/8"
+                    },
+                    "competitor_2": {
+                        "name": "Miranda Maverick",
+                        "odds": "4/7"
+                    },
+                    "competitor_3": {
+                        "name": "Mingyang Zhang",
+                        "odds": "4/6"
+                    },
+                    "competitor_4": {
+                        "name": "Brendson Ribeiro",
+                        "odds": "5/4"
+                    },
+                    "competitor_5": {
+                        "name": "Marcos Rogerio de Lima",
+                        "odds": "5/8"
+                    },
+                    "competitor_6": {
+                        "name": "Justin Tafa",
+                        "odds": "13/10"
+                    },
+                    "competitor_7": {
+                        "name": "Anthony Hernandez",
+                        "odds": "11/8"
+                    },
+                    "competitor_8": {
+                        "name": "Ikram Aliskerov",
+                        "odds": "4/7"
+                    },
+                    "competitor_9": {
+                        "name": "Geoff Neal",
+                        "odds": "17/10"
+                    },
+                    "competitor_10": {
+                        "name": "Ian Machado Garry",
+                        "odds": "1/2"
+                    },
+                    "competitor_11": {
+                        "name": "Merab Dvalishvili",
+                        "odds": "8/15"
+                    },
+                    "competitor_12": {
+                        "name": "Henry Cejudo",
+                        "odds": "6/4"
+                    },
+                    "competitor_13": {
+                        "name": "Alexander Volkanovski",
+                        "odds": "7/10"
+                    },
+                    "competitor_14": {
+                        "name": "Ilia Topuria",
+                        "odds": "11/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Andrea Lee",
+                        "odds": "11/8"
+                    },
+                    "competitor_2": {
+                        "name": "Miranda Maverick",
+                        "odds": "4/7"
+                    },
+                    "competitor_3": {
+                        "name": "Mingyang Zhang",
+                        "odds": "4/6"
+                    },
+                    "competitor_4": {
+                        "name": "Brendson Ribeiro",
+                        "odds": "5/4"
+                    },
+                    "competitor_5": {
+                        "name": "Marcos Rogerio de Lima",
+                        "odds": "5/8"
+                    },
+                    "competitor_6": {
+                        "name": "Justin Tafa",
+                        "odds": "13/10"
+                    },
+                    "competitor_7": {
+                        "name": "Anthony Hernandez",
+                        "odds": "11/8"
+                    },
+                    "competitor_8": {
+                        "name": "Ikram Aliskerov",
+                        "odds": "4/7"
+                    },
+                    "competitor_9": {
+                        "name": "Geoff Neal",
+                        "odds": "17/10"
+                    },
+                    "competitor_10": {
+                        "name": "Ian Machado Garry",
+                        "odds": "1/2"
+                    },
+                    "competitor_11": {
+                        "name": "Merab Dvalishvili",
+                        "odds": "8/15"
+                    },
+                    "competitor_12": {
+                        "name": "Henry Cejudo",
+                        "odds": "6/4"
+                    },
+                    "competitor_13": {
+                        "name": "Alexander Volkanovski",
+                        "odds": "7/10"
+                    },
+                    "competitor_14": {
+                        "name": "Ilia Topuria",
+                        "odds": "11/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Andrea Lee",
+                        "odds": "11/8"
+                    },
+                    "competitor_2": {
+                        "name": "Miranda Maverick",
+                        "odds": "4/7"
+                    },
+                    "competitor_3": {
+                        "name": "Mingyang Zhang",
+                        "odds": "4/6"
+                    },
+                    "competitor_4": {
+                        "name": "Brendson Ribeiro",
+                        "odds": "5/4"
+                    },
+                    "competitor_5": {
+                        "name": "Marcos Rogerio de Lima",
+                        "odds": "5/8"
+                    },
+                    "competitor_6": {
+                        "name": "Justin Tafa",
+                        "odds": "13/10"
+                    },
+                    "competitor_7": {
+                        "name": "Anthony Hernandez",
+                        "odds": "11/8"
+                    },
+                    "competitor_8": {
+                        "name": "Ikram Aliskerov",
+                        "odds": "4/7"
+                    },
+                    "competitor_9": {
+                        "name": "Geoff Neal",
+                        "odds": "17/10"
+                    },
+                    "competitor_10": {
+                        "name": "Ian Machado Garry",
+                        "odds": "1/2"
+                    },
+                    "competitor_11": {
+                        "name": "Merab Dvalishvili",
+                        "odds": "8/15"
+                    },
+                    "competitor_12": {
+                        "name": "Henry Cejudo",
+                        "odds": "6/4"
+                    },
+                    "competitor_13": {
+                        "name": "Alexander Volkanovski",
+                        "odds": "7/10"
+                    },
+                    "competitor_14": {
+                        "name": "Ilia Topuria",
+                        "odds": "11/10"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "Andrea Lee",
+                        "odds": "11/8"
+                    },
+                    "competitor_2": {
+                        "name": "Miranda Maverick",
+                        "odds": "4/7"
+                    },
+                    "competitor_3": {
+                        "name": "Mingyang Zhang",
+                        "odds": "4/6"
+                    },
+                    "competitor_4": {
+                        "name": "Brendson Ribeiro",
+                        "odds": "5/4"
+                    },
+                    "competitor_5": {
+                        "name": "Marcos Rogerio de Lima",
+                        "odds": "5/8"
+                    },
+                    "competitor_6": {
+                        "name": "Justin Tafa",
+                        "odds": "13/10"
+                    },
+                    "competitor_7": {
+                        "name": "Anthony Hernandez",
+                        "odds": "11/8"
+                    },
+                    "competitor_8": {
+                        "name": "Ikram Aliskerov",
+                        "odds": "4/7"
+                    },
+                    "competitor_9": {
+                        "name": "Geoff Neal",
+                        "odds": "17/10"
+                    },
+                    "competitor_10": {
+                        "name": "Ian Machado Garry",
+                        "odds": "1/2"
+                    },
+                    "competitor_11": {
+                        "name": "Merab Dvalishvili",
+                        "odds": "8/15"
+                    },
+                    "competitor_12": {
+                        "name": "Henry Cejudo",
+                        "odds": "6/4"
+                    },
+                    "competitor_13": {
+                        "name": "Alexander Volkanovski",
+                        "odds": "7/10"
+                    },
+                    "competitor_14": {
+                        "name": "Ilia Topuria",
+                        "odds": "11/10"
+                    }
+                }
+            ],
+            "meet_date": "2024-02-17"
+        },
+        {
+            "meet_name": "UFC 299",
+            "meet_url": "https://www.betvictor.com/en-ca/sports/1327866/meetings/695211610/all",
+            "fights": [
+                {
+                    "competitor_1": {
+                        "name": "CJ Vergara",
+                        "odds": "11/4"
+                    },
+                    "competitor_2": {
+                        "name": "Asu Almabaev",
+                        "odds": "2/7"
+                    },
+                    "competitor_3": {
+                        "name": "Pedro Munhoz",
+                        "odds": "13/8"
+                    },
+                    "competitor_4": {
+                        "name": "Kyler Phillips",
+                        "odds": "1/2"
+                    },
+                    "competitor_5": {
+                        "name": "Katlyn Chookagian",
+                        "odds": "11/8"
+                    },
+                    "competitor_6": {
+                        "name": "Maycee Barber",
+                        "odds": "4/7"
+                    },
+                    "competitor_7": {
+                        "name": "Mateusz Gamrot",
+                        "odds": "2/5"
+                    },
+                    "competitor_8": {
+                        "name": "Rafael dos Anjos",
+                        "odds": "2/1"
+                    },
+                    "competitor_9": {
+                        "name": "Petr Yan",
+                        "odds": "8/11"
+                    },
+                    "competitor_10": {
+                        "name": "Yadong Song",
+                        "odds": "11/10"
+                    },
+                    "competitor_11": {
+                        "name": "Kevin Holland",
+                        "odds": "8/11"
+                    },
+                    "competitor_12": {
+                        "name": "Michael Page",
+                        "odds": "11/10"
+                    },
+                    "competitor_13": {
+                        "name": "Gilbert Burns",
+                        "odds": "4/5"
+                    },
+                    "competitor_14": {
+                        "name": "Jack Della Maddalena",
+                        "odds": "1/1"
+                    },
+                    "competitor_15": {
+                        "name": "Curtis Blaydes",
+                        "odds": "9/10"
+                    },
+                    "competitor_16": {
+                        "name": "Jailton Almeida",
+                        "odds": "9/10"
+                    },
+                    "competitor_17": {
+                        "name": "Dustin Poirier",
+                        "odds": "5/4"
+                    },
+                    "competitor_18": {
+                        "name": "Benoit Saint-Denis",
+                        "odds": "4/6"
+                    },
+                    "competitor_19": {
+                        "name": "Sean O'Malley",
+                        "odds": "1/2"
+                    },
+                    "competitor_20": {
+                        "name": "Marlon Vera",
+                        "odds": "13/8"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "CJ Vergara",
+                        "odds": "11/4"
+                    },
+                    "competitor_2": {
+                        "name": "Asu Almabaev",
+                        "odds": "2/7"
+                    },
+                    "competitor_3": {
+                        "name": "Pedro Munhoz",
+                        "odds": "13/8"
+                    },
+                    "competitor_4": {
+                        "name": "Kyler Phillips",
+                        "odds": "1/2"
+                    },
+                    "competitor_5": {
+                        "name": "Katlyn Chookagian",
+                        "odds": "11/8"
+                    },
+                    "competitor_6": {
+                        "name": "Maycee Barber",
+                        "odds": "4/7"
+                    },
+                    "competitor_7": {
+                        "name": "Mateusz Gamrot",
+                        "odds": "2/5"
+                    },
+                    "competitor_8": {
+                        "name": "Rafael dos Anjos",
+                        "odds": "2/1"
+                    },
+                    "competitor_9": {
+                        "name": "Petr Yan",
+                        "odds": "8/11"
+                    },
+                    "competitor_10": {
+                        "name": "Yadong Song",
+                        "odds": "11/10"
+                    },
+                    "competitor_11": {
+                        "name": "Kevin Holland",
+                        "odds": "8/11"
+                    },
+                    "competitor_12": {
+                        "name": "Michael Page",
+                        "odds": "11/10"
+                    },
+                    "competitor_13": {
+                        "name": "Gilbert Burns",
+                        "odds": "4/5"
+                    },
+                    "competitor_14": {
+                        "name": "Jack Della Maddalena",
+                        "odds": "1/1"
+                    },
+                    "competitor_15": {
+                        "name": "Curtis Blaydes",
+                        "odds": "9/10"
+                    },
+                    "competitor_16": {
+                        "name": "Jailton Almeida",
+                        "odds": "9/10"
+                    },
+                    "competitor_17": {
+                        "name": "Dustin Poirier",
+                        "odds": "5/4"
+                    },
+                    "competitor_18": {
+                        "name": "Benoit Saint-Denis",
+                        "odds": "4/6"
+                    },
+                    "competitor_19": {
+                        "name": "Sean O'Malley",
+                        "odds": "1/2"
+                    },
+                    "competitor_20": {
+                        "name": "Marlon Vera",
+                        "odds": "13/8"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "CJ Vergara",
+                        "odds": "11/4"
+                    },
+                    "competitor_2": {
+                        "name": "Asu Almabaev",
+                        "odds": "2/7"
+                    },
+                    "competitor_3": {
+                        "name": "Pedro Munhoz",
+                        "odds": "13/8"
+                    },
+                    "competitor_4": {
+                        "name": "Kyler Phillips",
+                        "odds": "1/2"
+                    },
+                    "competitor_5": {
+                        "name": "Katlyn Chookagian",
+                        "odds": "11/8"
+                    },
+                    "competitor_6": {
+                        "name": "Maycee Barber",
+                        "odds": "4/7"
+                    },
+                    "competitor_7": {
+                        "name": "Mateusz Gamrot",
+                        "odds": "2/5"
+                    },
+                    "competitor_8": {
+                        "name": "Rafael dos Anjos",
+                        "odds": "2/1"
+                    },
+                    "competitor_9": {
+                        "name": "Petr Yan",
+                        "odds": "8/11"
+                    },
+                    "competitor_10": {
+                        "name": "Yadong Song",
+                        "odds": "11/10"
+                    },
+                    "competitor_11": {
+                        "name": "Kevin Holland",
+                        "odds": "8/11"
+                    },
+                    "competitor_12": {
+                        "name": "Michael Page",
+                        "odds": "11/10"
+                    },
+                    "competitor_13": {
+                        "name": "Gilbert Burns",
+                        "odds": "4/5"
+                    },
+                    "competitor_14": {
+                        "name": "Jack Della Maddalena",
+                        "odds": "1/1"
+                    },
+                    "competitor_15": {
+                        "name": "Curtis Blaydes",
+                        "odds": "9/10"
+                    },
+                    "competitor_16": {
+                        "name": "Jailton Almeida",
+                        "odds": "9/10"
+                    },
+                    "competitor_17": {
+                        "name": "Dustin Poirier",
+                        "odds": "5/4"
+                    },
+                    "competitor_18": {
+                        "name": "Benoit Saint-Denis",
+                        "odds": "4/6"
+                    },
+                    "competitor_19": {
+                        "name": "Sean O'Malley",
+                        "odds": "1/2"
+                    },
+                    "competitor_20": {
+                        "name": "Marlon Vera",
+                        "odds": "13/8"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "CJ Vergara",
+                        "odds": "11/4"
+                    },
+                    "competitor_2": {
+                        "name": "Asu Almabaev",
+                        "odds": "2/7"
+                    },
+                    "competitor_3": {
+                        "name": "Pedro Munhoz",
+                        "odds": "13/8"
+                    },
+                    "competitor_4": {
+                        "name": "Kyler Phillips",
+                        "odds": "1/2"
+                    },
+                    "competitor_5": {
+                        "name": "Katlyn Chookagian",
+                        "odds": "11/8"
+                    },
+                    "competitor_6": {
+                        "name": "Maycee Barber",
+                        "odds": "4/7"
+                    },
+                    "competitor_7": {
+                        "name": "Mateusz Gamrot",
+                        "odds": "2/5"
+                    },
+                    "competitor_8": {
+                        "name": "Rafael dos Anjos",
+                        "odds": "2/1"
+                    },
+                    "competitor_9": {
+                        "name": "Petr Yan",
+                        "odds": "8/11"
+                    },
+                    "competitor_10": {
+                        "name": "Yadong Song",
+                        "odds": "11/10"
+                    },
+                    "competitor_11": {
+                        "name": "Kevin Holland",
+                        "odds": "8/11"
+                    },
+                    "competitor_12": {
+                        "name": "Michael Page",
+                        "odds": "11/10"
+                    },
+                    "competitor_13": {
+                        "name": "Gilbert Burns",
+                        "odds": "4/5"
+                    },
+                    "competitor_14": {
+                        "name": "Jack Della Maddalena",
+                        "odds": "1/1"
+                    },
+                    "competitor_15": {
+                        "name": "Curtis Blaydes",
+                        "odds": "9/10"
+                    },
+                    "competitor_16": {
+                        "name": "Jailton Almeida",
+                        "odds": "9/10"
+                    },
+                    "competitor_17": {
+                        "name": "Dustin Poirier",
+                        "odds": "5/4"
+                    },
+                    "competitor_18": {
+                        "name": "Benoit Saint-Denis",
+                        "odds": "4/6"
+                    },
+                    "competitor_19": {
+                        "name": "Sean O'Malley",
+                        "odds": "1/2"
+                    },
+                    "competitor_20": {
+                        "name": "Marlon Vera",
+                        "odds": "13/8"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "CJ Vergara",
+                        "odds": "11/4"
+                    },
+                    "competitor_2": {
+                        "name": "Asu Almabaev",
+                        "odds": "2/7"
+                    },
+                    "competitor_3": {
+                        "name": "Pedro Munhoz",
+                        "odds": "13/8"
+                    },
+                    "competitor_4": {
+                        "name": "Kyler Phillips",
+                        "odds": "1/2"
+                    },
+                    "competitor_5": {
+                        "name": "Katlyn Chookagian",
+                        "odds": "11/8"
+                    },
+                    "competitor_6": {
+                        "name": "Maycee Barber",
+                        "odds": "4/7"
+                    },
+                    "competitor_7": {
+                        "name": "Mateusz Gamrot",
+                        "odds": "2/5"
+                    },
+                    "competitor_8": {
+                        "name": "Rafael dos Anjos",
+                        "odds": "2/1"
+                    },
+                    "competitor_9": {
+                        "name": "Petr Yan",
+                        "odds": "8/11"
+                    },
+                    "competitor_10": {
+                        "name": "Yadong Song",
+                        "odds": "11/10"
+                    },
+                    "competitor_11": {
+                        "name": "Kevin Holland",
+                        "odds": "8/11"
+                    },
+                    "competitor_12": {
+                        "name": "Michael Page",
+                        "odds": "11/10"
+                    },
+                    "competitor_13": {
+                        "name": "Gilbert Burns",
+                        "odds": "4/5"
+                    },
+                    "competitor_14": {
+                        "name": "Jack Della Maddalena",
+                        "odds": "1/1"
+                    },
+                    "competitor_15": {
+                        "name": "Curtis Blaydes",
+                        "odds": "9/10"
+                    },
+                    "competitor_16": {
+                        "name": "Jailton Almeida",
+                        "odds": "9/10"
+                    },
+                    "competitor_17": {
+                        "name": "Dustin Poirier",
+                        "odds": "5/4"
+                    },
+                    "competitor_18": {
+                        "name": "Benoit Saint-Denis",
+                        "odds": "4/6"
+                    },
+                    "competitor_19": {
+                        "name": "Sean O'Malley",
+                        "odds": "1/2"
+                    },
+                    "competitor_20": {
+                        "name": "Marlon Vera",
+                        "odds": "13/8"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "CJ Vergara",
+                        "odds": "11/4"
+                    },
+                    "competitor_2": {
+                        "name": "Asu Almabaev",
+                        "odds": "2/7"
+                    },
+                    "competitor_3": {
+                        "name": "Pedro Munhoz",
+                        "odds": "13/8"
+                    },
+                    "competitor_4": {
+                        "name": "Kyler Phillips",
+                        "odds": "1/2"
+                    },
+                    "competitor_5": {
+                        "name": "Katlyn Chookagian",
+                        "odds": "11/8"
+                    },
+                    "competitor_6": {
+                        "name": "Maycee Barber",
+                        "odds": "4/7"
+                    },
+                    "competitor_7": {
+                        "name": "Mateusz Gamrot",
+                        "odds": "2/5"
+                    },
+                    "competitor_8": {
+                        "name": "Rafael dos Anjos",
+                        "odds": "2/1"
+                    },
+                    "competitor_9": {
+                        "name": "Petr Yan",
+                        "odds": "8/11"
+                    },
+                    "competitor_10": {
+                        "name": "Yadong Song",
+                        "odds": "11/10"
+                    },
+                    "competitor_11": {
+                        "name": "Kevin Holland",
+                        "odds": "8/11"
+                    },
+                    "competitor_12": {
+                        "name": "Michael Page",
+                        "odds": "11/10"
+                    },
+                    "competitor_13": {
+                        "name": "Gilbert Burns",
+                        "odds": "4/5"
+                    },
+                    "competitor_14": {
+                        "name": "Jack Della Maddalena",
+                        "odds": "1/1"
+                    },
+                    "competitor_15": {
+                        "name": "Curtis Blaydes",
+                        "odds": "9/10"
+                    },
+                    "competitor_16": {
+                        "name": "Jailton Almeida",
+                        "odds": "9/10"
+                    },
+                    "competitor_17": {
+                        "name": "Dustin Poirier",
+                        "odds": "5/4"
+                    },
+                    "competitor_18": {
+                        "name": "Benoit Saint-Denis",
+                        "odds": "4/6"
+                    },
+                    "competitor_19": {
+                        "name": "Sean O'Malley",
+                        "odds": "1/2"
+                    },
+                    "competitor_20": {
+                        "name": "Marlon Vera",
+                        "odds": "13/8"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "CJ Vergara",
+                        "odds": "11/4"
+                    },
+                    "competitor_2": {
+                        "name": "Asu Almabaev",
+                        "odds": "2/7"
+                    },
+                    "competitor_3": {
+                        "name": "Pedro Munhoz",
+                        "odds": "13/8"
+                    },
+                    "competitor_4": {
+                        "name": "Kyler Phillips",
+                        "odds": "1/2"
+                    },
+                    "competitor_5": {
+                        "name": "Katlyn Chookagian",
+                        "odds": "11/8"
+                    },
+                    "competitor_6": {
+                        "name": "Maycee Barber",
+                        "odds": "4/7"
+                    },
+                    "competitor_7": {
+                        "name": "Mateusz Gamrot",
+                        "odds": "2/5"
+                    },
+                    "competitor_8": {
+                        "name": "Rafael dos Anjos",
+                        "odds": "2/1"
+                    },
+                    "competitor_9": {
+                        "name": "Petr Yan",
+                        "odds": "8/11"
+                    },
+                    "competitor_10": {
+                        "name": "Yadong Song",
+                        "odds": "11/10"
+                    },
+                    "competitor_11": {
+                        "name": "Kevin Holland",
+                        "odds": "8/11"
+                    },
+                    "competitor_12": {
+                        "name": "Michael Page",
+                        "odds": "11/10"
+                    },
+                    "competitor_13": {
+                        "name": "Gilbert Burns",
+                        "odds": "4/5"
+                    },
+                    "competitor_14": {
+                        "name": "Jack Della Maddalena",
+                        "odds": "1/1"
+                    },
+                    "competitor_15": {
+                        "name": "Curtis Blaydes",
+                        "odds": "9/10"
+                    },
+                    "competitor_16": {
+                        "name": "Jailton Almeida",
+                        "odds": "9/10"
+                    },
+                    "competitor_17": {
+                        "name": "Dustin Poirier",
+                        "odds": "5/4"
+                    },
+                    "competitor_18": {
+                        "name": "Benoit Saint-Denis",
+                        "odds": "4/6"
+                    },
+                    "competitor_19": {
+                        "name": "Sean O'Malley",
+                        "odds": "1/2"
+                    },
+                    "competitor_20": {
+                        "name": "Marlon Vera",
+                        "odds": "13/8"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "CJ Vergara",
+                        "odds": "11/4"
+                    },
+                    "competitor_2": {
+                        "name": "Asu Almabaev",
+                        "odds": "2/7"
+                    },
+                    "competitor_3": {
+                        "name": "Pedro Munhoz",
+                        "odds": "13/8"
+                    },
+                    "competitor_4": {
+                        "name": "Kyler Phillips",
+                        "odds": "1/2"
+                    },
+                    "competitor_5": {
+                        "name": "Katlyn Chookagian",
+                        "odds": "11/8"
+                    },
+                    "competitor_6": {
+                        "name": "Maycee Barber",
+                        "odds": "4/7"
+                    },
+                    "competitor_7": {
+                        "name": "Mateusz Gamrot",
+                        "odds": "2/5"
+                    },
+                    "competitor_8": {
+                        "name": "Rafael dos Anjos",
+                        "odds": "2/1"
+                    },
+                    "competitor_9": {
+                        "name": "Petr Yan",
+                        "odds": "8/11"
+                    },
+                    "competitor_10": {
+                        "name": "Yadong Song",
+                        "odds": "11/10"
+                    },
+                    "competitor_11": {
+                        "name": "Kevin Holland",
+                        "odds": "8/11"
+                    },
+                    "competitor_12": {
+                        "name": "Michael Page",
+                        "odds": "11/10"
+                    },
+                    "competitor_13": {
+                        "name": "Gilbert Burns",
+                        "odds": "4/5"
+                    },
+                    "competitor_14": {
+                        "name": "Jack Della Maddalena",
+                        "odds": "1/1"
+                    },
+                    "competitor_15": {
+                        "name": "Curtis Blaydes",
+                        "odds": "9/10"
+                    },
+                    "competitor_16": {
+                        "name": "Jailton Almeida",
+                        "odds": "9/10"
+                    },
+                    "competitor_17": {
+                        "name": "Dustin Poirier",
+                        "odds": "5/4"
+                    },
+                    "competitor_18": {
+                        "name": "Benoit Saint-Denis",
+                        "odds": "4/6"
+                    },
+                    "competitor_19": {
+                        "name": "Sean O'Malley",
+                        "odds": "1/2"
+                    },
+                    "competitor_20": {
+                        "name": "Marlon Vera",
+                        "odds": "13/8"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "CJ Vergara",
+                        "odds": "11/4"
+                    },
+                    "competitor_2": {
+                        "name": "Asu Almabaev",
+                        "odds": "2/7"
+                    },
+                    "competitor_3": {
+                        "name": "Pedro Munhoz",
+                        "odds": "13/8"
+                    },
+                    "competitor_4": {
+                        "name": "Kyler Phillips",
+                        "odds": "1/2"
+                    },
+                    "competitor_5": {
+                        "name": "Katlyn Chookagian",
+                        "odds": "11/8"
+                    },
+                    "competitor_6": {
+                        "name": "Maycee Barber",
+                        "odds": "4/7"
+                    },
+                    "competitor_7": {
+                        "name": "Mateusz Gamrot",
+                        "odds": "2/5"
+                    },
+                    "competitor_8": {
+                        "name": "Rafael dos Anjos",
+                        "odds": "2/1"
+                    },
+                    "competitor_9": {
+                        "name": "Petr Yan",
+                        "odds": "8/11"
+                    },
+                    "competitor_10": {
+                        "name": "Yadong Song",
+                        "odds": "11/10"
+                    },
+                    "competitor_11": {
+                        "name": "Kevin Holland",
+                        "odds": "8/11"
+                    },
+                    "competitor_12": {
+                        "name": "Michael Page",
+                        "odds": "11/10"
+                    },
+                    "competitor_13": {
+                        "name": "Gilbert Burns",
+                        "odds": "4/5"
+                    },
+                    "competitor_14": {
+                        "name": "Jack Della Maddalena",
+                        "odds": "1/1"
+                    },
+                    "competitor_15": {
+                        "name": "Curtis Blaydes",
+                        "odds": "9/10"
+                    },
+                    "competitor_16": {
+                        "name": "Jailton Almeida",
+                        "odds": "9/10"
+                    },
+                    "competitor_17": {
+                        "name": "Dustin Poirier",
+                        "odds": "5/4"
+                    },
+                    "competitor_18": {
+                        "name": "Benoit Saint-Denis",
+                        "odds": "4/6"
+                    },
+                    "competitor_19": {
+                        "name": "Sean O'Malley",
+                        "odds": "1/2"
+                    },
+                    "competitor_20": {
+                        "name": "Marlon Vera",
+                        "odds": "13/8"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "CJ Vergara",
+                        "odds": "11/4"
+                    },
+                    "competitor_2": {
+                        "name": "Asu Almabaev",
+                        "odds": "2/7"
+                    },
+                    "competitor_3": {
+                        "name": "Pedro Munhoz",
+                        "odds": "13/8"
+                    },
+                    "competitor_4": {
+                        "name": "Kyler Phillips",
+                        "odds": "1/2"
+                    },
+                    "competitor_5": {
+                        "name": "Katlyn Chookagian",
+                        "odds": "11/8"
+                    },
+                    "competitor_6": {
+                        "name": "Maycee Barber",
+                        "odds": "4/7"
+                    },
+                    "competitor_7": {
+                        "name": "Mateusz Gamrot",
+                        "odds": "2/5"
+                    },
+                    "competitor_8": {
+                        "name": "Rafael dos Anjos",
+                        "odds": "2/1"
+                    },
+                    "competitor_9": {
+                        "name": "Petr Yan",
+                        "odds": "8/11"
+                    },
+                    "competitor_10": {
+                        "name": "Yadong Song",
+                        "odds": "11/10"
+                    },
+                    "competitor_11": {
+                        "name": "Kevin Holland",
+                        "odds": "8/11"
+                    },
+                    "competitor_12": {
+                        "name": "Michael Page",
+                        "odds": "11/10"
+                    },
+                    "competitor_13": {
+                        "name": "Gilbert Burns",
+                        "odds": "4/5"
+                    },
+                    "competitor_14": {
+                        "name": "Jack Della Maddalena",
+                        "odds": "1/1"
+                    },
+                    "competitor_15": {
+                        "name": "Curtis Blaydes",
+                        "odds": "9/10"
+                    },
+                    "competitor_16": {
+                        "name": "Jailton Almeida",
+                        "odds": "9/10"
+                    },
+                    "competitor_17": {
+                        "name": "Dustin Poirier",
+                        "odds": "5/4"
+                    },
+                    "competitor_18": {
+                        "name": "Benoit Saint-Denis",
+                        "odds": "4/6"
+                    },
+                    "competitor_19": {
+                        "name": "Sean O'Malley",
+                        "odds": "1/2"
+                    },
+                    "competitor_20": {
+                        "name": "Marlon Vera",
+                        "odds": "13/8"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "CJ Vergara",
+                        "odds": "11/4"
+                    },
+                    "competitor_2": {
+                        "name": "Asu Almabaev",
+                        "odds": "2/7"
+                    },
+                    "competitor_3": {
+                        "name": "Pedro Munhoz",
+                        "odds": "13/8"
+                    },
+                    "competitor_4": {
+                        "name": "Kyler Phillips",
+                        "odds": "1/2"
+                    },
+                    "competitor_5": {
+                        "name": "Katlyn Chookagian",
+                        "odds": "11/8"
+                    },
+                    "competitor_6": {
+                        "name": "Maycee Barber",
+                        "odds": "4/7"
+                    },
+                    "competitor_7": {
+                        "name": "Mateusz Gamrot",
+                        "odds": "2/5"
+                    },
+                    "competitor_8": {
+                        "name": "Rafael dos Anjos",
+                        "odds": "2/1"
+                    },
+                    "competitor_9": {
+                        "name": "Petr Yan",
+                        "odds": "8/11"
+                    },
+                    "competitor_10": {
+                        "name": "Yadong Song",
+                        "odds": "11/10"
+                    },
+                    "competitor_11": {
+                        "name": "Kevin Holland",
+                        "odds": "8/11"
+                    },
+                    "competitor_12": {
+                        "name": "Michael Page",
+                        "odds": "11/10"
+                    },
+                    "competitor_13": {
+                        "name": "Gilbert Burns",
+                        "odds": "4/5"
+                    },
+                    "competitor_14": {
+                        "name": "Jack Della Maddalena",
+                        "odds": "1/1"
+                    },
+                    "competitor_15": {
+                        "name": "Curtis Blaydes",
+                        "odds": "9/10"
+                    },
+                    "competitor_16": {
+                        "name": "Jailton Almeida",
+                        "odds": "9/10"
+                    },
+                    "competitor_17": {
+                        "name": "Dustin Poirier",
+                        "odds": "5/4"
+                    },
+                    "competitor_18": {
+                        "name": "Benoit Saint-Denis",
+                        "odds": "4/6"
+                    },
+                    "competitor_19": {
+                        "name": "Sean O'Malley",
+                        "odds": "1/2"
+                    },
+                    "competitor_20": {
+                        "name": "Marlon Vera",
+                        "odds": "13/8"
+                    }
+                },
+                {
+                    "competitor_1": {
+                        "name": "CJ Vergara",
+                        "odds": "11/4"
+                    },
+                    "competitor_2": {
+                        "name": "Asu Almabaev",
+                        "odds": "2/7"
+                    },
+                    "competitor_3": {
+                        "name": "Pedro Munhoz",
+                        "odds": "13/8"
+                    },
+                    "competitor_4": {
+                        "name": "Kyler Phillips",
+                        "odds": "1/2"
+                    },
+                    "competitor_5": {
+                        "name": "Katlyn Chookagian",
+                        "odds": "11/8"
+                    },
+                    "competitor_6": {
+                        "name": "Maycee Barber",
+                        "odds": "4/7"
+                    },
+                    "competitor_7": {
+                        "name": "Mateusz Gamrot",
+                        "odds": "2/5"
+                    },
+                    "competitor_8": {
+                        "name": "Rafael dos Anjos",
+                        "odds": "2/1"
+                    },
+                    "competitor_9": {
+                        "name": "Petr Yan",
+                        "odds": "8/11"
+                    },
+                    "competitor_10": {
+                        "name": "Yadong Song",
+                        "odds": "11/10"
+                    },
+                    "competitor_11": {
+                        "name": "Kevin Holland",
+                        "odds": "8/11"
+                    },
+                    "competitor_12": {
+                        "name": "Michael Page",
+                        "odds": "11/10"
+                    },
+                    "competitor_13": {
+                        "name": "Gilbert Burns",
+                        "odds": "4/5"
+                    },
+                    "competitor_14": {
+                        "name": "Jack Della Maddalena",
+                        "odds": "1/1"
+                    },
+                    "competitor_15": {
+                        "name": "Curtis Blaydes",
+                        "odds": "9/10"
+                    },
+                    "competitor_16": {
+                        "name": "Jailton Almeida",
+                        "odds": "9/10"
+                    },
+                    "competitor_17": {
+                        "name": "Dustin Poirier",
+                        "odds": "5/4"
+                    },
+                    "competitor_18": {
+                        "name": "Benoit Saint-Denis",
+                        "odds": "4/6"
+                    },
+                    "competitor_19": {
+                        "name": "Sean O'Malley",
+                        "odds": "1/2"
+                    },
+                    "competitor_20": {
+                        "name": "Marlon Vera",
+                        "odds": "13/8"
+                    }
+                }
+            ],
+            "meet_date": "2024-03-09"
+        }
+    ]
+}
